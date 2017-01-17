@@ -1,9 +1,4 @@
-sudo apt-get install pandoc
-sudo apt install npm
-sudo npm install -g confluence-to-github-markdown
-
-
-Galicaster 2 Documentation Project
+Galicaster Documentation Project
 ==================================
 
 Documentation:

@@ -12,12 +12,12 @@ Galicaster can be operated on two different ways, depending on the areas availab
 
 
 #### Manage recordings
-You can do operations like ingesting, editing metadata or deleting a recording in the [Media Manager](). Just select a recording and use the different buttons available.
+You can do operations like ingesting, editing metadata or deleting a recording in the [Media Manager](UserGuide/MediaManager.md). Just select a recording and use the different buttons available.
 
 #### Play recordings
 To play a video you have to enter Media Manager and select a recording. Playable recordings need to be stored in the repository folder. In the player mode, you can also ingest and delete the recording or edit its metadata.
 
 #### Recording
-To make a recording you have to access the [Recorder](). Once there, if available, you can start recording whenever you want. Make sure that your laptop is connected and the sound activeted before start it.
+To make a recording you have to access the [Recorder](UserGuide/Recorder.md). Once there, if available, you can start recording whenever you want. Make sure that your laptop is connected and the sound activeted before start it.
 
 ![](images/UserGuide/steps.png)

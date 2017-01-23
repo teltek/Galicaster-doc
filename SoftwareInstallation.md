@@ -1,7 +1,7 @@
 Software installation
 =====================
 
-This page is updated to the 1.4.2 release
+*This page is updated to the 1.4.2 release*
 
 Installation process
 --------------------
@@ -10,17 +10,17 @@ The installation process consists of 5 simple steps:
 * [Check the prerequisites.](#prerequisites)
 * [Download the latest Galicaster version.](#download)
 * [Install the software.](#installation)
-* [Run Galicaster for the first time.](#run-Galicaster-for-the-first-time)
+* [Run Galicaster for the first time.](#run-galicaster-for-the-first-time)
 * [Install and configure drivers.](#install-drivers)
 
 After installing, the next step is configuring the system.
-Advanced users, or those with special needs, can download the [source code]() and make a manual installation.
+Advanced users, or those with special needs, can download the [source code](https://github.com/teltek/Galicaster) and make a manual installation.
 
 ### Prerequisites
 Before starting the installation process, please make sure that:
 
-* If you already have a Galicaster running in your computer, please refer to the [upgrade]() documentation.
-* Your equipment meets Galicaster [Hardware Recommendations.]()
+* If you already have a Galicaster running in your computer, please refer to the [upgrade](SoftwareInstallation/UpgradingFromOlderVersions.md) documentation.
+* Your equipment meets Galicaster [Hardware Recommendations.](HardwareRecommendations.md)
 * You are running a Linux-based OS. The recommended distribution is Ubuntu 12.04. Make sure that the version chosen matches your system architecture (32 or 64 bits). We also recommend the distribution [Ubuntu 12.04.5](http://releases.ubuntu.com/12.04/) since it has the kernel 3.13.0 included. In case of using previous versions (like 12.04.1) you may have to install the next packages:
 
 ```bash
@@ -29,7 +29,7 @@ apt-get -y install linux-generic-lts-trusty
 ```
 
 ### Download
-The latest Galicaster version can be downloaded [here](), as a DEB package. Older versions and information about the new features that each of them included are available on the [Release Archive.]()
+The latest Galicaster version can be downloaded [here](http://webfiler.teltek.es/webfiler/galicaster/galicaster_1.4.2_all.deb), as a DEB package. Older versions and information about the new features that each of them included are available on the [Release Archive.](SoftwareInstallation/ReleaseArchive.md)
 
 By downloading, you agree to the [non-commercial license](http://creativecommons.org/licenses/by-nc-sa/3.0/). (Commercial licenses also available under request) ￼![](http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png)
 
@@ -60,7 +60,7 @@ Galicaster will be installed in `/usr/share/galicaster` . The configuration file
 ```bash
 sudo chown -R <user>:<group> /etc/galicaster
 ```
-New profiles can be added in `/etc/galicaster/profiles`. For more information about them, refer to the [Input Profiles section]().
+New profiles can be added in `/etc/galicaster/profiles`. For more information about them, refer to the [Input Profiles section](GalicasterConfiguration/InputProfiles.md).
 
 You may remove Galicaster from your system using the Ubuntu Software Center or the following command on a terminal:
 ```bash
@@ -99,6 +99,6 @@ The default input Profile consists of two mock video sources and a mock audio so
 ### Install drivers
 Depending on the hardware you have chosen to run Galicaster with, you may need to install and configure its drivers.
 
-Check our [Compatible hardware]() and visit your device manufacturer's Driver & Info websites for information on how to install and configure the drivers.
+Check our [Compatible hardware](HardwareRecommendations/CompatibleHardware.md) and visit your device manufacturer's Driver & Info websites for information on how to install and configure the drivers.
 
 > If you have purcharsed a Galicaster unit, the drivers are already installed.

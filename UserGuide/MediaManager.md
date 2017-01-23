@@ -2,7 +2,7 @@
 User Guide - Media Manager
 ==========================
 
-The Media Manager is the area where recordings are browsed. You can operate on all the finished recordings from here. Two of the most most important features are [Metadata]() and [Operations](). We will take a brief look to all its features.
+The Media Manager is the area where recordings are browsed. You can operate on all the finished recordings from here. Two of the most most important features are [Metadata](Metadata.md) and [Operations](Operations.md). We will take a brief look to all its features.
 
 ![](images/UserGuide/MediaManager/media_manager.jpg)
 
@@ -13,7 +13,7 @@ To play a recording, double click on it or select it and press the Play Button. 
 
 ### Edit Metadata
 ￼![](images/UserGuide/MediaManager/edit.png)
-Recording metadata can be set up and edited. If the recording has been scheduled, the metadata is already filled up, otherwise it should be edited manually. When a recording is finished it appears on the Media Manager, where it can be browsed and edited. [More information on Metadata Edition]()
+Recording metadata can be set up and edited. If the recording has been scheduled, the metadata is already filled up, otherwise it should be edited manually. When a recording is finished it appears on the Media Manager, where it can be browsed and edited. [More information on Metadata Edition](#metadata-edition)
 
 
 ### Delete

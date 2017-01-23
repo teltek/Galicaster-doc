@@ -7,7 +7,7 @@ Documentation:
 1. [Hardware Recommendations](HardwareRecommendations.md)
 2. [Software Installation](SoftwareInstallation.md)
 3. [Galicaster Configuration](GalicasterConfiguration.md)
-4. [User's Guide](UsersGuide.md)
+4. [User Guide](UserGuide.md)
 
 What to do with these two?:
 

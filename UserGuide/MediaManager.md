@@ -13,7 +13,7 @@ To play a recording, double click on it or select it and press the Play Button. 
 
 ### Edit Metadata
 ￼![](images/UserGuide/MediaManager/edit.png)
-Recording metadata can be set up and edited. If the recording has been scheduled, the metadata is already filled up, otherwise it should be edited manually. When a recording is finished it appears on the Media Manager, where it can be browsed and edited. [More information on Metadata Edition](metadata-edition)
+Recording metadata can be set up and edited. If the recording has been scheduled, the metadata is already filled up, otherwise it should be edited manually. When a recording is finished it appears on the Media Manager, where it can be browsed and edited. [More information on Metadata Edition](#metadata-edition)
 
 
 ### Delete

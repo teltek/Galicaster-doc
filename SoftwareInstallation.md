@@ -1,7 +1,7 @@
 Software installation
 =====================
 
-This page is updated to the 1.4.2 release
+*This page is updated to the 1.4.2 release*
 
 Installation process
 --------------------

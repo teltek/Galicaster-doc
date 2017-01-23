@@ -1,7 +1,7 @@
 Plugins
 =======
 
-This page is updated to the 1.4.0 release
+*This page is updated to the 1.4.2 release*
 
 Plugins are independent modules that provide a specific feature to Galicaster without affecting its normal behaviour and can be enabled or disabled separately. They may also have some sort of configuration to control its behaviour.
 Plugins communicate with Galicaster in a very simple way, by connecting to the inner signals of the program. They also can retrieve information from different elements of the application - repository, profiles, network status, GUI, etc.
@@ -44,8 +44,8 @@ screensaver = True
 inactivity = 60
 ```
 
-`True`: *Enables plugin.*  
-`False`: *Disables plugin.*  
+`True`: *Enables plugin.*
+`False`: *Disables plugin.*
 `inactivity`: *Length of the inactivity period in seconds. Default value: 120 seconds.*
 
 
@@ -81,8 +81,8 @@ min = -80
 keepclosed = False
 ```
 
-`True`: *Enables plugin*.  
-`False`: *Disables plugin.*  
+`True`: *Enables plugin*.
+`False`: *Disables plugin.*
 `min`: *A negative integer representing the 'silence' level in dB. Accepted values range between -100 and 0. Normal values are between -100 and -60. Defaults to -80.*
 
 ### Hide cursor
@@ -92,10 +92,10 @@ This plugin hides the mouse cursor. It is primarily meant to use with tactile sc
 In `conf.ini` (link to conf.ini), include the following section with your value of choice:
 
 ```ini
-[plugins]  
+[plugins]
 nocursor = False
 ```
-`True`: *Hide cursor.*  
+`True`: *Hide cursor.*
 `False`: *Show cursor.*
 
 
@@ -116,7 +116,7 @@ In `conf.ini` (link to conf.ini), include the following code with your values of
 [plugins]
 checkrepo = True
 ```
-`True`: *Enables plugin.*  
+`True`: *Enables plugin.*
 `False`: *Disables plugin.*
 
 
@@ -133,7 +133,7 @@ cleanstale = True
 [cleanstale]
 maxarchivaldays = 30
 ```
-`True`: *Enables plugin.*  
+`True`: *Enables plugin.*
 `False`: *Disables plugin.*
 `maxarchivaldays`: *An integer representing number of days the recording will be kept. Defaults to 30.*
 
@@ -155,8 +155,8 @@ forcedurationrec = True
 [forcedurationrec]
 duration = 240
 ```
-`True`: *Enables plugin.*  
-`False`: *Disables plugin.*  
+`True`: *Enables plugin.*
+`False`: *Disables plugin.*
 `duration`: *An integer representing the maximum duration allowed for a recording, in minutes. Defaults 240 minutes (4 hours).*
 
 
@@ -184,7 +184,7 @@ It can be accessed via localhost:8080 when the application is running.
 rest = False
 ```
 
-`True`: *Enables plugin.*  
+`True`: *Enables plugin.*
 `False`: *Disables plugin.*
 
 
@@ -195,7 +195,7 @@ This plugin captures certain key combinations to trigger specific actions in Gal
 [plugins]
 shortcuts = True
 ```
-`True`: *Enables plugin.*  
+`True`: *Enables plugin.*
 `False`: *Disables plugin.*
 
 
@@ -234,7 +234,7 @@ default = XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 contributor = {user}
 ...
 ```
-`True`: *Enables plugin.*  
+`True`: *Enables plugin.*
 `False`: *Disables plugin.*
 
 
@@ -257,7 +257,7 @@ hide = events
 default = recording
 ```
 
-`True`: *Enables plugin.*  
+`True`: *Enables plugin.*
 `False`: *Disables plugin.*
 
 ### Hide operations
@@ -292,8 +292,8 @@ check_after = 300
 nightly = True
 ```
 
-`check_published`: *Check with the Opencast client if the mediapackage already has been published, in this case the plugin will ignore this mediapackage*  
-`check_after`: *Time between check processes*  
+`check_published`: *Check with the Opencast client if the mediapackage already has been published, in this case the plugin will ignore this mediapackage*
+`check_after`: *Time between check processes*
 `nightly`: *Schedule the new operations to be processed nightly, if not will be processed at the moment*
 
 ### Notify when a recording has crashed

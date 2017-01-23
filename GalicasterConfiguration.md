@@ -1,8 +1,7 @@
-
 Galicaster configuration
 ========================
 
-This page is updated to the 1.4.2 release
+*This page is updated to the 1.4.2 release*
 
 Configuring Galicaster involves:
 
@@ -22,7 +21,7 @@ The general configuration file is `conf.ini`, located by default at the director
   * [Series configuration]()
 * [Plugins configuration]()
 
-> `conf-dist.ini`  
+> `conf-dist.ini`
 > The file `conf-dist.ini`, located at the installation folder of Galicaster, contains the factory configuration of Galicaster. You can check the default parameters there. This file is meant to remain unchanged.
 
 
@@ -41,7 +40,7 @@ In the `basic` section of the `conf.ini` file, you can configure the following i
 #### Administration mode
 The *admin mode* allows the user to access the Profile Selector and the Media manager. If the *admin mode* is disabled, only the Recorder area is available and the selected profile is locked.
 
-> [basic]  
+> [basic]
 > admin = True|False
 
 Default value: `True`
@@ -50,7 +49,7 @@ Default value: `True`
 #### Active profile
 The active profile is saved in the `conf.ini` file. Use the Profile Selector in the graphical interface to change it.
 
-> [basic]  
+> [basic]
 > profile = Default
 
 Default value: `Default`
@@ -59,7 +58,7 @@ Default value: `Default`
 If set, an "are you sure" pop-up will show when the stop button is clicked during a recording. If unset, the recording will stop immediatly.
 Disabling this option is specially useful in consecutive recordings, where the time between pieces is minimum.
 
-> [basic]  
+> [basic]
 > stopdialog = True|False
 
 Default value: `False`
@@ -68,7 +67,7 @@ Default value: `False`
 If set, a "Quit" button will be displayed in the Welcome screen of Galicaster. The quit button will close Galicaster.
 If shortcuts are activated, the program can be closed with ctrl+shift+q
 
-> [basic]  
+> [basic]
 > quit = True|False
 
 Default value: `True`
@@ -76,7 +75,7 @@ Default value: `True`
 #### Shutdown
 If set, a "Shutdown" button will be displayed in the Welcome screen of Galicaster. The shutdown button will close Galicaster and shutdown the system.
 
-> [basic]  
+> [basic]
 > shutdown = True|False
 
 Default value: `False`
@@ -84,7 +83,7 @@ Default value: `False`
 #### Resolution
 The application window resolution can be defined manually. Recommended resolutions are 1080p, 1024x768 and 1280x1024. Other resolutions are also possible. "auto" will adapt the resolution to the maximum available in fullscreen mode.
 
-> [basic]  
+> [basic]
 > resolution = auto|1920x1080|1024x768|...
 
 Default value: `auto`
@@ -94,7 +93,7 @@ Default value: `auto`
 #### Swap videos
 If set, a button will be displayed in the Recorder view in order to be able to swap the preview videos. For instance, if the camera is been displayed in the right side, pressing this button will be shown in the left side and the screen preview will be shown in the other side.
 
-> [basic]  
+> [basic]
 > swapvideos = True|False
 
 Default value: `True`
@@ -102,7 +101,7 @@ Default value: `True`
 #### Side-by-side layout
 Three types of layout are provide: Side-by-side and Picture-in-picture with screen or camera as main picture. In future releases the layout will be more customizable.
 
-> [sidebyside]  
+> [sidebyside]
 > layout = sbs
 
 Layout options: (**sbs**|pip-screen|pip-camera)
@@ -116,45 +115,45 @@ Different conflict resolution for manual versus scheduled recordings.
 * pause: whether any recording can be paused.
 * overlap : wheter a manual recording can or cannot cancel a scheduled recording.
 
-> [allows]  
-> manual = True  
-> start = False  
-> stop = False  
-> pause = True  
+> [allows]
+> manual = True
+> start = False
+> stop = False
+> pause = True
 
 ### Media Manager appearance
 The Media Manager appearance, more specificaly the color of the row, depends on the Mediapackage status, can be customized. If the classic color is selected, row color depends on the Ingest operation status, otherwise, each operation cell wil acdquire a different color depending on its status.
 
-> [color]  
-> classic = false  
-> none =  #FFF0AA ;yellow  
-> nightly = #AEFFAE ; light green  
-> pending = #AEFFAE ; light green  
-> processing = #FFAE00 ; orange  
-> done = #88FF88 ; green  
+> [color]
+> classic = false
+> none =  #FFF0AA ;yellow
+> nightly = #AEFFAE ; light green
+> pending = #AEFFAE ; light green
+> processing = #FFAE00 ; orange
+> done = #88FF88 ; green
 > failed = #FFAEAE ;red
 
 ### Folder designation
 #### Repository folder
 The main folder and the name format of the subfolders can be modified.
 
-> [basic]  
-> repository = /path/to/folder/repository/  
+> [basic]
+> repository = /path/to/folder/repository/
 
-> [repository]  
+> [repository]
 > foldertemplate = gc_{hostname}_{year}-{month}-{day}T{hour}h{minute}m{second}
 
 Default value: `/home/$user/Repository`
 Template format: Free text; the following substitutions (in curly braces) are available: year, month, day, hour, minute, second and hostname.
 
->	Repository privileges  
-The default user must have privileges for accessing and writing on this folder, otherwise you can execute a command like this:  
+>	Repository privileges
+The default user must have privileges for accessing and writing on this folder, otherwise you can execute a command like this:
 `sudo chown -R $user /path/to/folder/repository/`
 
 #### Export Folder
 The default user must have privileges for accessing and writing this folder.
 
->	[basic]  
+>	[basic]
 >	export = /path/to/folder/export/
 
 Default value: `/home/$user/_1`
@@ -162,7 +161,7 @@ Default value: `/home/$user/_1`
 #### Temporary folder
 The default user must have privileges for accessing and writing on this folder.
 
->	[basic]  
+>	[basic]
 >	tmp = /path/folder/repository/
 
 Default value: `/tmp` (in Ubuntu distros)
@@ -170,14 +169,14 @@ Default value: `/tmp` (in Ubuntu distros)
 ### Logger
 By default, the log information is stored at the temporary folder, in a single file named galicaster.log, so the file is deleted on every reboot. However, the syslog system may be used instead. The log level and destination folder can be also configured.
 
->	[logger]  
->	path = /tmp/galicaster.log  
->	level = DEBUG  
->	use_syslog = False  
->	rotate = False  
+>	[logger]
+>	path = /tmp/galicaster.log
+>	level = DEBUG
+>	use_syslog = False
+>	rotate = False
 
-level: (INFO|WARNING|**DEBUG**)  
-use_syslog: (True|**False**)  
+level: (INFO|WARNING|**DEBUG**)
+use_syslog: (True|**False**)
 rotate: (True|**False**)
 
 ### Opencast server configuration
@@ -191,7 +190,7 @@ Galicaster can connect to an Opencast core, but certain requirements have to be 
 Scheduled recordings are taken from the Opencast core scheduling system. Any scheduled recording has metadata associated with it and its series. Galicaster will fetch all metadata and allow the user to modify some of them.
 Scheduled recordings can be ingested immediately or nightly - the nocturnal ingest time is defined in the heartbeat section - or reingested manually anytime through the media manager.
 
-> [basic]  
+> [basic]
 > scheduled = none|immediately|nightly
 
 #### Manual recordings
@@ -201,7 +200,7 @@ Galicaster can set up the default values for some parameters in Manual recording
 * Workflow parameters
 * Ingest schedule
 
-> [basic]  
+> [basic]
 > manual = none|immediately|nightly
 
 #### Galicaster agent hostname
@@ -234,24 +233,24 @@ This is a summary of all the parameters related to the Opencast configuration in
 * **multiple-ingest**: (new in Galicaster 1.3.1): Whether ingestion is made through the admin server or through the less loaded available ingest server. When the option is active, Galicaster looks for the less loaded active sever (not in mantenaince nor offline), always avoiding the admin server. True | **False** (default value) .
 * **address**: IP to connect with Opencast.
 ￼
-> Changes in track names  
-If this option is **_enabled_**, and track names are changed at the configuration file for some reason, the recordings already scheduled in Opencast may fail because the track names in the schedule will not match the current ones. Therefore, if the track names are modified, all the existing recordings should be scheduled again so that they include the new track names.  
+> Changes in track names
+If this option is **_enabled_**, and track names are changed at the configuration file for some reason, the recordings already scheduled in Opencast may fail because the track names in the schedule will not match the current ones. Therefore, if the track names are modified, all the existing recordings should be scheduled again so that they include the new track names.
 When this option is **_disabled_**, Galicaster sends no information about the tracks defined in its profile, and therefore no special precautions should be taken when the track names need to be modified for some reason.
 
 #### Example:
-> [ingest]  
-active = True  
-legacy = False  
-visible_tracks = False  
-manual =  nightly  
-scheduled = immediately  
-host = http://fakeadmin.matterhorn.com:80  
-username = matterhorn_system_account  
-password = CHANGE_ME  
-workflow = full  
-workflow-parameters = videoPreview:true;trimHold:true;captionHold:false;archiveOp:true  
-multiple-ingest = False  
-address = 127.0.0.1  
+> [ingest]
+active = True
+legacy = False
+visible_tracks = False
+manual =  nightly
+scheduled = immediately
+host = http://fakeadmin.matterhorn.com:80
+username = matterhorn_system_account
+password = CHANGE_ME
+workflow = full
+workflow-parameters = videoPreview:true;trimHold:true;captionHold:false;archiveOp:true
+multiple-ingest = False
+address = 127.0.0.1
 
 ### Heartbeat configuration
 The heartbeat module handles the frequency by which the Opencast communication module in Galicaster send messages to the designated Opencast server.
@@ -266,10 +265,10 @@ There are three periodic signals: short period, long period and 24-hour period (
   * Value in hh:mm format. Default 00:00
 
 #### Default configuration example:
-> [heartbeat]  
-short = 10  
-long = 60  
-night = 00:00  
+> [heartbeat]
+short = 10
+long = 60
+night = 00:00
 
 ### Series configuration
 This section sets allows filtering series shown in the drop down list of the metadata editor. It accepts most of the filter values that Opencast endpoint accepts, namely: seriesId, seriesTitle, creator, contributor, publisher, rightsholder, createdfrom, createdto, language, license, subject, abstract, description.
@@ -278,7 +277,7 @@ This section sets allows filtering series shown in the drop down list of the met
 
 In addition to the previous filters, the 'default' keyword accepts a series ID that will appear in the series list, no matter what. The values to the parameters may include placeholders for certain environment variables. The only one supported currently is '{user}', that is substituted with the current user name.
 
-> [series]  
-default = XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX  
-contributor = {user}  
-... etc  
+> [series]
+default = XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+contributor = {user}
+... etc

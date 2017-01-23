@@ -29,7 +29,7 @@ apt-get -y install linux-generic-lts-trusty
 ```
 
 ### Download
-The latest Galicaster version can be downloaded [here](http://webfiler.teltek.es/webfiler/galicaster/galicaster_1.4.1_all.deb), as a DEB package. Older versions and information about the new features that each of them included are available on the [Release Archive.]()
+The latest Galicaster version can be downloaded [here](http://webfiler.teltek.es/webfiler/galicaster/galicaster_1.4.2_all.deb), as a DEB package. Older versions and information about the new features that each of them included are available on the [Release Archive.](SoftwareInstallation/ReleaseArchive.md)
 
 By downloading, you agree to the [non-commercial license](http://creativecommons.org/licenses/by-nc-sa/3.0/). (Commercial licenses also available under request) ￼![](http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png)
 

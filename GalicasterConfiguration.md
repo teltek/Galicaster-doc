@@ -14,12 +14,12 @@ Due to their their extension and importance, Profiles and Plugins are further ex
 ### General configuration
 The general configuration file is `conf.ini`, located by default at the directory `/etc/galicaster/` of your system. This file includes several sections regarding:
 
-* [Main parameters](), including designated work folders
-* [Logger]()
-* [Opencast server configuration]()
-  * [Heartbeat configuration](): frequency of communication signals
-  * [Series configuration]()
-* [Plugins configuration]()
+* [Main parameters](main-parameters), including designated work folders
+* [Logger](logger)
+* [Opencast server configuration](opencast-server-configuration)
+  * [Heartbeat configuration](heartbeat-configuration): frequency of communication signals
+  * [Series configuration](series-configuration)
+* [Plugins configuration](GalicasterConfiguration/Plugins.md)
 
 > `conf-dist.ini`
 > The file `conf-dist.ini`, located at the installation folder of Galicaster, contains the factory configuration of Galicaster. You can check the default parameters there. This file is meant to remain unchanged.
@@ -30,12 +30,12 @@ Parameters are set in different sections at the `conf.ini file`. Parameters incl
 
 In the `basic` section of the `conf.ini` file, you can configure the following items:
 
-* [Administration mode]()
-* [Active profile]() - configurable through the interface
-* [Stop dialog]()
-* [Quit option]()
-* [Shutdown option]()
-* [Resolution]()
+* [Administration mode](administration-mode)
+* [Active profile](active-profile) - configurable through the interface
+* [Stop dialog](stop-dialog)
+* [Quit option](quit)
+* [Shutdown option](shutdown)
+* [Resolution](resolution)
 
 #### Administration mode
 The *admin mode* allows the user to access the Profile Selector and the Media manager. If the *admin mode* is disabled, only the Recorder area is available and the selected profile is locked.

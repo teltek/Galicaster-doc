@@ -10,7 +10,7 @@ The installation process consists of 5 simple steps:
 * [Check the prerequisites.](#prerequisites)
 * [Download the latest Galicaster version.](#download)
 * [Install the software.](#installation)
-* [Run Galicaster for the first time.](#run-Galicaster-for-the-first-time)
+* [Run Galicaster for the first time.](#run-galicaster-for-the-first-time)
 * [Install and configure drivers.](#install-drivers)
 
 After installing, the next step is configuring the system.

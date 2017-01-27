@@ -19,9 +19,10 @@ Documentation:
   * [Metadata](UserGuide/Metadata.md)
   * [Operations](UserGuide/Operations.md)
 
-Galicaster 2 Site:
+Galicaster Site:
 ------------------
+https://wiki.teltek.es/display/Galicaster/Galicaster+project+Home
 
-Galicaster 2 Code Project:
+Galicaster Code Project:
 --------------------------
 https://github.com/teltek/Galicaster

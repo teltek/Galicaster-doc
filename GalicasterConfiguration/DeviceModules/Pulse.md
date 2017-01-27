@@ -13,7 +13,7 @@ Special features of this module are:
 To capture this devices, additional configuring must be performed over the pulse layer through the Sound Settings or alsamixer.
 
 ### Pulse compatible devices
-* [Revolabs wireless mics]()
+* [Revolabs wireless mics](Devices/Pulse.md)
 * Microphones (thr. motherboard)
 * Audio mixers (thr motherboard)
 * Build-in webcam microphones

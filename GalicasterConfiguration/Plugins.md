@@ -8,20 +8,20 @@ Plugins communicate with Galicaster in a very simple way, by connecting to the i
 
 The following list enumerates the current available plugins at the 1.4.0 release. Each plugin's functionality and configuration are briefly explained on its corresponding section in this page.
 
-* [Screensaver for Ubuntu 12.04]()
-* [No Audio Warning Dialog]()
-* [Hide cursor]()
-* [Check for a non-started scheduled recording]()
-* [Clean old recordings]()
-* [Limit recording duration]()
-* [REST interface - Experimental]()
-* [Keyboard Shortcuts - Discontinued]()
-* [Setup the default values of any recording]()
-* [Hide tabs in the recorder UI]()
-* [Hide operations]()
-* [Send snapshot to Dashboard]()
-* [Retry failed ingest]()
-* [Notify when a recording has crashed]()
+* [Screensaver for Ubuntu 12.04](#screensaver-for-ubuntu-12.04)
+* [No Audio Warning Dialog](#no-audio-warning-dialog)
+* [Hide cursor](#hide-cursor)
+* [Check for a non-started scheduled recording](#check-for-a-non-started-scheduled-recording)
+* [Clean old recordings](#clean-old-recordings)
+* [Limit recording duration](#limit-recording-duration)
+* [REST interface - Experimental](#rest-interface-experimental)
+* [Keyboard Shortcuts - Discontinued](#keyboard-shortcuts-discontinued)
+* [Setup the default values of any recording](#setup-the-default-values-of-any-recording)
+* [Hide tabs in the recorder UI](#hide-tabs-in-the-recorder-ui)
+* [Hide operations](#hide-operations)
+* [Send snapshot to Dashboard](#send-snapshot-to-dashboard)
+* [Retry failed ingest](#retry-failed-ingest)
+* [Notify when a recording has crashed](#notify-when-a-recording-has-crashed)
 
 ### Screensaver for Ubuntu 12.04
 This plugin uses the Xorg system and the DBUS application interface to provide an automatic screensaver control for Galicaster. In order to work properly, this plugin requires both the screensaver and tge power management system to be disabled.

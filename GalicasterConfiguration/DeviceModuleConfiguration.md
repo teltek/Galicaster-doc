@@ -9,16 +9,16 @@ The configuration of a capture card or device involves different aspects:
 * Driver and device configuration - static and dynamic configuration made through `modprobe`, `v4l2-ctl` and similar commands.
 * Device module configuration - setup the Galicaster adaptation modules for each device
 
-Each device family has its own page with information, including driver-related instructions. These pages are listed at the [Compatible hardware]().
+Each device family has its own page with information, including driver-related instructions. These pages are listed at the [Compatible hardware](../HardwareRecommendations/CompatibleHardware.md).
 
 This section will focus on the device module configuration. Every device or capture card is handled with a specific device module depending on their nature. After you read this page check the links on the following list for more information about a specific modules:
 
-* [V4l2 device module]() (Datapath, Epiphan and other devices)
-* [Blackmagic device module]()
-* [Hauppauge device module]()
-* [Firewire device module]()
-* [RTP device module]()
-* [Pulse device module]()
+* [V4l2 device module](DeviceModules/V4L2.md) (Datapath, Epiphan and other devices)
+* [Blackmagic device module](DeviceModules/Blackmagic.md)
+* [Hauppauge device module](DeviceModules/Hauppauge.md)
+* [Firewire device module](DeviceModules/Firewire.md)
+* [RTP device module](DeviceModules/RTP.md)
+* [Pulse device module](DeviceModules/Pulse.md)
 
 ### Common parameters
 The device module configuration sets the parameters necessary to capture, preview and process the incoming data from a device or capture card. Every device module has 5 common parameters:

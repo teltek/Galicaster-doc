@@ -6,15 +6,15 @@ Blackmagic device module
 
 The blackmagic device module provides compatibility with those Blackmagic Design capture cards compatible with Linux, for instance Decklink SDI and Intensity Pro. These capture cards are focused on recording High Definition formats but they also record other formats such as Svideo, Composite and Components.
 
-Consult our page dedicated to [Blackmagic cards]() for a more detailed information.
+Consult our page dedicated to [Blackmagic cards](../../HardwareRecommendations/BlackmagicCards.md) for a more detailed information.
 
 ### Blackmagic Linux-compatible cards
-* Blackmagic Intensity Series
-* Blackmagic Decklink Series
+* [Blackmagic Intensity Series](Devices/Blackmagic.md)
+* [Blackmagic Decklink Series](Devices/Blackmagic.md)
 
 
 ### Technical details
-#### Blackmagic Design SDI
+#### Blackmagic Decklink SDI
 From http://www.blackmagicdesign.com/products/decklink/techspecs
 
 | Connectors | SD Formats | HD Formats 720p | HD Formats 1080i | HD Formats 180p | Audio Input |

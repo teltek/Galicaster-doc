@@ -12,10 +12,10 @@ This module is meant to adapt to those Epiphan framegrabbers compatible with V42
 * Define a output resolution to which scale the unknown incoming stream.
 * Ensure or limit the framerate.
 
-For Epiphan VGADVI Broadcaster use the [RTP device module]()
+For Epiphan VGADVI Broadcaster use the [RTP device module](RTP.md)
 
 ### Epiphan compatible devices
-* [Epiphan framegrabbers]()
+* [Epiphan framegrabbers](Devices/Epiphan.md)
   * Epiphan DVI2PCI2
   * Epiphan DVI2USB
   * Epiphan VGA2USB (LR, HR and Pro)

@@ -1,7 +1,7 @@
 Input Profiles
 ==============
 
-The page contains a general overview of the Input Profiles, including several downloadable examples. Please refer to the [Device module configuration]() section for a deeper explanation on how to configure a certain device.
+The page contains a general overview of the Input Profiles, including several downloadable examples. Please refer to the [Device module configuration](DeviceModuleConfiguration.md) section for a deeper explanation on how to configure a certain device.
 
 ### Input Profiles
 Profiles are groups of tracks. Each track contains the reference to a device and its configuration.
@@ -37,21 +37,21 @@ A *track* is the configuration of a single device through an appropriate Galicas
 There are several types of device modules:
 
 * Video plugin
-  * [V4L2]()
-  * [Hauppauge]() - audio available
-  * [Epiphan]()
-  * [Blackmagic]() - audio available
-  * [Firewire]() - audio available on DV
-  * [RTPvideo]()
+  * [V4L2](DeviceModules/V4L2.md)
+  * [Hauppauge](DeviceModules/Hauppauge.md) - audio available
+  * [Epiphan](DeviceModules/Epiphan.md)
+  * [Blackmagic](DeviceModules/Blackmagic.md) - audio available
+  * [Firewire](DeviceModules/Firewire.md) - audio available on DV
+  * [RTPvideo](DeviceModules/RTPvideo.md)
 * Audio plugin
-  * [Pulse]()
-* [Mock plugins]() - test plugins simulating a real device
+  * [Pulse](DeviceModules/Pulse.md)
+* [Mock plugins](DeviceModules/Mock.md) - test plugins simulating a real device
   * Audiotest
   * Videotest
 * Other:
   * Custom plugin
 
-Find out which module is appropriate for your device by checking the [Device table]().
+Find out which module is appropriate for your device by checking the [Device table](../HardwareRecommendations/CompatibleHardware.md).
 
 #### Profile configuration
 A Profile is build up of one or many tracks configuring several devices, usually from 1 to 4 (two videos and two audio streams). Profiles can be selected in the Profile Selector, by clicking on the button under "Recorder" in the welcome screen of Galicaster (only accessible in admin mode).
@@ -61,7 +61,7 @@ Profiles load automatically right after they are selected. If something goes wro
 Changing the current profile does not require to restart the application. However, make sure Galicaster is not running before editing your profile definitions.
 
 ### Encoding
-Most device modules allow configuring its encoding and encapsulation. To know more about this matters please check out Device module configuration.
+Most device modules allow configuring its encoding and encapsulation. To know more about this matters please check out [Device module configuration](DeviceModuleConfiguration.md).
 
 ### Scripts and configuration commands
 #### Logitech c920
@@ -100,7 +100,7 @@ caps = video/x-raw-yuv,framerate=24/1,width=1024,height=768
 location = /dev/screen
 file = SCREEN.avi
 ```
-For further information, please go to [Device Module Configuration]()
+For further information, please go to [Device Module Configuration](DeviceModuleConfiguration.md)
 
 ###### An complete example with mock devices:
 ```ini

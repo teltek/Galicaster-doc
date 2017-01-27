@@ -7,8 +7,7 @@ Firewire device module
 The Firewire device module is meant to give compatibility for Firewire video cards working with DV or miniDV professional cameras.
 
 ### Firewire compatible devices
-* Firewire cards and
-* Any DV or mini-DV camera
+* [Firewire cards and any DV or mini-DV camera](Devices/Firewire.md)
 
 ### Module Configuration
 Admmited values:

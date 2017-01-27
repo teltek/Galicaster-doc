@@ -5,23 +5,22 @@ Logitech webcams
 ### Drivers & information
 Logitech HD Webcams are compatible with Galicaster. They provide HD and Full HD videos. Other Logitech UVC webcams will work but most of them don't provide a fair resolution-framerate ratio.
 
-* [Drivers & information]()
-* [Driver installation]()
-* [Device identification]()
-* [Device configuration]()
-* [Module configuration]()
-* [Troubleshooting]()
-* [FAQ]()
+* [Driver installation](#driver-installation)
+* [Device identification](#device-identification)
+* [Device configuration](#device-configuration)
+* [Module configuration](#module-configuration)
+* [Troubleshooting](#troubleshooting)
+* [FAQ](#faq)
 
 #### Technical data
-* Vendor: [Logitech]()
-* Models [c920]() and [BCC950]()
+* Vendor: [Logitech](http://www.logitech.com/en-us/home)
+* Models [c920](http://www.logitech.com/en-us/product/hd-pro-webcam-c920) and [BCC950](http://www.logitech.com/en-us/product/Conferencecam?crid=1252)
 * Resolution: **upto Full HD**
 * Format: **YUV or JPEG**
 * Connector: **USB 2.0**
 * Signal: **RAW**
 * Drivers: **pre-installed on Ubuntu 12**
-* Plugin: [v4l2]()
+* Plugin: [v4l2](../V4L2.md)
 * Price: **around 100 €**
 
 

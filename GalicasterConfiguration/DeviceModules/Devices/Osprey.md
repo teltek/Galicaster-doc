@@ -4,24 +4,23 @@ Osprey Cards
 ### Drivers & information
 Osprey cards are analog video captures on both PAL and NTSC (including panoramic). They work with composite a S-Video inputs and balanced audio input.
 
-* [Drivers & information]()
-* [Driver installation]()
-* [Device identification]()
-* [Device configuration]()
-* [Module configuration]()
-* [Troubleshooting]()
-* [FAQ]()
+* [Driver installation](#driver-installation)
+* [Device identification](#device-identification)
+* [Device configuration](#device-configuration)
+* [Module configuration](#module-configuration)
+* [Troubleshooting](#troubleshooting)
+* [FAQ](#faq)
 
 ### Technical data
-* Vendor: [Viewcast]()
-* Models: [230](), [100](), [100e](), [210](), [260e](), [440](), [460e]() and [530]()
+* Vendor: [Viewcast](http://www.viewcast.com/)
+* Models: [230](http://www.viewcast.com/products/osprey-cards/osprey-230), [100](http://www.viewcast.com/products/osprey-cards/osprey-100), [100e](http://www.viewcast.com/products/osprey-cards/osprey-100e), [210](http://www.viewcast.com/products/osprey-cards/osprey-210), [260e](http://www.viewcast.com/products/osprey-cards/osprey-260e), [440](http://www.viewcast.com/products/osprey-cards/osprey-440), [460e](http://www.viewcast.com/products/osprey-cards/osprey-460e) and [530](http://www.viewcast.com/products/osprey-cards/osprey-530)
 * Resolution: **PAL/NTSC**
 * Format: **Svideo or Composite**
 * Connector: **BNC** and other through adaptors
 * Signal: **RAW**
 * Drivers: **PCI-based pre-installed
 on Ubuntu 12**
-* Plugin: [v4l2]()
+* Plugin: [v4l2](../V4l2.md)
 * Price: **From $170 (Osprey 100)
 to $1000 (Osprey 530)**
 

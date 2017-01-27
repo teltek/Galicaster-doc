@@ -8,25 +8,24 @@ Revolabs wireless microphones are devices well adapted to a classroom or confere
 The bay is connected to the computer to send the audio and it also works as battery recharder.
 The microphone is cilindric with a structure for attaching it to the clothing. The cilinder incorporates two microphones, one for speech recording and a second one to receive the room noise to process the signal and improve the audio quality.o
 
-* [Drivers & information]()
-* [Driver installation]()
-* [Device identification]()
-* [Device configuration]()
-* [Plugin configuration]()
-* [Use instructions]()
-  * [Charging the Batteries]()
-  * [Pairing the microphone to the base]()
-* [Troubleshooting]()
-* [FAQ]()
+* [Driver installation](#driver-installation)
+* [Device identification](#device-identification)
+* [Device configuration](#device-configuration)
+* [Plugin configuration](#plugin-configuration)
+* [Use instructions](#use-instructions)
+  * [Charging the Batteries](#charging-the-batteries)
+  * [Pairing the microphone to the base](#pairing-the-microphone-to-the-base)
+* [Troubleshooting](#troubleshooting)
+* [FAQ](#faq)
 
 ### Technical data
-* Vendor: [Revolabs]()
+* Vendor: [Revolabs](http://www.revolabs.com/)
 * Models **solo, xTag**
 * Format: **PCM**
 * Connector: **USB or Line in**
 * Signal: **RAW**
 * Drivers: **pre-installed on Ubuntu 12**
-* Plugin: [pulse]()
+* Plugin: [pulse](../Pulse.md)
 * Price: **600 €** (microphone and bay)
 
 ### Driver installation
@@ -73,7 +72,7 @@ amplification = 2.0
 ### Use instructions
 #### Charging the Batteries
 To charge the batteries place the Microphone into the xTag Charger Base. During charging, the Microphone status LED indicator
-changes from solid RED to solid GREEN as chargingcompletes. The Charger Base status indicator remains off during charging. The Microphone is always muted while in the Charger Base. **  The battery charges from fully depleted to fully charged in approximately two hours, however, it is “quick-charged” to 80% capacityin 45 minutes.**  
+changes from solid RED to solid GREEN as chargingcompletes. The Charger Base status indicator remains off during charging. The Microphone is always muted while in the Charger Base. **  The battery charges from fully depleted to fully charged in approximately two hours, however,** it is “quick-charged” to **80% capacityin 45 minutes.**  
 _Note: A fully charged battery provides approximately 8 hours of talk time._
 
 *When to Charge*

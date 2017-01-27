@@ -5,31 +5,30 @@ Blackmagic capture cards
 Blackmagic Design provides linux support for their Intensity, Decklink and Multibridge series.
 Blackmagic capture cards support multiple formats - through adaptors - including HD-SDI and HDMI. Check the table below for more information on connectors and signal standards available.
 
-* [Drivers & information]()
-* [Models table]()
-* [Driver installation]()
-* [Device identification]()
-* [Module configuration]()
-* [Troubleshooting]()
-* [FAQ]()
+* [Models table](#models-table)
+* [Driver installation](#driver-installation)
+* [Device identification](#device-identification)
+* [Module configuration](#module-configuration)
+* [Troubleshooting](#troubleshooting)
+* [FAQ](#faq)
 
 #### Technical data
-* Vendor: [Blackmagic Design]()
+* Vendor: [Blackmagic Design](http://www.blackmagicdesign.com/)
 * Models **Intensity Pro, Decklink SDI and, Multibride**
 * Resolution: **upto Full HD**
 * Format: **SDI, HDMI and others**
 * Connector: **BNC or HDMI**
 * Signal: **RAW**
-* Drivers: available [here]()
-* GC Module: [blackmagic]()
+* Drivers: available [here](http://www.blackmagicdesign.com/support/)
+* GC Module: [blackmagic](../Blackmagic)
 * Price: **around 300 €**
 
 ### Models table
 
 | Model | Singal standards | Connectors | Audio | HD formats | SD formats | HW Encoding | Price |
 |-----|-----|-----|-------|-------|---------|------|-------------|
-| [Intensity Pro]() | HDMI <br> Components <br> Composite <br> S-Video | HDMI <br> Components | embedded <br> stereo RCA | 1080p (@23.98, 24, 25, 29.97, 30) <br> 1080i (@50, 59.94, 60) <br> 720p (@50, 59.94, 60)	PAL 625 | PAL 625 <br> NTSC 525 | No | 200 $ |
-| [Decklink SDI]() | SDI <br> Components <br> Composite <br> S-Video | BNC | embedded <br> stereo RCA | 1080p (@25, 29.97,30) <br> 1080i (@50, 59.94, 60) <br> 1080PsF (23.98, 24 ,25, 29.97, 30 ) <br> 720p (@50, 59.94, 60)	PAL 625 | PAL 625 <br> NTSC 525| No | 300 $ |
+| [Intensity Pro](http://www.blackmagicdesign.com/products/intensity/) | HDMI <br> Components <br> Composite <br> S-Video | HDMI <br> Components | embedded <br> stereo RCA | 1080p (@23.98, 24, 25, 29.97, 30) <br> 1080i (@50, 59.94, 60) <br> 720p (@50, 59.94, 60)	PAL 625 | PAL 625 <br> NTSC 525 | No | 200 $ |
+| [Decklink SDI](http://www.blackmagicdesign.com/products/intensity/) | SDI <br> Components <br> Composite <br> S-Video | BNC | embedded <br> stereo RCA | 1080p (@25, 29.97,30) <br> 1080i (@50, 59.94, 60) <br> 1080PsF (23.98, 24 ,25, 29.97, 30 ) <br> 720p (@50, 59.94, 60)	PAL 625 | PAL 625 <br> NTSC 525| No | 300 $ |
 
 Table information retrieved from:
 

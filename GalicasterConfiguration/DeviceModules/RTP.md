@@ -6,10 +6,10 @@ RTP device module
 
 The Rtp device module is focused on Network-based Cameras with hardware encoding. This module records the RTP stream directly, whether it is is encoded on MPEG4 or H264, and decodes it for visualization. It can record streams with our without audio.
 
-Rtp has been tested with several [Axis Network cameras]() of both MPEG4 and H264 encoding, and with the Epiphan VGADCI Broadcast.
+Rtp has been tested with several [Axis Network cameras](Devices/Axis.md) of both MPEG4 and H264 encoding, and with the Epiphan VGADCI Broadcast.
 
 ### RTP compatible devices
-* Axis Network cameras
+* [Axis Network cameras](Devices/Axis.md)
 * Epiphan Broadcast
 
 ### Module Configuration

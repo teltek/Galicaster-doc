@@ -21,7 +21,7 @@ Regarding configuration, Galicaster is compatible with 1.2.x configuration. A nu
 * legacy on section ingest, for Matterhorn 1.2 and 1.3 compatibility.
 * visible_tracks on section ingest, for scheduling purposes.
 
-For more information about these and other parameters consult [Galicaster configuration](/GalicasterConfiguration.md).
+For more information about these and other parameters consult [Galicaster configuration](../GalicasterConfiguration.md).
 
 ### From 1.1.x to 1.2.0
 **The following upgrade steps are optional.** All 1.1 configuration is kept the same, except for the automatic ingest options. However, new variables (which will obviously not appear in the old configuration files) will take default values, which may not be the ones desired.

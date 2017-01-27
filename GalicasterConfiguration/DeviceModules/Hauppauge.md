@@ -7,10 +7,10 @@ Hauppauge device module
 The Hauppauge module is adapted to take advantage of the features of hardware encoding Hauppauge cards. These cards encode both audio and video into a MPEG2 stream.
 
 ### Module Compatibility
-[Hauppauge capture cards]()  
-* Hauppauge PVR-350  
-* Hauppauge PVR-250  
-* Hauppauge PVR-1600  
+* [Hauppauge capture cards](Devices/Hauppauge.md)  
+  *  Hauppauge PVR-350  
+  *  Hauppauge PVR-250  
+  *  Hauppauge PVR-1600  
 
 ### Plugin configuration
 Admitted values:

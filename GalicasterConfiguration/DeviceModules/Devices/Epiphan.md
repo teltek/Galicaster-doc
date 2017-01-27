@@ -5,26 +5,25 @@ Epiphan framegrabbers
 #### Drivers & information
 Epiphan framegrabbers are USB and PCI capture cards for VGA and DVI. The admit multiple resolution at different framerates.
 
-* [Drivers & information]()
-* [Model table]()
-* [Driver installation]()
-* [Driver configuration]()
-* [VGA2USB and DVI2USB]()
-* [VGA2PCI and DVI2PCI]()
-* [Device identification]()
-* [Module configuration]()
-* [Troubleshooting]()
-* [FAQ]()
+* [Model table](#model-table)
+* [Driver installation](#driver-installation)
+* [Driver configuration](#driver-configuration)
+* [VGA2USB and DVI2USB](#vga2usb-and-dvi2usb)
+* [VGA2PCI and DVI2PCI](#vga2pci-and-dvi2pci)
+* [Device identification](#device-identification)
+* [Module configuration](#module-configuration)
+* [Troubleshooting](#troubleshooting)
+* [FAQ](#faq)
 
 ### Technical data
-* Vendor: [Epiphan]()
+* Vendor: [Epiphan](http://www.epiphan.com/)
 * Models **VGA2USB, VGA2PCI, DVI2USB, DVI2PCI and VGADVI Broadcaster** among others
 * Resolution: **upto 1920×1200@60**
 * Format: **RGB**
 * Connector: **VGA or DVI**
 * Signal: **RAW**
-* Drivers: [available here]()
-* GC Module: [epiphan]() or [rtp]() (Broadcaster)
+* Drivers: [available here](http://www.epiphan.com/downloads/linux/)
+* GC Module: [epiphan](.../Epiphan.md) or [rtp](../RTP.md) (Broadcaster)
 * Price: **from 300 to 2000 $**
 
 
@@ -32,13 +31,13 @@ Epiphan framegrabbers are USB and PCI capture cards for VGA and DVI. The admit m
 | Model | Signal standards | Connectors | Audio | HD formats | SD Formats | HW Encoding | Price |
 |-----|
 |  |  |  |  |  |  |  |  |
-| [DVI2PCIe]() | DVI VGA HDMI | DVI | None | 1080p 1920x1200 | 1600x1200, 1360x1024, 1400x1050, 1280x1024, 1280x960, 1280x800, 1152x900, 1152x864, 1360x768, 1024x768, 800x600, 640x480, 720x540, 720x480, 720x400 | No | 1000 $ |
-| [DVI2USB]() | DVI | DVI | None | 1080p 1920x1200 (DVI) | 1600x1200, 1280x1024, 1280x960, 1152x900, 1152x864, 1024x768, 800x600, 640x480, 720x400 | No | 1000 $ |
-| [VGA2USB]() | VGA | VGA DE-15 | None | 1080p 1920x1200 | 1600x1200. 1280x1024, 1280x960, 1152x900, 1152x864, 1024x768, 800x600, 640x480, 720x400 | No | 300 $ |
-| [VGA2USB LR]() | VGA | VGA DE-15 | None | None | 1280x1024, 1280x960, 1152x900, 1152x864, 1024x768, 800x600, 640x480, 720x400 | No | 800 $ |
-| [VGA2USB HR]() | VGA | VGA DE-15 | None | 1080p | 1600x1200. 1280x1024, 1280x960, 1152x900, 1152x864, 1024x768, 800x600, 640x480, 720x400 | No | 1600 $ |
-| [VGA2USB Pro]() | VGA | VGA DE-15 | None | 2048x2048, 2048x1546, 1920x1200 | 1600x1200. 1280x1024, 1280x960, 1152x900, 1152x864, 1024x768, 800x600, 640x480, 720x400 | No | 2000 $ |
-| [VGADVI Broadcaster]() | DVI, VGA, HDMI, S-Video, Composite | DVI, S-Video | None | None | VESA modes 640x480 to 1920x1200 PAL, NTSC | H264, MPEG4 | 1600 $ |
+| [DVI2PCIe](http://www.epiphan.com/products/dvi-frame-grabbers/dvi2pcie/specifications/) | DVI VGA HDMI | DVI | None | 1080p 1920x1200 | 1600x1200, 1360x1024, 1400x1050, 1280x1024, 1280x960, 1280x800, 1152x900, 1152x864, 1360x768, 1024x768, 800x600, 640x480, 720x540, 720x480, 720x400 | No | 1000 $ |
+| [DVI2USB](http://www.epiphan.com/products/dvi-frame-grabbers/dvi2usb/specifications/) | DVI | DVI | None | 1080p 1920x1200 (DVI) | 1600x1200, 1280x1024, 1280x960, 1152x900, 1152x864, 1024x768, 800x600, 640x480, 720x400 | No | 1000 $ |
+| [VGA2USB](http://www.epiphan.com/products/frame-grabbers/vga2usb/specifications/) | VGA | VGA DE-15 | None | 1080p 1920x1200 | 1600x1200. 1280x1024, 1280x960, 1152x900, 1152x864, 1024x768, 800x600, 640x480, 720x400 | No | 300 $ |
+| [VGA2USB LR](http://www.epiphan.com/products/frame-grabbers/vga2usb-lr/specifications/) | VGA | VGA DE-15 | None | None | 1280x1024, 1280x960, 1152x900, 1152x864, 1024x768, 800x600, 640x480, 720x400 | No | 800 $ |
+| [VGA2USB HR](http://www.epiphan.com/products/frame-grabbers/vga2usb-hr/specifications/) | VGA | VGA DE-15 | None | 1080p | 1600x1200. 1280x1024, 1280x960, 1152x900, 1152x864, 1024x768, 800x600, 640x480, 720x400 | No | 1600 $ |
+| [VGA2USB Pro](http://www.epiphan.com/products/frame-grabbers/vga2usb-pro/specifications/) | VGA | VGA DE-15 | None | 2048x2048, 2048x1546, 1920x1200 | 1600x1200. 1280x1024, 1280x960, 1152x900, 1152x864, 1024x768, 800x600, 640x480, 720x400 | No | 2000 $ |
+| [VGADVI Broadcaster](http://www.epiphan.com/products/frame-grabbers/vga2usb-pro/specifications/) | DVI, VGA, HDMI, S-Video, Composite | DVI, S-Video | None | None | VESA modes 640x480 to 1920x1200 PAL, NTSC | H264, MPEG4 | 1600 $ |
 Table information retrieved from:
 
 * http://www.epiphan.com/products/frame-grabbers/  

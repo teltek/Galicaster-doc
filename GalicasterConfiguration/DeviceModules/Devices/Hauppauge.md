@@ -6,13 +6,12 @@ Hauppauge capture card
 Hauppage cards models PVR-350 and PVR-250 (among others) are hardware capture cards. Cameras and other devices can connect to a Hauppauge card through a SVideo or RCA connector (last only PVR-350) and a Line Level audio input.
 They are compatible with both PAL and NTSC. They provide RAW input (for both audio and vide), and MPEG2 encoded input.
 
-* [Drivers & information]()
-* [Driver installation]()
-* [Device identification]()
-* [Device configuration]()
-* [Module configuration]()
-* [Troubleshooting]()
-* [FAQ]()
+* [Driver installation](#driver-installation)
+* [Device identification](#device-identification)
+* [Device configuration](#device-configuration)
+* [Module configuration](#module-configuration)
+* [Troubleshooting](#troubleshooting)
+* [FAQ](#faq)
 
 ### Technical data
 * Vendor: **Hauppage**
@@ -22,7 +21,7 @@ They are compatible with both PAL and NTSC. They provide RAW input (for both aud
 * Connector: **RCA or SVideo and mini-jack** (3,5mm)
 * Signal: Composite or Svideo
 * Drivers: **pre-installed on Ubuntu 12**
-* Plugin: [hauppauge]() or [v4l2]()
+* Plugin: [hauppauge](../Hauppage.md) or [v4l2](../V4l2.md)
 * Price: Obsolete, consult stock.
 
 

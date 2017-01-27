@@ -6,15 +6,22 @@ Bluecherry cards are supported by Linux, both SD capturing PV cards and HW encod
 
 BC cards are Hardware Compression (mpeg4 or h264) cards oriented to surveillance purposes. Since they have V4l2 interface support they represent a alternative solution for Hardware encoding, however, encoded resolution is limited to 320x204.
 
+* [Driver installation](#driver-installation)
+* [Device identification](#device-identification)
+* [Device configuration](#device-configuration)
+* [Module configuration](#module-configuration)
+* [Troubleshooting](#troubleshooting)
+* [FAQ](#faq)
+
 ### Technical data
-* Vendor: [Bluecherry]()
-* Models [*PV]() and [BC]() models
+* Vendor: [Bluecherry](http://store.bluecherry.net/)
+* Models [*PV](http://store.bluecherry.net/capture-cards/video4linux-supported) and [BC](http://www.bluecherrydvr.com/products/hardware-compression-h-264-capture-card-pcie-x1/) models
 * Format: **YUV**
 * Connector: **BNC**
 * Signal: **RAW**
 * Drivers: PV pre-installed
-* BC models available [here]()
-* Plugin: [v4l2]()
+* BC models available [here](https://github.com/bluecherrydvr/solo6x10)
+* Plugin: [v4l2](../V4L2.md)
 * Price: **from 50 to 500 €**
 
 
@@ -22,7 +29,7 @@ BC cards are Hardware Compression (mpeg4 or h264) cards oriented to surveillance
 For PV models, drivers already present on the linux kernel - bttv.  
 For BC models - hardware compression - do the following.
 
-* Download the lattest version at [Bluecherry's download area]() or at [Bluecherry's Github]().
+* Download the lattest version at [Bluecherry's download area](http://downloads.bluecherrydvr.com/solo6x10/) or at [Bluecherry's Github](https://github.com/bluecherrydvr/solo6x10).
 * Compile the driver: run make
 * Install it, running as root: `sudo make install && sudo depmod -a`
 * Restart the computer.

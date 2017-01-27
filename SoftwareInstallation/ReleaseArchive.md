@@ -3,7 +3,7 @@ Release Archive
 ===============
 
 ### Galicaster 1.4.2 - 2015 22th June
-[Source]() - [Debian Package]() - [Installation guide]() - [Configuration]()
+[Source](http://webfiler.teltek.es/webfiler/galicaster/galicaster_1.4.2.tar.gz) - [Debian Package](http://webfiler.teltek.es/webfiler/galicaster/galicaster_1.4.2_all.deb) - [Installation guide](../SoftwareInstallation.md) - [Configuration](../GalicasterConfiguration.md)
 
 * Add compatibility to use Opencast 1.6 and 2.0.x
 * Change in the default videoencoder due to better multicore capabilities of x264enc
@@ -14,7 +14,7 @@ Release Archive
 * Fixed bugs (See all of them in [Github CHANGELOG]() )
 ------------------------------------------------------------------------------------
 ### Galicaster 1.4.1 - 2014 18th August
-[Source]() - [Debian Package]() - [Installation guide]() - [Configuration]()
+[Source](http://webfiler.teltek.es/webfiler/galicaster/galicaster_1.4.1.tar.gz) - [Debian Package](http://webfiler.teltek.es/webfiler/galicaster/galicaster_1.4.1_all.deb) - [Installation guide](../SoftwareInstallation.md) - [Configuration](../GalicasterConfiguration.md)
 
 * New retry to recreate the pipeline periodically when a stream dies.
 * Fixed enable pause in datapath bin.
@@ -28,7 +28,7 @@ Release Archive
 * Using autoaudiosink instead of hardcoding pulsesink in player. (oaubert)
 ------------------------------------------------------------------------------------
 ### Galicaster 1.4.0 - 2014 9th April
-[Source]() - [Debian Package]() - [Installation guide]() - [Configuration]()
+[Source](http://webfiler.teltek.es/webfiler/galicaster/galicaster_1.4.0.tar.gz) - [Debian Package](http://webfiler.teltek.es/webfiler/galicaster/galicaster_1.4.0_all.deb) - [Installation guide](../SoftwareInstallation.md) - [Configuration](../GalicasterConfiguration.md)
 
 * Source - Debian Package - Installation guide - Configuration
 * Feature: Allow configuration of MHHTTPClient timeouts (ppettit)
@@ -46,13 +46,13 @@ Release Archive
 * Corrected some bad interactions between the no-audio dialog and other popups.
 ------------------------------------------------------------------------------------
 ### Galicaster 1.3.2 - 2014 25th March
-[Source]() - [Debian Package]() - [Installation guide]() - [Configuration]()
+[Source](http://webfiler.teltek.es/webfiler/galicaster/galicaster_1.3.2.tar.gz) - [Debian Package](http://webfiler.teltek.es/webfiler/galicaster/galicaster_1.3.2_all.deb) - [Installation guide](../SoftwareInstallation.md) - [Configuration](../GalicasterConfiguration.md)
 
 * Fixed bug: Galicaster crashes from python / libgdk errors
 
 ------------------------------------------------------------------------------------
 ### Galicaster 1.3.1 - 2014 20th January
-Source - Debian Package - Installation guide - Configuration
+[Source](http://webfiler.teltek.es/webfiler/galicaster/galicaster_1.3.1.tar.gz) - [Debian Package](http://webfiler.teltek.es/webfiler/galicaster/galicaster_1.3.1_all.deb) - [Installation guide](../SoftwareInstallation.md) - [Configuration](../GalicasterConfiguration.md)
 * Ingest to a Opencast Matterhorn cluster with multiple ingest servers.
 * New Pushpic plugin: send screenshoots periodically for monitoring with Galicaster Dashboard
 * Added logstale in REST endpoing plugin.
@@ -63,7 +63,7 @@ Source - Debian Package - Installation guide - Configuration
   * Fixed serious bug that crashed GC when using Datapath capture cards
 ------------------------------------------------------------------------------------
 ### Galicaster 1.3.0 - 2013 27th June
-[Source]() - [Debian Package]() - [Installation guide]() - [Configuration]()
+[Source](http://webfiler.teltek.es/webfiler/galicaster/galicaster-1.3.0.tgz) - [Debian Package](http://webfiler.teltek.es/webfiler/galicaster/galicaster_1.3.0_all.deb) - [Installation guide](../SoftwareInstallation.md) - [Configuration](../GalicasterConfiguration.md)
 
 * Support for RTP sources and Datapath cards
 * New Custom device module
@@ -82,14 +82,14 @@ Source - Debian Package - Installation guide - Configuration
   * No_audio_dialog_plugin: general improvement, more configurable.
 ------------------------------------------------------------------------------------
 ### Galicaster 1.2.3 - 2012 December 19
-[Source]() - [Debian Package]() - [Installation guide]() - [Configuration]()
+[Source](http://webfiler.teltek.es/webfiler/galicaster/galicaster-1.2.3.tar.gz) - [Debian Package](http://webfiler.teltek.es/webfiler/galicaster/galicaster_1.2.3_all.deb) - [Installation guide](../SoftwareInstallation.md) - [Configuration](../GalicasterConfiguration.md)
 
 * Feature: After crash partial recordings are saved
 * Fix: Minor bug on firewire plugin concerning configuration
 * Fix: Minor bug on MH compatibility towards 1.4
 ------------------------------------------------------------------------------------
 ## Galicaster 1.2.2 - 2012 November 28
-[Source]() - [Debian Package]() - [Installation guide]() - [Configuration]()
+[Source](http://webfiler.teltek.es/webfiler/galicaster/galicaster-1.2.2.tar.gz) - [Debian Package](http://webfiler.teltek.es/webfiler/galicaster/galicaster_1.2.2_all.deb) - [Installation guide](../SoftwareInstallation.md) - [Configuration](../GalicasterConfiguration.md)
 
 * Opencast-Matterhorn 1.4 Compatible
 * Custom template for recording folders
@@ -101,7 +101,7 @@ Fixes and bugs:
 * Some fixes on MH Series fetching
 ------------------------------------------------------------------------------------
 ### Galicaster 1.2.1 - 2012 October 9
-[Source]() - [Debian Package]() - [Installation guide]() - [Configuration]()
+[Source](http://webfiler.teltek.es/webfiler/galicaster/galicaster-1.2.1.tgz) - [Debian Package](http://webfiler.teltek.es/webfiler/galicaster/galicaster_1.2.1_all.deb) - [Installation guide](../SoftwareInstallation.md) - [Configuration](../GalicasterConfiguration.md)
 
 * Zip Mediapackger larger than 4 GB.
 * Side by Side supports embedded audio.
@@ -111,7 +111,7 @@ Fixes and bugs:
 * Fixes related to dialog pop-up.
 ------------------------------------------------------------------------------------
 ### Galicaster 1.2.0 - 2012 August 23
-[Source]() - [Debian Package]() - [Installation guide]() - [Configuration]()
+[Source](http://webfiler.teltek.es/webfiler/galicaster/galicaster-1.2.0.tgz) - [Debian Package](http://webfiler.teltek.es/webfiler/galicaster/galicaster_1.2.0_all.deb) - [Installation guide](../SoftwareInstallation.md) - [Configuration](../GalicasterConfiguration.md)
 
 * Input Profiles
 * New Operations: Zip and Side by Side Beta
@@ -129,23 +129,23 @@ Fixes and bugs:
 * Runs on Ubuntu 12.04 LTS
 ------------------------------------------------------------------------------------
 ### Galicaster 1.1.1 - 2012 April 27
-[Source]() - [Debian Package]() - [Installation guide]() - [Configuration]()
+[Download](http://webfiler.teltek.es/webfiler/galicaster/galicaster-1.1.1.tgz) - [Installation guide](../SoftwareInstallation.md) - [Configuration](../GalicasterConfiguration.md)
 
 * Bug fixes
 
 ------------------------------------------------------------------------------------
 ### Galicaster 1.1.0 - 2012 April 12
-[Source]() - [Debian Package]() - [Installation guide]() - [Configuration]()
+[Download](http://webfiler.teltek.es/webfiler/galicaster/galicaster-1.1.0.tgz) - [Installation guide](../SoftwareInstallation.md) - [Configuration](../GalicasterConfiguration.md)
 
 * Features: Screensaver control, Pausable recordings
 * Opencast Matterhorn: Series harvest and editon, Device selection enabled, Workflow parameters enabled
 * Several bugs fixed and minor improvements
 ------------------------------------------------------------------------------------
 ### Galicaster 1.0.1 - 2012 March 15
-[Source]() - [Debian Package]() - [Installation guide]() - [Configuration]()
+[Download](http://webfiler.teltek.es/webfiler/galicaster/galicaster-1.0.1.tgz) - [Installation guide](../SoftwareInstallation.md) - [Configuration](../GalicasterConfiguration.md)
 
 * Compatible with Opencast Matterhorn 1.3
 
 ------------------------------------------------------------------------------------
 ### Galicaster 1.0 - 2011 December 22
-[Source]() - [Debian Package]() - [Installation guide]() - [Configuration]()
+[Download](http://webfiler.teltek.es/webfiler/galicaster/galicaster-1.0.0.tgz) - [Installation guide](../SoftwareInstallation.md) - [Configuration](../GalicasterConfiguration.md)

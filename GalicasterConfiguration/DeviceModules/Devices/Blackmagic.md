@@ -25,7 +25,6 @@ Blackmagic capture cards support multiple formats - through adaptors - including
 * Price: **around 300 €**
 
 ### Models table
-|  |  |  |  |  |  |  |  |
 
 | Model | Singal standards | Connectors | Audio | HD formats | SD formats | HW Encoding | Price |
 |-----|-----|-----|-------|-------|---------|------|-------------|
@@ -102,8 +101,8 @@ For more information on mode, connection and audio values please use:
 gst-inspect0.10 decklinksrc
 ```
 
-```ini
 Example:
+```ini
 [track1]
 name = Blackmagic
 device = blackmagic

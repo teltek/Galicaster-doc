@@ -1,7 +1,7 @@
 Galicaster Documentation Project
 ==================================
 
-*This page is updated to the 1.4.2 release*
+*This page is updated to the 2.0.0 release*
 
 Documentation:
 --------------

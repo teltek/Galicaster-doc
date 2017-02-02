@@ -50,4 +50,6 @@ file = sound.mp3
 active = True
 vumeter = True
 amplification = 2.0
+channels = 2
+delay = 0.0
 ```

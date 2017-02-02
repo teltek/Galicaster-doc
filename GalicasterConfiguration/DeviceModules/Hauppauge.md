@@ -1,7 +1,7 @@
 
 Hauppauge device module
 =======================
-
+**NOT TESTED WITH GALICASTER 2**
 **THIS PAGE IS UNDER CONSTRUCTION**
 
 The Hauppauge module is adapted to take advantage of the features of hardware encoding Hauppauge cards. These cards encode both audio and video into a MPEG2 stream.

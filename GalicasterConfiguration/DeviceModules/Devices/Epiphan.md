@@ -2,6 +2,8 @@
 Epiphan framegrabbers
 =====================
 
+**NOT TESTED WITH GALICASTER 2**
+
 #### Drivers & information
 Epiphan framegrabbers are USB and PCI capture cards for VGA and DVI. The admit multiple resolution at different framerates.
 

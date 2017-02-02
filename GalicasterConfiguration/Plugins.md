@@ -8,9 +8,9 @@ Plugins communicate with Galicaster in a very simple way, by connecting to the i
 
 The following list enumerates the current available plugins at the 1.4.0 release. Each plugin's functionality and configuration are briefly explained on its corresponding section in this page.
 
-* [Screensaver for Ubuntu 12.04](#screensaver-for-ubuntu-12.04)
+* [Screensaver for Ubuntu 16.04](#screensaver-for-ubuntu-16.04)
 * [No Audio Warning Dialog](#no-audio-warning-dialog)
-* [Hide cursor](#hide-cursor)
+* [Hide cursor and modify Ubuntu appearance](#hide-cursor-and-modify-ubuntu-appearance)
 * [Check for a non-started scheduled recording](#check-for-a-non-started-scheduled-recording)
 * [Clean old recordings](#clean-old-recordings)
 * [Limit recording duration](#limit-recording-duration)
@@ -22,8 +22,11 @@ The following list enumerates the current available plugins at the 1.4.0 release
 * [Send snapshot to Dashboard](#send-snapshot-to-dashboard)
 * [Retry failed ingest](#retry-failed-ingest)
 * [Notify when a recording has crashed](#notify-when-a-recording-has-crashed)
+* [On-screen Keyboard](#on-screen-keyboard)
+* [Lock Galicaster](#lock-galicaster)
+* [Occlude tracks](#occlude-tracks)
 
-### Screensaver for Ubuntu 12.04
+### Screensaver for Ubuntu 16.04
 This plugin uses the Xorg system and the DBUS application interface to provide an automatic screensaver control for Galicaster. In order to work properly, this plugin requires both the screensaver and tge power management system to be disabled.
 
 #### Behaviour
@@ -44,8 +47,8 @@ screensaver = True
 inactivity = 60
 ```
 
-`True`: *Enables plugin.*
-`False`: *Disables plugin.*
+`True`: *Enables plugin.*  
+`False`: *Disables plugin.*  
 `inactivity`: *Length of the inactivity period in seconds. Default value: 120 seconds.*
 
 
@@ -81,23 +84,26 @@ min = -80
 keepclosed = False
 ```
 
-`True`: *Enables plugin*.
-`False`: *Disables plugin.*
+`True`: *Enables plugin*.  
+`False`: *Disables plugin.*  
 `min`: *A negative integer representing the 'silence' level in dB. Accepted values range between -100 and 0. Normal values are between -100 and -60. Defaults to -80.*
 
-### Hide cursor
-This plugin hides the mouse cursor. It is primarily meant to use with tactile screens.
+### Hide cursor and modify Ubuntu appearance
+This plugin hides de Ubuntu Unity bar, removes the desktop workspaces and disables Ubuntu desktop lock. Also could hide the mouse cursor.
 
 #### Loading
 In `conf.ini` (link to conf.ini), include the following section with your value of choice:
 
 ```ini
 [plugins]
-nocursor = False
-```
-`True`: *Hide cursor.*
-`False`: *Show cursor.*
+appearance = False
 
+[appearance]
+hidecursor = False
+```
+`True`: *Enables plugin.*  
+`False`: *Disables plugin.*  
+`hidecursor`: *Enable or disable cursor*
 
 ### Check for a non-started scheduled recording
 If the Galicaster unit is turned on after a scheduled recording should had been started, the recording will be lost. This pluging helps mitigating this problem by checking for a recording that should have already been started and starting it immediately for the remaining time.
@@ -116,7 +122,7 @@ In `conf.ini` (link to conf.ini), include the following code with your values of
 [plugins]
 checkrepo = True
 ```
-`True`: *Enables plugin.*
+`True`: *Enables plugin.*  
 `False`: *Disables plugin.*
 
 
@@ -132,10 +138,12 @@ cleanstale = True
 
 [cleanstale]
 maxarchivaldays = 30
+checkoninit = False
 ```
-`True`: *Enables plugin.*
-`False`: *Disables plugin.*
-`maxarchivaldays`: *An integer representing number of days the recording will be kept. Defaults to 30.*
+`True`: *Enables plugin.*  
+`False`: *Disables plugin.*  
+`maxarchivaldays`: *An integer representing number of days the recording will be kept. Defaults to 30.*  
+`checkoninit`: *Run the plugin when galicaster starts*
 
 Note: This plugin will execute the process to delete on the hour configured as "nightly" in the section "heartbeat"
 
@@ -155,8 +163,8 @@ forcedurationrec = True
 [forcedurationrec]
 duration = 240
 ```
-`True`: *Enables plugin.*
-`False`: *Disables plugin.*
+`True`: *Enables plugin.*  
+`False`: *Disables plugin.*  
 `duration`: *An integer representing the maximum duration allowed for a recording, in minutes. Defaults 240 minutes (4 hours).*
 
 
@@ -175,6 +183,30 @@ The available endpoints are:
 * /operation/ingest/<id>: Ingest the MediaPackage with ID <id>.
 * /operation/sidebyside/<id>: Export the MediaPackage with ID <id> as a side-by-side composition.
 * /operation/exporttozip/<id>: Export the Mediapackage with ID <id> as a ZIP file.
+* /screen: Get a screenshoot of the active screen
+* /logstale: Check if log is stale
+* /quit: Quit Galicaster.
+  * *Use method __POST__*
+* /enable_input: Enable multimedia inputs
+  * *Use method __POST__*
+  * `Content-Type: application/json`
+  * `{"input":[]}`: Enables all inputs
+  * `{"input":["Pulse","Webcam"]}`: Enable selected inputs
+* /disable_input: Disable multimedia inputs
+  * *Use method __POST__*
+  * `Content-Type: application/json`
+  * `{"input":[]}`: Disables all inputs
+  * `{"input":["Pulse","Webcam"]}`: Disable selected inputs
+* /enable_preview: Enable preview
+  * *Use method __POST__*
+  * `Content-Type: application/json`
+  * `{"input":[]}`: Enables all previews
+  * `{"input":["Pulse","Webcam"]}`: Enable selected previews
+* /disable_preview: Disable preview
+  * *Use method __POST__*
+  * `Content-Type: application/json`
+  * `{"input":[]}`: Disable all previews
+  * `{"input":["Pulse","Webcam"]}`: Disable selected previews
 
 The REST server is listening in the port 8080 in all interfaces.
 It can be accessed via localhost:8080 when the application is running.
@@ -182,20 +214,23 @@ It can be accessed via localhost:8080 when the application is running.
 ```ini
 [plugins]
 rest = False
+
+[rest]
+port = 8080
 ```
 
-`True`: *Enables plugin.*
+`True`: *Enables plugin.*  
 `False`: *Disables plugin.*
 
 
 ### Keyboard Shortcuts - Discontinued
-This plugin captures certain key combinations to trigger specific actions in Galicaster. The key combinations and their associated actions can be configured by the user. At the present time this plugin provides the possibility to exit typing "Ctrl + Q".
+This plugin captures certain key combinations to trigger specific actions in Galicaster. The key combinations and their associated actions can be configured by the user. At the present time this plugin provides the possibility to exit typing "Ctrl + Shift + Q".
 
 ```ini
 [plugins]
 shortcuts = True
 ```
-`True`: *Enables plugin.*
+`True`: *Enables plugin.*  
 `False`: *Disables plugin.*
 
 
@@ -234,7 +269,7 @@ default = XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
 contributor = {user}
 ...
 ```
-`True`: *Enables plugin.*
+`True`: *Enables plugin.*  
 `False`: *Disables plugin.*
 
 
@@ -257,7 +292,7 @@ hide = events
 default = recording
 ```
 
-`True`: *Enables plugin.*
+`True`: *Enables plugin.*  
 `False`: *Disables plugin.*
 
 ### Hide operations
@@ -268,10 +303,10 @@ For example:
 ```ini
 [operations]
 hide = ingest
-hide_nightly = ingest sidebyside
+hide_nightly = ingest sidebyside exporttozip
 ```
 
-### Send snapshot to Dashboard
+### Send snapshot to Dashboard - Experimental
 This plugin fetchs a screenchoot of the window through gtk and sends it with Galicaster's Opencast HTTP client to the Dashboard endpoint. This module can work as a plugin or as a separated application.
 
 ```ini
@@ -292,20 +327,68 @@ check_after = 300
 nightly = True
 ```
 
-`check_published`: *Check with the Opencast client if the mediapackage already has been published, in this case the plugin will ignore this mediapackage*
-`check_after`: *Time between check processes*
-`nightly`: *Schedule the new operations to be processed nightly, if not will be processed at the moment*
+`check_published`: *Check with the Opencast client if the mediapackage already has been published, in this case the plugin will ignore this mediapackage*  
+`check_after`: *Time between check processes*  
+`nightly`: *Schedule the new operations to be processed nightly, if not will be processed at the moment*  
 
-### Notify when a recording has crashed
-Plugin that sends an email when there is a recording failed. *Limitation: only detects future recordings, it doesn't analyze the rectemp folder in order to find any older recordings that have failed.*
+
+### On-screen Keyboard
+This plugin activates Onboard keyboard to use with Galicaster. It is primarily meant to use with tactile screens.
+
+#### Loading
+```ini
+[plugins]
+keyboard = True
+```
+
+### Lock Galicaster
+This plugin allow to use Galicaster only by authorized users. It can use a simple password or LDAP to authenticate users.
+
+#### Loading and configuration:
+In `conf.ini`, include thefollowing section with your value of choice:
 
 ```ini
-[notifycrash]
-mailuser = a@a.es
-mailpass = xxxx
-mailto = b@b.es
-mailsubject = Recording failed
-mailmessage = Notification...
-smtpserver = ...
-smtpport = ...
+[plugins]
+setuprecording = True
+
+[lockscreen]
+password = 1234
+authentication = basic
+ldapserver = ldap://localhost
+ldapserverport = 10389
+ldapou = users system
+ldapdc =
+ldapusertype = cn
+enable_quit_button = false
 ```
+
+`password`: *Password to unlock Galicaster when basic autentication is in use*  
+`authentication`: *Type of authentication: (`basic`|`ldap`)*  
+`ldapserver`: *URL for LDAP server*  
+`ldapserverport`: *Port for LDAP server*  
+`ldapou`: *LDAP Organizational Unit*  
+`ldapdc`: *LDAP Domain Component*  
+`ldapusertype`:  *User type: (`cn`|`uid`)*  
+`enable_quit_button`: *Enable or disable quit button in lockscreen window*
+
+### Occlude tracks
+This plugin gives the possibility to disable tracks in the recording when pressing a button in the recorder.  
+
+#### Behaviour
+When the button is pressed, the choosed tracks go black. It's possible select where disable the tracks, only in the preview or in the recording.
+
+
+#### Loading and configuring
+In `conf.ini`, include the following code with your values of choice:
+```ini
+[plugins]
+muteinputs = True
+
+[muteinputs]
+mute_on_startup = False
+bins = Webcam Pulse
+mute_type = input
+```
+`mute_on_startup`: *Disable tracks on startup*  
+`bin`: *Tracks name to disable, __if empty disable all__*  
+`mute_type`: *Where to disable tracks (`preview`|`input`)*

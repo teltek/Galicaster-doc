@@ -13,11 +13,9 @@ Each profile must have a name which identifies it on the Profile Selector. Addit
 name = Profile  
 execute = /home/user/script.sh  
 ```
-#### Preview order
-The order of the tracks in a profile will define the position of the corresponding video feeds on the preview, from left to right. So, the first video track will be on the left, the second will be next to it and so on.
 
 #### Default profile
-The *default profile* is the set of tracks defined directly in Galicaster's configuration file. Unlike the other profiles, it does not have a name and it is not defined in its own file within the `profiles` directory. Besides, the video preview positions are defined specifically under the screen section of the `conf-dist.ini` file. Our recommendation is to leave the *default profile* as it is – two mock video sources and one mock audio source – and define all your profiles in their own files under the `profiles` directory.
+The *default profile* is the set of tracks defined directly in Galicaster's configuration file `conf-dist.ini`. Unlike the other profiles, it does not have a name and it is not defined in its own file within the `profiles` directory. Our recommendation is to leave the *default profile* as it is – two mock video sources and one mock audio source – and define all your profiles in their own files under the `profiles` directory.
 
 
 ### Device modules
@@ -85,7 +83,7 @@ As discussed earlier in this page, a profile is a set of tracks. Following are e
 name = camera
 device = v4l2
 flavor = presenter
-caps = video/x-raw-yuv,framerate=24/1,width=1280,height=720
+caps = video/x-raw,format=YUY2,framerate=24/1,width=1280,height=720
 location = /dev/webcam
 file = CAMERA.avi
 ```
@@ -96,7 +94,7 @@ file = CAMERA.avi
 name = camera
 device = v4l2
 flavor = presenter
-caps = video/x-raw-yuv,framerate=24/1,width=1024,height=768
+caps = video/x-raw,format=YUY2,framerate=24/1,width=1024,height=768
 location = /dev/screen
 file = SCREEN.avi
 ```

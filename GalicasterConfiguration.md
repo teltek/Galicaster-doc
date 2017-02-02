@@ -1,7 +1,7 @@
 Galicaster configuration
 ========================
 
-*This page is updated to the 1.4.2 release*
+*This page is updated to the 2.0.0 release*
 
 Configuring Galicaster involves:
 
@@ -25,7 +25,7 @@ The general configuration file is `conf.ini`, located by default at the director
 > The file `conf-dist.ini`, located at the installation folder of Galicaster, contains the factory configuration of Galicaster. You can check the default parameters there. This file is meant to remain unchanged.
 
 
-### Main parameters
+## Main parameters
 Parameters are set in different sections at the `conf.ini file`. Parameters include folder designation, UI configuration, processing options, etc.
 
 In the `basic` section of the `conf.ini` file, you can configure the following items:
@@ -114,7 +114,17 @@ layout = sbs
 ```
 Layout options: (**sbs**|pip-screen|pip-camera)
 
-#### Conflicts between manual and scheduled recordings
+#### Homepage
+If you are in admin mode, Galicaster can load at startup the recorder or the media manager page.
+```ini
+[basic]
+homepage = DIS|REC|MMA
+```
+Default value: `DIS`
+
+--------------------------------------------
+
+### Conflicts between manual and scheduled recordings
 Different conflict resolution for manual versus scheduled recordings.
 
 * manual: If active, the user can start manual recordings
@@ -141,8 +151,9 @@ nightly = #AEFFAE ; light green
 pending = #AEFFAE ; light green
 processing = #FFAE00 ; orange
 done = #88FF88 ; green
-failed = #FFAEAE ;red### Folder designation
+failed = #FFAEAE ;red
 ```
+### Folder designation
 #### Repository folder
 The main folder and the name format of the subfolders can be modified.
 ```ini
@@ -176,7 +187,30 @@ tmp = /path/folder/repository/
 ```
 Default value: `/tmp` (in Ubuntu distros)
 
-### Logger
+### Recorder
+Allow to modify the behaviour of the recorder:
+* autorecover: If active the recorder reloads automatically after an error in the profile.
+* pausetype: Select if pause the pipeline or only pause the recording.
+
+```ini
+[recorder]
+autorecover = False
+pausetype = recording
+```
+autorecover: (True | **False**)  
+pausetype: (recording | **pipeline**)
+
+### Help
+Set the default help message in Galicaster when the help button is pressed in the recorder. The button it's only visible when `admin = False`
+
+```ini
+[help]
+main = Visit galicaster.teltek.esmain = Visit galicaster.teltek.es
+text = ...or contact us on our community list.
+```
+
+
+## Logger
 By default, the log information is stored at the temporary folder, in a single file named galicaster.log, so the file is deleted on every reboot. However, the syslog system may be used instead. The log level and destination folder can be also configured.
 
 ```ini
@@ -187,11 +221,11 @@ use_syslog = False
 rotate = False
 ```
 
-level: (INFO|WARNING|**DEBUG**)
-use_syslog: (True|**False**)
+level: (INFO|WARNING|**DEBUG**)  
+use_syslog: (True|**False**)  
 rotate: (True|**False**)
 
-### Opencast server configuration
+## Opencast server configuration
 Galicaster can connect to an Opencast core, but certain requirements have to be met:
 
 * A digest user account and password have to be provided. A regular user will not work
@@ -202,7 +236,7 @@ Galicaster can connect to an Opencast core, but certain requirements have to be 
 Scheduled recordings are taken from the Opencast core scheduling system. Any scheduled recording has metadata associated with it and its series. Galicaster will fetch all metadata and allow the user to modify some of them.
 Scheduled recordings can be ingested immediately or nightly - the nocturnal ingest time is defined in the heartbeat section - or reingested manually anytime through the media manager.
 ```ini
-[basic]
+[ingest]
 scheduled = none|immediately|nightly
 ```
 #### Manual recordings
@@ -213,7 +247,7 @@ Galicaster can set up the default values for some parameters in Manual recording
 * Ingest schedule
 
 ```ini
-[basic]
+[ingest]
 manual = none|immediately|nightly
 ```
 #### Galicaster agent hostname
@@ -243,12 +277,17 @@ This is a summary of all the parameters related to the Opencast configuration in
   * If active, the available tracks are reported to Opencast, so that the user can choose which ones will be recorded.
   * If not, Galicaster will record all the tracks in the profile active at the moment the scheduled recording starts.
     * If this option is active, and the track names in the configuration file are changed for some reason, the previously scheduled recordings may fail because the track names in such recordings will not much the current track names. Therefore, all the existing recordings should be scheduled again if such a change is made.
+    > **Changes in track names**  
+    If this option is **_enabled_**, and track names are changed at the configuration file for some reason, the recordings already scheduled in Opencast may fail because the track names in the schedule will not match the current ones. Therefore, if the track names are modified, all the existing recordings should be scheduled again so that they include the new track names.
+    When this option is **_disabled_**, Galicaster sends no information about the tracks defined in its profile, and therefore no special precautions should be taken when the track names need to be modified for some reason.
 * **multiple-ingest**: (new in Galicaster 1.3.1): Whether ingestion is made through the admin server or through the less loaded available ingest server. When the option is active, Galicaster looks for the less loaded active sever (not in mantenaince nor offline), always avoiding the admin server. True | **False** (default value) .
 * **address**: IP to connect with Opencast.
+* **connect_timeout**: Connection timeout for curl in seconds. Default: 30
+* **timeout**: Total timeout for curl in seconds. Default: 30
+* **ca_parameters**: Extra parameters to be passed to opencast (More info: https://opencast.jira.com/wiki/display/MH/Configuration+Keys)
+* **ignore_capture_devices**: Whether to record all tracks regardless of capture.device.names (True | **False**)
 ￼
-> **Changes in track names**  
-If this option is **_enabled_**, and track names are changed at the configuration file for some reason, the recordings already scheduled in Opencast may fail because the track names in the schedule will not match the current ones. Therefore, if the track names are modified, all the existing recordings should be scheduled again so that they include the new track names.
-When this option is **_disabled_**, Galicaster sends no information about the tracks defined in its profile, and therefore no special precautions should be taken when the track names need to be modified for some reason.
+
 
 #### Example:
 ```ini

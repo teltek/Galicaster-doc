@@ -1,7 +1,7 @@
 Firewire-based professional cameras
 ===================================
 
-**NOT TESTED WITH GALICASTER 2**
+**NOT TESTED WITH GALICASTER 2**  
 **THIS PAGE IS UNDER CONSTRUCTION**
 
 ### Drivers & information

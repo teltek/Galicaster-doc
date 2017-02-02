@@ -29,7 +29,7 @@ to $1000 (Osprey 530)**
 
 ### Driver installation
 For PCI cards, the driver is included in the linux kernel - bttv.
-For PCIe cards, the driver can be found at [kernellabs.com]()
+For PCIe cards, the driver can be found at [kernellabs.com](http://www.kernellabs.com/blog/)
 
 ### Device identification
 1. Find the Device name attribute:
@@ -41,7 +41,7 @@ For PCIe cards, the driver can be found at [kernellabs.com]()
   * Add the line: `KERNEL=="video[0-9]*", ATTR{name}=="BT878 video (Osprey 210/220/230", GROUP="video", SYMLINK+="osprey"`
 
 ### Device configuration
-Osprey cards can capture svideo and composite with NTSC, PAL and SECAM formats. To probe and set the parameters use the video4linux2 CLI configuration and compound your configuration on a script:  
+Osprey cards can capture svideo and composite with NTSC, PAL and SECAM formats. To probe and set the parameters use the video4linux2 CLI configuration and compound your configuration on a script:
 To list the parameters:
 
 * Inputs
@@ -67,7 +67,7 @@ Useful commands
 * framerate: 25/1
 * resolution:
 regular (4:3) : NTSC width=720, height=480 PAL width=720,height=576
-panoramic (16:10): NTSC width=924,height=480 PAL width=924,height=576  
+panoramic (16:10): NTSC width=924,height=480 PAL width=924,height=576
 For more information http://pygstdocs.berlios.de/pygst-tutorial/capabilities.html
 
 #### Example:

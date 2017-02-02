@@ -11,7 +11,7 @@ Release Archive
 * New plugin (notifycrash) to send an email when a recording has failed
 * Added an endpoint to close Galicaster through the rest API
 * Added the option to configure the output framerate using Blackmagic devices
-* Fixed bugs (See all of them in [Github CHANGELOG]() )
+* Fixed bugs (See all of them in [Github CHANGELOG](https://github.com/teltek/Galicaster/blob/1.4.x/CHANGELOG)
 ------------------------------------------------------------------------------------
 ### Galicaster 1.4.1 - 2014 18th August
 [Source](http://webfiler.teltek.es/webfiler/galicaster/galicaster_1.4.1.tar.gz) - [Debian Package](http://webfiler.teltek.es/webfiler/galicaster/galicaster_1.4.1_all.deb) - [Installation guide](../SoftwareInstallation.md) - [Configuration](../GalicasterConfiguration.md)

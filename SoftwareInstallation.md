@@ -29,7 +29,7 @@ Since Galicaster 2 it's not necessary download any DEB package to install it. Yo
 By downloading, you agree to the [non-commercial license](http://creativecommons.org/licenses/by-nc-sa/3.0/). (Commercial licenses also available under request) ￼![](http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png)
 
 #### Source code
-As an alternative to the DEB package installation, you can install Galicaster from the source code. Stable versions are available on the [Release archive](). Stable and development versions, as well as development information, are available in our [Git repository](http://github.com/teltek/Galicaster).
+As an alternative to the DEB package installation, you can install Galicaster from the source code. Stable versions are available on the [Release Archive.](SoftwareInstallation/ReleaseArchive.md). Stable and development versions, as well as development information, are available in our [Git repository](http://github.com/teltek/Galicaster).
 
 Installing a source code version requires installing its [dependencies](#dependencies) manually.
 If a DEB package installation is also present, conf.ini and the profiles will be read from the folder /etc/galicaster. Otherwise, the ones in the installation folder will be used.

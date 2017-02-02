@@ -4,32 +4,32 @@ User Guide - Media Manager
 
 The Media Manager is the area where recordings are browsed. You can operate on all the finished recordings from here. Two of the most most important features are [Metadata](Metadata.md) and [Operations](Operations.md). We will take a brief look to all its features.
 
-![](images/UserGuide/MediaManager/media_manager.jpg)
+![](../images/UserGuide/MediaManager/media_manager.jpg)
 
 ### Play
-￼![](images/UserGuide/MediaManager/play.png)
+￼![](../images/UserGuide/MediaManager/play.png)
 To play a recording, double click on it or select it and press the Play Button. All the operations available in the Media Manager are also available in the Player environment.
 
 
 ### Edit Metadata
-￼![](images/UserGuide/MediaManager/edit.png)
+￼![](../images/UserGuide/MediaManager/edit.png)
 Recording metadata can be set up and edited. If the recording has been scheduled, the metadata is already filled up, otherwise it should be edited manually. When a recording is finished it appears on the Media Manager, where it can be browsed and edited. [More information on Metadata Edition](#metadata-edition)
 
 
 ### Delete
-￼![](images/UserGuide/MediaManager/delete.png)
+￼![](../images/UserGuide/MediaManager/delete.png)
 Any recording can be deleted but be aware that it will be erased also from your hard disk.
 
 
 ### Operations
-![](images/UserGuide/MediaManager/operation.png)
+![](../images/UserGuide/MediaManager/operation.png)
 Operations are the different actions that can be applied on recordings. When an operation is triggered it will be enqueued until previous operations are finished, showing Pending as its status. Once started, the operation status will change to Processing. If the operation process is successful its status will change to Done, otherwise it will Failed.
 
 Operations can be performed nightly, meaning they will be triggered at the period established as 'night', by default local midnight. This way, recording and processing will not interfere with each other. Nightly operations can be cancelled before they start. Selecting an immediate operation on a recording with that operation already scheduled as 'nightly' will override it.
 
 Operations take some time to be performed and they always consume some CPU load, so be careful of triggering operations right before starting a recording.
 
-￼![](images/UserGuide/MediaManager/question.png)
+￼![](../images/UserGuide/MediaManager/question.png)
 
 ###### Ingest
 Ingest is the operation that sends the recordings to the publishing platform.
@@ -47,10 +47,8 @@ Once ingested, a recording can be re-ingested, but it will probably overwrite th
 ###### Export to zip
 Export to zip will gather all the recording streams and metadata files into a single uncompressed zip file. The zip package will be placed on the zip designated folder, by default the user Home folder (i.e. /home/user/).
 
-###### Side by Side Beta
-Side by side operation exports a mediapackage streams to a single file. Once finished the resulting file will be placed on the sidebyside designated folder, by default the user Home folder (e.g. /home/user/).
-
-Note: Side by Side operation is still in beta phase, it only works on mediapackages with two video streams. Otherwise the operation will fail.
+###### Side by Side
+Side by side operation exports a mediapackage streams to a single file. Once finished the resulting file will be placed on the sidebyside designated folder, by default the user Home folder (e.g. `/home/user/`).
 
 ###### Operation Status and Colors
 The status of an operation is represented by both its cell colour and the message in the 'Operation' column in this way:

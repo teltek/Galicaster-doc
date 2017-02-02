@@ -7,7 +7,7 @@ Documentation:
 --------------
 
 1. [Hardware Recommendations](HardwareRecommendations.md)
-  * [Compatible Hardware]()
+  * [Compatible Hardware](HardwareRecommendations/CompatibleHardware.md)
 2. [Software Installation](SoftwareInstallation.md)
 3. [Galicaster Configuration](GalicasterConfiguration.md)
   * [Device Module Configuration](GalicasterConfiguration/DevicesModules/DeviceModuleConfiguration.md)

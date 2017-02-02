@@ -1,7 +1,7 @@
 Software installation
 =====================
 
-*This page is updated to the 1.4.2 release*
+*This page is updated to the 2.0.0 release*
 
 Installation process
 --------------------
@@ -19,17 +19,11 @@ Advanced users, or those with special needs, can download the [source code](http
 ### Prerequisites
 Before starting the installation process, please make sure that:
 
-* If you already have a Galicaster running in your computer, please refer to the [upgrade](SoftwareInstallation/UpgradingFromOlderVersions.md) documentation.
 * Your equipment meets Galicaster [Hardware Recommendations.](HardwareRecommendations.md)
-* You are running a Linux-based OS. The recommended distribution is Ubuntu 12.04. Make sure that the version chosen matches your system architecture (32 or 64 bits). We also recommend the distribution [Ubuntu 12.04.5](http://releases.ubuntu.com/12.04/) since it has the kernel 3.13.0 included. In case of using previous versions (like 12.04.1) you may have to install the next packages:
-
-```bash
-apt-get -y install xserver-xorg-lts-trusty
-apt-get -y install linux-generic-lts-trusty
-```
+* You are running a Linux-based OS. The recommended distribution is Ubuntu 16.04. Make sure that the version chosen matches your system architecture (32 or 64 bits).
 
 ### Download
-The latest Galicaster version can be downloaded [here](http://webfiler.teltek.es/webfiler/galicaster/galicaster_1.4.2_all.deb), as a DEB package. Older versions and information about the new features that each of them included are available on the [Release Archive.](SoftwareInstallation/ReleaseArchive.md)
+The latest Galicaster version can be downloaded [here](http://webfiler.teltek.es/webfiler/galicaster/galicaster_2.0.0_all.deb), as a DEB package. Older versions and information about the new features that each of them included are available on the [Release Archive.](SoftwareInstallation/ReleaseArchive.md)
 
 By downloading, you agree to the [non-commercial license](http://creativecommons.org/licenses/by-nc-sa/3.0/). (Commercial licenses also available under request) ￼![](http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png)
 
@@ -40,14 +34,30 @@ Installing a source code version requires installing its [dependencies](#depende
 If a DEB package installation is also present, conf.ini and the profiles will be read from the folder /etc/galicaster. Otherwise, the ones in the installation folder will be used.
 
 > ###### Adding a launcher
-You can easilly add a launcher to a manual installation by creating a file at /usr/local/bin/ containing the following command:
+You can easilly add a launcher to a manual installation by creating a file at `/usr/local/bin/` containing the following command:
 ```bash
 python <path>/run_galicaster.py
 ```
 
 ### Installation
+#### Using Galicaster repository
+Installation instructions using the galicaster repository are as follows:
 
- The Ubuntu Software Center will install the DEB package by simply double-clicking on it. Both the Galicaster software and the dependencies will be installed.
+**Remember to install the system using the galicaster user per default.**  
+```bash
+echo "deb https://packages.galicaster.org/apt xenial main" | sudo tee --append /etc/apt/sources.list.d/galicaster.list
+wget -O - https://packages.galicaster.org/apt/galicaster.gpg.key  | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install galicaster
+```
+If you are **upgrading from a previous 2.0 version**, you just need to execute
+```bash
+sudo apt-get update
+sudo apt-get install galicaster
+```
+
+#### Manual install deb package
+The Ubuntu Software Center  will install the DEB package by simply double-clicking on it. Both the Galicaster software and the dependencies will be installed.
 
 > ￼The Ubuntu Software Center shows a warning because Galicaster does not strictly follow the .deb standards. You can safely ignore it and continue the installation.
 
@@ -76,11 +86,10 @@ sudo dpkg --purge galicaster
 
 Galicaster depends on the following modules and libraries:
 
-* `python, python-gtk2, libgtk2.0-0`
-* `python-gst0.10, libgstreamer0.10-0, gstreamer0.10-plugins-base, gstreamer0.10-plugins-good, gstreamer0.10-plugins-base-apps, gstreamer0.10-ffmpeg, gstreamer0.10-alsa, gstreamer0.10-plugins-bad, gstreamer0.10-plugins-bad-multiverse, gstreamer0.10-plugins-ugly`
-* `python-pip, python-setuptools, python-pycurl, python-bottle`
-* `v4l-conf, v4l-utils, guvcview`
-* `icalendar, phyton-glade2`
+* `python`, `python-pip`, `python-setuptools`, `python-pycurl`, `python-bottle`, `python-glade2`, `python-icalendar`, `python-gi`, `python-dbus`, `python-simplejson`
+* `gstreamer1.0-plugins-base`, `gstreamer1.0-plugins-bad`, `gstreamer1.0-plugins-ugly`, `gstreamer1.0-plugins-good`, `gstreamer1.0-alsa`, `gstreamer1.0-libav`
+* `gir1.2-gstreamer-1.0`, `gir1.2-gtk-3.0`, `gir1.2-gst-plugins-base-1.0`
+* `onboard`, `onboard-data`
 
 For testing devices, specially webcams and V4L2-compatible devices, other software may be installed as well:
 

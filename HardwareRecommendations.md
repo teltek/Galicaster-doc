@@ -1,7 +1,7 @@
 Hardware recommendations
 ========================
 
-*This document is updated to the 1.4.2 release*
+*This document is updated to the 2.0.0 release*
 
 Base unit
 ---------
@@ -20,7 +20,7 @@ The capture devices used with Galicaster demand a high bandwith capacity and dis
 * 64 bits architecture.
 * 4 GB of RAM memory.
 
-> The selected hardware must be compatible with your Linux distribution of choice. Our recommendation is using Ubuntu 12.04, since Galicaster is developed and extensively tested in this distribution. Nonetheless, other distributions may work with Galicaster, however some additional testing is advisable.
+> The selected hardware must be compatible with your Linux distribution of choice. Our recommendation is using Ubuntu 16.04, since Galicaster is developed and extensively tested in this distribution. Nonetheless, other distributions may work with Galicaster, however some additional testing is advisable.
 
 Touchscreen
 -----------
@@ -53,7 +53,7 @@ Entry level unit - HD webcam based
 |----------------------|-----------------------------|-----------------|--------------|
 | **Base unit**        | Intel i3 processor 4 GB RAM |                 |              |
 | **Camera**           | [Logitech c920](GalicasterConfiguration/DeviceModules/Devices/Logitech.md)             | 720p or 1080p   |              |
-| **VGA capture card** | [Epiphan VGA2USB](GalicasterConfiguration/DeviceModules/Devices/Epiphan.md)           | up to 1280x1024 |	This device is not able to record full motion presentations, only slides |
+| **VGA capture card** | [Datapath VisionRBG 1es](GalicasterConfiguration/DeviceModules/Devices/Datapath.md) | 24bit 1920x1080 x 32bit at 60Hz |	Accepts DVI single link and VGA |
 
 
 SD camera and DVI framegrabber
@@ -64,7 +64,7 @@ SD camera and DVI framegrabber
 | Component 	         | Device                      |	Format         | Observations |
 |----------------------|-----------------------------|-----------------|--------------|
 | **Base unit**        | Intel i3 processor 4 GB RAM |                 |              |
-|**Video capture card**| [Osprey 230](GalicasterConfiguration/DeviceModules/Devices/Osprey.md) Generic Firewire card | PAL/NTSC  DV| Accepts audio via stereo RCA. Accepts embedded audio |
+|**Video capture card**| [Blackmagic Intensity Pro](GalicasterConfiguration/DeviceModules/Devices/Blackmagic.md) | 720p, 1080p, 1080i  | Sound embedded or analog |
 | **DVI capture card** | [Datapath VisionRBG 1es](GalicasterConfiguration/DeviceModules/Devices/Datapath.md) | 24bit 1920x1080 x 32bit at 60Hz |	Accepts DVI single link and VGA |
 
 

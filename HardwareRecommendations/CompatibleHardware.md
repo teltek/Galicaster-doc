@@ -1,7 +1,7 @@
 Compatible hardware
 ===================
 
-*This page is updated to the 1.4.2 release*
+*This page is updated to the 2.0.0 release*
 
 In this section we will enumerate the devices and capture cards compatible with Galicaster, and mention the Galicaster modules designed to make them work. Usually, Galicaster captures a camera feed and a presentation feed from a laptop or similar device. Audio can be captured through the video capture card, through the soundcard or with specialized devices.
 
@@ -17,15 +17,17 @@ Some card models by different vendors and for different video recording formats,
 |------------------|----------------|-------|-----------|-----------|--------|--------|-------|
 | Logitech webcams | [Drivers & Info](../GalicasterConfiguration/DeviceModules/Devices/Logitech.md) | c920, c910 BCC9500 | [v4l2](../GalicasterConfiguration/DeviceModules/V4L2.md) | USB | RAW | HD Full HD | Yes (pulse) |
 | Blackmagic cards | [Drivers & Info](../GalicasterConfiguration/DeviceModules/Devices/Blackmagic.md) |	Decklink | [blackmagic](../GalicasterConfiguration/DeviceModules/Blackmagic.md) |	BNC or breakout cable | Multiple | SD-SDI and HD-SDI | Yes (embedded)|
-| Firewire cameras | [Drivers & Info](../GalicasterConfiguration/DeviceModules/Devices/Firewire.md) | multiple | [firewire](../GalicasterConfiguration/DeviceModules/Firewire.md) | Firewire miniFW| SD or DV | PAL/NTSC | Some models only|
 
 #### Other capture devices
+**NOT TESTED WITH GALICASTER 2**
+
 | Device           |                | Model | GC Module | Connector | Signal | Format | Audio |
 |------------------|----------------|-------|-----------|-----------|--------|--------|-------|
 | Hauppauge cards  | [Drivers & Info](../GalicasterConfiguration/DeviceModules/Devices/Hauppauge.md) | PVR-350 PVR-250| [hauppauge](../GalicasterConfiguration/DeviceModules/Hauppauge.md) | RCA or 5-pin | SD | PAL/NTSC | Yes (raw and encoded) |
 | Osprey cards     | [Drivers & Info](../GalicasterConfiguration/DeviceModules/Devices/Osprey.md) | 230 and others | [v4l2](../GalicasterConfiguration/DeviceModules/V4L2.md) | BNC and other (adaptors) | SD | PAL/NTSC pan. | Yes (pulse) |
 | Axis cameras     | [Drivers & Info](../GalicasterConfiguration/DeviceModules/Devices/Axis.md) | multiple | [rtp](../GalicasterConfiguration/DeviceModules/RTP.md) | Ethernet | H264 or MPEG4 | up to QVGA | Some models only |
 | Bluecherry cards | [Drivers & Info](../GalicasterConfiguration/DeviceModules/Devices/Bluecherry.md) | multiple | [v4l2](../GalicasterConfiguration/DeviceModules/V4L2.md) | BNC	 | SD | PAL/NTSC | Some models only |
+| Firewire cameras | [Drivers & Info](../GalicasterConfiguration/DeviceModules/Devices/Firewire.md) | multiple | [firewire](../GalicasterConfiguration/DeviceModules/Firewire.md) | Firewire miniFW| SD or DV | PAL/NTSC | Some models only|
 
 ### VGA/DVI capture devices
 Presentation is usually captured using specialized capture cards. Those cards can be connected to a variety of devices: PCs, laptops, tablets, projectors, VGA splitters and matrix switches. There are options to record VGA, DVI and HDMI sources.
@@ -39,6 +41,8 @@ Presentation is usually captured using specialized capture cards. Those cards ca
 
 
 #### Other VGA/DVI capture devices
+**NOT TESTED WITH GALICASTER 2**
+
 | Device                |                | Model | GC Module | Connector | Signal | Format | Audio | Support Level|
 |-----------------------|----------------|-------|-----------|-----------|--------|--------|-------|--------------|
 | Epiphan framegrabbers | [Drivers & Info](../GalicasterConfiguration/DeviceModules/Devices/Epiphan.md) | DVI2PCIe VGA2USB DVI2USB | [v4l2](../GalicasterConfiguration/DeviceModules/V4L2.md) | VGA or DVI | RGBHV |	upto QVGA | Not yet | Low |

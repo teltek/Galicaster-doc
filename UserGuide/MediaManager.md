@@ -81,7 +81,7 @@ Metadata can be edited at different stages of the recording and the Mediapackage
 
 Galicaster supports a subset of the Matterhorn metadata: title, presenter, description, language and series. Please note that if the series is changed, all the metadata related to the series is also changed (series title, series description, series creators ...).
 
-![](images/UserGuide/MediaManager/metadata.png)
+![](../images/UserGuide/MediaManager/metadata.png)
 ￼
 ###### Custom fields
 Galicaster does NOT modify any other metadata field but the ones listed above. Galicaster ignores (and keeps unchanged) the other Opencast Matterhorn metadata fields, as well as any other custom fields you may want to add, through all the Mediapackage life cycle, unless, of course, the metadata files are modified outside the control of the application.

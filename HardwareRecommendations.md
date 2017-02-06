@@ -8,7 +8,7 @@ Base unit
 
 Galicaster units are assembled with standard computer components and compatible capture devices and cards. For a good experience with Galicaster, we recommend a series of reference units, all of them sharing the common components indicated in this base unit.
 
-Three different references are proposed: an [entry level](#entry-level-unit-hd-webcam-based) unit (using a HD webcam), a [SD based unit](#sd-camera-and-dvi-framegrabber) and a [HD based unit](#hd-configuration-unit). Other combinations are possible that may fit your needs better. For instructions on how to assemble or purchase a unit, contact us through our multiple [communication channels](https://wiki.teltek.es/display/Galicaster/Community)
+Three different references are proposed: an [entry level](#entry-level-unit-hd-webcam-based) unit (using a HD webcam), a [SD based unit](#sd-camera-and-dvi-framegrabber) and a [HD based unit](#hd-configuration-unit). Other combinations are possible that may fit your needs better. For instructions on how to assemble or purchase a unit, contact us through any of our multiple [communication channels](https://wiki.teltek.es/display/Galicaster/Community)
 
 
 CPU and RAM requirements
@@ -20,14 +20,18 @@ The capture devices used with Galicaster demand a high bandwith capacity and dis
 * 64 bits architecture.
 * 4 GB of RAM memory.
 
-> The selected hardware must be compatible with your Linux distribution of choice. Our recommendation is using Ubuntu 16.04, since Galicaster is developed and extensively tested in this distribution. Nonetheless, other distributions may work with Galicaster, however some additional testing is advisable.
+|![Info](images/info.gif) Info |
+| :------ |
+| The selected hardware must be compatible with your Linux distribution of choice. Our recommendation is using Ubuntu 16.04, since Galicaster is developed and extensively tested in this distribution. Nonetheless, other distributions may work with Galicaster, however some additional testing is advisable. |
+
+
 
 Touchscreen
 -----------
 
 Galicaster's Graphical Interface is designed in an user-friendly, easy-to-use, big-sized style, making it suitable for tactile devices, specially high resolution touchscreens. However, there is nothing against using it with a classic mouse and keyboard interface.
 
--------------------------------------------------------------------------------------
+---------------
 
 Reference units
 ---------------
@@ -35,13 +39,12 @@ Reference units
 This section provides some examples of reference units, so that the interested readers can have a reference to begin with. Several combinations can be implemented, even multiple ones on the same unit. Some parameters should be taken into account when making the decision, such as:
 
 
-    * Pre-existing equipment: cameras, microphones, computers.
-    * Recording scenario: lectures, conferences, studio, video-conference.
-    * Complementary Hardware: scalers, splitters, audio mixers ...
-    * Cost.
-    * Publication channels.
+* Pre-existing equipment: cameras, microphones, computers.
+* Recording scenario: lectures, conferences, studio, video-conference.
+* Complementary Hardware: scalers, splitters, audio mixers ...
+* Cost.
+* Publication channels.
 
------------------------------------------------------------------------------------------
 
 Entry level unit - HD webcam based
 ----------------------------------
@@ -80,4 +83,10 @@ HD configuration unit
 |**Video capture card**| [Blackmagic Decklink SDI](GalicasterConfiguration/DeviceModules/Devices/Blackmagic.md)<br>[Blackmagic Intensity Pro](GalicasterConfiguration/DeviceModules/Devices/Blackmagic.md) | 720p, 1080p, 1080i  | Sound embedded or analog |
 | **DVI capture card** | [Datapath VisionRBG 1es](GalicasterConfiguration/DeviceModules/Devices/Datapath.md)    | 24bit 1920x1080 x 32bit at 60Hz |  | |
 
-*NOTE: Audio can be captured from outside the video capture cards. Multiple audio sources can be recorded at once, but additional processing may be needed afterwards for a proper playback.*
+
+|![Info](images/info.gif) Info |
+| :------ |
+| Audio can be captured from outside the video capture cards. Multiple audio sources can be recorded at once, but additional processing may be needed afterwards for a proper playback. |
+
+
+

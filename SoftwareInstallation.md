@@ -5,47 +5,35 @@ Software installation
 
 Installation process
 --------------------
-The installation process consists of 5 simple steps:
+The installation process consists of 4 simple steps:
 
 * [Check the prerequisites.](#prerequisites)
-* [Download the latest Galicaster version.](#download)
 * [Install the software.](#installation)
 * [Run Galicaster for the first time.](#run-galicaster-for-the-first-time)
 * [Install and configure drivers.](#install-drivers)
 
-After installing, the next step is configuring the system.
-Advanced users, or those with special needs, can download the [source code](https://github.com/teltek/Galicaster) and make a manual installation.
+After installing Galicaster, the next step is configuring it. You can take a look at the [Configuration Guide](ConfigurationGuide.md).
 
 ### Prerequisites
 Before starting the installation process, please make sure that:
 
-* Your equipment meets Galicaster [Hardware Recommendations.](HardwareRecommendations.md)
-* You are running a Linux-based OS. The recommended distribution is Ubuntu 16.04. Make sure that the version chosen matches your system architecture (32 or 64 bits). [How to install Ubuntu.](SoftwareInstallation/InstallingUbuntu.md)
-  * `galicaster` is the default user in the system.
-
-### Download
-Since Galicaster 2 it's not necessary download any DEB package to install it. You can skip this step and go directly to the [installation process.](#installation) Anyway, the latest Galicaster version can be downloaded [here](http://webfiler.teltek.es/webfiler/galicaster/galicaster_2.0.0_all.deb), as a DEB package. Older versions and information about the new features that each of them included are available on the [Release Archive.](SoftwareInstallation/ReleaseArchive.md)
-
-By downloading, you agree to the [non-commercial license](http://creativecommons.org/licenses/by-nc-sa/3.0/). ![](http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png) (Commercial licenses also available under request)
-
-#### Source code
-As an alternative to the DEB package installation, you can install Galicaster from the source code. Stable versions are available on the [Release Archive.](SoftwareInstallation/ReleaseArchive.md). Stable and development versions, as well as development information, are available in our [Git repository](http://github.com/teltek/Galicaster).
-
-Installing a source code version requires installing its [dependencies](#dependencies) manually.
-If a DEB package installation is also present, conf.ini and the profiles will be read from the folder /etc/galicaster. Otherwise, the ones in the installation folder will be used.
-
-> ###### Adding a launcher
-You can easilly add a launcher to a manual installation by creating a file at `/usr/local/bin/` containing the following command:
-```bash
-python <path>/run_galicaster.py
-```
+* Your unit meets Galicaster [Hardware Recommendations.](HardwareRecommendations.md)
+* You are running a Linux-based OS. The recommended distribution is Ubuntu 16.04. Make sure that the version chosen matches your system architecture (32 or 64 bits). If using the recommended Linux OS, check the following guide: [How to install Ubuntu.](SoftwareInstallation/InstallingUbuntu.md)
+* `galicaster` is the default user in the system.
 
 ### Installation
-There are two options to install Galicaster. Using the Galicaster repository or install the deb package manually.
-#### Using Galicaster repository
+ There are three options to install Galicaster:
+ * [Install through our repository](#using-the-galicaster-repository). This is the recommended option for newcomers.
+ * [Download and install DEB package.](#install-from-.deb-package)
+ * [Clone the source code and install manually.](#install-manually-from-source)
+
+ 
+ By installing or downloading Galicaster, you agree to the [non-commercial license](http://creativecommons.org/licenses/by-nc-sa/3.0/). ![](http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png) (Commercial licenses also available under request)
+
+#### Using the Galicaster repository
 Installation instructions using the galicaster repository are as follows:
 
-**Remember to install the system using the galicaster user per default.**
+_**WARNING:** Remember to install the system using the galicaster user_
 ```bash
 echo "deb https://packages.galicaster.org/apt xenial main" | sudo tee --append /etc/apt/sources.list.d/galicaster.list
 wget -O - https://packages.galicaster.org/apt/galicaster.gpg.key  | sudo apt-key add -
@@ -58,19 +46,21 @@ sudo apt-get update
 sudo apt-get install galicaster
 ```
 
-#### Manual install deb package
-The Ubuntu Software Center  will install the DEB package by simply double-clicking on it. Both the Galicaster software and the dependencies will be installed.
+#### Install from .deb package
+The latest Galicaster version can be downloaded [here](http://webfiler.teltek.es/webfiler/galicaster/galicaster_2.0.0_all.deb), as a DEB package. Older versions and information about the new features that each of them included are available on the [Release Archive.](SoftwareInstallation/ReleaseArchive.md)
 
-> ￼The Ubuntu Software Center shows a warning because Galicaster does not strictly follow the .deb standards. You can safely ignore it and continue the installation.
+Once downloaded, the DEB package can be installed through the Ubuntu Software Center by simply *double-clicking* on it. Both the Galicaster software and the dependencies will be installed.
 
-You may also run the following command on a shell (needs root permissions):
+_**NOTE:** The Ubuntu Software Center will show a warning. You can safely ignore it and continue the installation. This is due to Galicaster not strictly adhering to the Ubuntu .deb standards._
+
+Alternatively, you may also run the following command on a shell (needs root permissions):
 
 ```bash
-dpkg --install <galicaster_$version_all.deb>
+dpkg --install <galicaster_2.0.0_all.deb>
 ```
 Galicaster will be installed in `/usr/share/galicaster` . The configuration files and profiles folder will be placed at `/etc/galicaster/`. In order to get Galicaster ready to go, it would be useful running this command to put the right file owners:
 ```bash
-sudo chown -R <user>:<group> /etc/galicaster
+sudo chown -R galicaster:galicaster /etc/galicaster
 ```
 New profiles can be added in `/etc/galicaster/profiles`. For more information about them, refer to the [Input Profiles section](GalicasterConfiguration/InputProfiles.md).
 
@@ -84,7 +74,13 @@ The files at `/etc/galicaster` will not be removed, thus preserving your configu
 sudo rm /etc/galicaster/profiles/*.*
 sudo dpkg --purge galicaster
 ```
-#### Dependencies
+#### Source code
+As an alternative to the DEB package installation, you can install Galicaster from the source code. Stable versions are available on the [Release Archive.](SoftwareInstallation/ReleaseArchive.md). Stable and development versions, as well as development information, are available in our [Git repository](http://github.com/teltek/Galicaster).
+
+Installing a source code version requires installing its [dependencies](#dependencies) manually.
+If a DEB package installation is also present, conf.ini and the profiles will be read from the folder /etc/galicaster. Otherwise, the ones in the installation folder will be used.
+
+##### Dependencies
 
 Galicaster depends on the following modules and libraries:
 ```
@@ -97,14 +93,22 @@ For testing devices, specially webcams and V4L2-compatible devices, other softwa
 
 * `guvcview (apt)`
 
+
+###### Adding a launcher
+You can easilly add a launcher to a manual installation by creating a file at `/usr/local/bin/` containing the following command:
+```bash
+python <path>/run_galicaster.py
+```
+where `<path>` is the directory where you downloaded galicaster source code.
+
 ### Run Galicaster for the first time
 Once installed, Galicaster is ready to run. You may start Galicaster by:
 
-* Opening a terminal and executing galicaster.
-* Find Galicaster under Applications in the Unity Menu.
+* Opening a terminal and executing `galicaster`.
+* Find Galicaster under `Applications` in the Unity Menu.
 You can also add Galicaster to your Unity sidebar, place a link at the Desktop or include it as a startup application.
 
-The default input Profile consists of two mock video sources and a mock audio source. You can try recording from them, edit its metadata and check if the media is listed in the Media Manager.
+The default Input Profile consists of two mock video sources and a mock audio source. You can try recording from them, edit its metadata and check if the media is listed in the Media Manager.
 
 
 ### Install drivers
@@ -112,14 +116,11 @@ Depending on the hardware you have chosen to run Galicaster with, you may need t
 
 Check our [Compatible hardware](HardwareRecommendations/CompatibleHardware.md) and visit your device manufacturer's Driver & Info websites for information on how to install and configure the drivers.
 
-| |
-| ------                     ------ |
-|![Info](images/info.png)   If you have purcharsed a Galicaster unit, the drivers are already installed. |
-| |
+|![Info](images/info.png) Info                                                   |
+|                    ------                                              |
+|   If you have purcharsed a Galicaster unit, the drivers are already installed. |
 
-```
-Info: If you have purcharsed a Galicaster unit, the drivers are already installed.
-```
-
+<!--
 !!! Info:
-      If you have purcharsed a Galicaster unit, the drivers are already installed.
+If you have purcharsed a Galicaster unit, the drivers are already installed.
+-->

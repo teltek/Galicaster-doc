@@ -116,8 +116,8 @@ Depending on the hardware you have chosen to run Galicaster with, you may need t
 
 Check our [Compatible hardware](HardwareRecommendations/CompatibleHardware.md) and visit your device manufacturer's Driver & Info websites for information on how to install and configure the drivers.
 
-|![Info](images/info.png) Info                                                   |
-|                    ------                                              |
+|![Info](images/info.gif) Info                                                |
+|                    :------                                             |
 |   If you have purcharsed a Galicaster unit, the drivers are already installed. |
 
 <!--

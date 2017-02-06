@@ -33,7 +33,10 @@ Before starting the installation process, please make sure that:
 #### Using the Galicaster repository
 Installation instructions using the galicaster repository are as follows:
 
-_**WARNING:** Remember to install the system using the galicaster user_
+|![Info](images/info.gif) Info                                                |
+|                    :------                                             |
+|   Remember to install the system using the galicaster user|
+
 ```bash
 echo "deb https://packages.galicaster.org/apt xenial main" | sudo tee --append /etc/apt/sources.list.d/galicaster.list
 wget -O - https://packages.galicaster.org/apt/galicaster.gpg.key  | sudo apt-key add -
@@ -51,7 +54,9 @@ The latest Galicaster version can be downloaded [here](http://webfiler.teltek.es
 
 Once downloaded, the DEB package can be installed through the Ubuntu Software Center by simply *double-clicking* on it. Both the Galicaster software and the dependencies will be installed.
 
-_**NOTE:** The Ubuntu Software Center will show a warning. You can safely ignore it and continue the installation. This is due to Galicaster not strictly adhering to the Ubuntu .deb standards._
+|![Info](images/info.gif) Info                                                |
+|                    :------                                             |
+|   The Ubuntu Software Center will show a warning. You can safely ignore it and continue the installation. This is due to Galicaster not strictly adhering to the Ubuntu .deb standards. |
 
 Alternatively, you may also run the following command on a shell (needs root permissions):
 

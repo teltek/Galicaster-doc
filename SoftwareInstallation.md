@@ -26,7 +26,7 @@ Before starting the installation process, please make sure that:
 ### Download
 Since Galicaster 2 it's not necessary download any DEB package to install it. You can skip this step and go directly to the [installation process.](#installation) Anyway, the latest Galicaster version can be downloaded [here](http://webfiler.teltek.es/webfiler/galicaster/galicaster_2.0.0_all.deb), as a DEB package. Older versions and information about the new features that each of them included are available on the [Release Archive.](SoftwareInstallation/ReleaseArchive.md)
 
-By downloading, you agree to the [non-commercial license](http://creativecommons.org/licenses/by-nc-sa/3.0/). (Commercial licenses also available under request) ￼![](http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png)
+By downloading, you agree to the [non-commercial license](http://creativecommons.org/licenses/by-nc-sa/3.0/). ![](http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png) (Commercial licenses also available under request)
 
 #### Source code
 As an alternative to the DEB package installation, you can install Galicaster from the source code. Stable versions are available on the [Release Archive.](SoftwareInstallation/ReleaseArchive.md). Stable and development versions, as well as development information, are available in our [Git repository](http://github.com/teltek/Galicaster).
@@ -45,7 +45,7 @@ There are two options to install Galicaster. Using the Galicaster repository or 
 #### Using Galicaster repository
 Installation instructions using the galicaster repository are as follows:
 
-**Remember to install the system using the galicaster user per default.**  
+**Remember to install the system using the galicaster user per default.**
 ```bash
 echo "deb https://packages.galicaster.org/apt xenial main" | sudo tee --append /etc/apt/sources.list.d/galicaster.list
 wget -O - https://packages.galicaster.org/apt/galicaster.gpg.key  | sudo apt-key add -
@@ -87,12 +87,12 @@ sudo dpkg --purge galicaster
 #### Dependencies
 
 Galicaster depends on the following modules and libraries:
-
-* `python`, `python-pip`, `python-setuptools`, `python-pycurl`, `python-bottle`, `python-glade2`, `python-icalendar`, `python-gi`, `python-dbus`, `python-simplejson`
-* `gstreamer1.0-plugins-base`, `gstreamer1.0-plugins-bad`, `gstreamer1.0-plugins-ugly`, `gstreamer1.0-plugins-good`, `gstreamer1.0-alsa`, `gstreamer1.0-libav`
-* `gir1.2-gstreamer-1.0`, `gir1.2-gtk-3.0`, `gir1.2-gst-plugins-base-1.0`
-* `onboard`, `onboard-data`
-
+```
+python python-pip python-setuptools python-pycurl python-bottle python-glade2 python-icalendar python-gi python-dbus python-simplejson
+gstreamer1.0-plugins-base gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-plugins-good gstreamer1.0-alsa gstreamer1.0-libav
+gir1.2-gstreamer-1.0 gir1.2-gtk-3.0 gir1.2-gst-plugins-base-1.0
+onboard onboard-data
+```
 For testing devices, specially webcams and V4L2-compatible devices, other software may be installed as well:
 
 * `guvcview (apt)`
@@ -112,4 +112,14 @@ Depending on the hardware you have chosen to run Galicaster with, you may need t
 
 Check our [Compatible hardware](HardwareRecommendations/CompatibleHardware.md) and visit your device manufacturer's Driver & Info websites for information on how to install and configure the drivers.
 
-> If you have purcharsed a Galicaster unit, the drivers are already installed.
+| |
+| ------                     ------ |
+|![Info](images/info.png)   If you have purcharsed a Galicaster unit, the drivers are already installed. |
+| |
+
+```
+Info: If you have purcharsed a Galicaster unit, the drivers are already installed.
+```
+
+!!! Info:
+      If you have purcharsed a Galicaster unit, the drivers are already installed.

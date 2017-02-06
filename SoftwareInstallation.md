@@ -20,10 +20,11 @@ Advanced users, or those with special needs, can download the [source code](http
 Before starting the installation process, please make sure that:
 
 * Your equipment meets Galicaster [Hardware Recommendations.](HardwareRecommendations.md)
-* You are running a Linux-based OS. The recommended distribution is Ubuntu 16.04. Make sure that the version chosen matches your system architecture (32 or 64 bits).
+* You are running a Linux-based OS. The recommended distribution is Ubuntu 16.04. Make sure that the version chosen matches your system architecture (32 or 64 bits). [How to install Ubuntu.](SoftwareInstallation/InstallingUbuntu.md)
+  * `galicaster` is the default user in the system.
 
 ### Download
-The latest Galicaster version can be downloaded [here](http://webfiler.teltek.es/webfiler/galicaster/galicaster_2.0.0_all.deb), as a DEB package. Older versions and information about the new features that each of them included are available on the [Release Archive.](SoftwareInstallation/ReleaseArchive.md)
+Since Galicaster 2 it's not necessary download any DEB package to install it. You can skip this step and go directly to the [installation process.](#installation) Anyway, the latest Galicaster version can be downloaded [here](http://webfiler.teltek.es/webfiler/galicaster/galicaster_2.0.0_all.deb), as a DEB package. Older versions and information about the new features that each of them included are available on the [Release Archive.](SoftwareInstallation/ReleaseArchive.md)
 
 By downloading, you agree to the [non-commercial license](http://creativecommons.org/licenses/by-nc-sa/3.0/). (Commercial licenses also available under request) ￼![](http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png)
 
@@ -40,6 +41,7 @@ python <path>/run_galicaster.py
 ```
 
 ### Installation
+There are two options to install Galicaster. Using the Galicaster repository or install the deb package manually.
 #### Using Galicaster repository
 Installation instructions using the galicaster repository are as follows:
 

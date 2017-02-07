@@ -64,7 +64,7 @@ Useful commands
 * `caps`: GStreamer cappabilities of the device (`mimetype=TYPE, framerate=X/Y,width=A,height=B`)
 
 #### Caps magic:
-* type: (**image/jpeg** | video/x-raw-yuv)
+* type: (**image/jpeg** | video/x-raw)
   * image/jpeg usually provides better framerate-resolution ratio, leaving de transcoding to the software
 * framerate: 24/1,25/1 or 30/1 for full motion 10/1 15/1 for testing.
 * resolution:

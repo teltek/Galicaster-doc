@@ -111,7 +111,7 @@ device = videotest
 location = default
 file = SCREEN.avi
 flavor = presentation
-caps = video/x-raw-yuv,framerate=25/1,width=640,height=480
+caps = video/x-raw,framerate=25/1,width=640,height=480
 pattern = 1
 color1 = 4294967295
 color2 = 4278190080
@@ -122,7 +122,7 @@ device = videotest
 flavor = presenter
 location = default
 file = CAMERA.avi
-caps = video/x-raw-yuv,framerate=25/1,width=640,height=480
+caps = video/x-raw,framerate=25/1,width=640,height=480
 pattern = 0
 color1 = 4294967295
 color2 = 4278190080

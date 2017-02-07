@@ -32,14 +32,14 @@ For more information  http://pygstdocs.berlios.de/pygst-tutorial/capabilities.ht
 ### Caps
 V4L2 devices accepts two types of signal inputs - RAW and MJPEG - and multiple resolution-framerate combinations. A simplified Gstreamer cappabilities string is formed by type, resolution and framerate among other parameters:
 
-* **Type**: `image/jpeg` | `video/x-raw-yuv`
+* **Type**: `image/jpeg` | `video/x-raw`
 * **Framerate**: X/Y. Examples: 30/1, 25/1, 24/1, 10/1
 * **Resolution**: width=A,height=B. A and B being length in pixels
 
 Them, a complete caps string looks like:
 ```ini
 image/jpeg, framerate=24/1, width=1280, height=720
-video/x-raw-yuv framerate=30/1, width=1280, height=1024
+video/x-raw framerate=30/1, width=1280, height=1024
 ```
 Examples:
 For a Datapath RGBVision e1s
@@ -50,5 +50,5 @@ device = v4l2
 location = /dev/datapath
 file = SCREEN.avi
 flavor = presentation
-caps = video/x-raw-yuv,framerate=30/1,width=1024,height=768
+caps = video/x-raw,framerate=30/1,width=1024,height=768
 ```

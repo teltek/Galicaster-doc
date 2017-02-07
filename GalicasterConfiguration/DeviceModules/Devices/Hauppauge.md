@@ -121,8 +121,8 @@ If you only want to record video with a Hauppauge card you better use it with th
 
 ```ini
 location=dev/haucamera
-caps=_video/x-raw-yuv,framerate=25/1,width=720,height=576 #if PAL
-caps=_video/x-raw-yuv,framerate=30000/1001,width=720,height=480 #if NTSC
+caps=_video/x-raw,framerate=25/1,width=720,height=576 #if PAL
+caps=_video/x-raw,framerate=30000/1001,width=720,height=480 #if NTSC
 ```
 Note_: 30000/1001 is 29.97 fps_
 

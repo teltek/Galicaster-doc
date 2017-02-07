@@ -52,7 +52,7 @@ To uninstall the driver execute `scripts/uninstall.sh`
 * `caps`: GStreamer cappabilities of the device (`mimetype=TYPE, framerate=X/Y,width=A,height=B`)
 
 #### Caps magic:
-* type: video/x-raw-yuv
+* type: video/x-raw
 * framerate: 30/1, 25/1, 10/1 ...
 **. Datapath provides an stable 30 fps, lower framerates will decimate the input signal accordingly.
 * resolution:
@@ -69,7 +69,7 @@ device = datapath
 flavor = presentation
 location = /dev/screen
 file = SCREEN.avi
-caps = video/x-raw-yuv,framerate=30/1,width=1280,height=720
+caps = video/x-raw,framerate=30/1,width=1280,height=720
 videocrop-left = 0
 videocrop-right = 0
 ```

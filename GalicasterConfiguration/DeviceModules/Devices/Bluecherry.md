@@ -83,7 +83,7 @@ device = v4l2
 flavor = presenter
 location = /dev/camera
 file = CAMERA.avi
-caps = video/x-raw-yuv,framerate=30/1,width=720,height=576
+caps = video/x-raw,framerate=30/1,width=720,height=576
 videocrop-left = 0
 videocrop-right = 0
 ```

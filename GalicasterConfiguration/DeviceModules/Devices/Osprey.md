@@ -63,7 +63,7 @@ Useful commands
 * `caps`: GStreamer cappabilities of the device (mimetype=TYPE, framerate=X/Y,width=A,height=B)
 
 #### Caps magic
-* type: video/x-raw-yuv
+* type: video/x-raw
 * framerate: 25/1
 * resolution:
 regular (4:3) : NTSC width=720, height=480 PAL width=720,height=576
@@ -78,7 +78,7 @@ device = v4l2
 flavor = presenter
 location = /dev/osprey
 file = CAMERA.avi
-caps = video/x-raw-yuv,framerate=25/1,width=720,height=576
+caps = video/x-raw,framerate=25/1,width=720,height=576
 ```
 
 ### Troubleshooting

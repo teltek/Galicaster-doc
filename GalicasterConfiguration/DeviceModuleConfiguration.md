@@ -56,7 +56,7 @@ Some device modules do not handle encoding parameters, partially or totally:
 Find out more about the each element's valid parameters using the GStreamer inspect command:
 
 ```bash
-gst-inspect-0.10 <element>
+gst-inspect-1.0 <element>
 ```
 
 ##### h264, MP3 and AVI (Recommended)

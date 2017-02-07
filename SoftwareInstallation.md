@@ -12,7 +12,7 @@ The installation process consists of 4 simple steps:
 * [Run Galicaster for the first time.](#run-galicaster-for-the-first-time)
 * [Install and configure drivers.](#install-drivers)
 
-After installing Galicaster, the next step is configuring it. You can take a look at the [Configuration Guide](ConfigurationGuide.md).
+After installing Galicaster, the next step is configuring it. You can take a look at the [Configuration Guide](GalicasterConfiguration.md).
 
 ### Prerequisites
 Before starting the installation process, please make sure that:
@@ -27,7 +27,7 @@ Before starting the installation process, please make sure that:
  * [Download and install DEB package.](#install-from-.deb-package)
  * [Clone the source code and install manually.](#install-manually-from-source)
 
- 
+
  By installing or downloading Galicaster, you agree to the [non-commercial license](http://creativecommons.org/licenses/by-nc-sa/3.0/). ![](http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png) (Commercial licenses also available under request)
 
 #### Using the Galicaster repository

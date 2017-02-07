@@ -97,6 +97,7 @@ onboard onboard-data
 For testing devices, specially webcams and V4L2-compatible devices, other software may be installed as well:
 
 * `guvcview (apt)`
+* `v4l-utils (apt)`
 
 
 ###### Adding a launcher

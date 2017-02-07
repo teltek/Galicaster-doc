@@ -2,7 +2,7 @@
 User Guide - Media Manager
 ==========================
 
-The Media Manager is the area where recordings are browsed. You can operate on all the finished recordings from here. Two of the most most important features are [Metadata](Metadata.md) and [Operations](Operations.md). We will take a brief look to all its features.
+The Media Manager is the area where recordings are browsed. You can do operations on all the finished recordings from here. Two of the most important features are [Metadata](Metadata.md) and [Operations](Operations.md). We will take a brief look to all its features.
 
 ![](../images/UserGuide/MediaManager/media_manager.jpg)
 
@@ -18,12 +18,12 @@ Recording metadata can be set up and edited. If the recording has been scheduled
 
 ### Delete
 ￼![](../images/UserGuide/MediaManager/delete.png)
-Any recording can be deleted but be aware that it will be erased also from your hard disk.
+Any recording can be deleted but be aware that it will be erased from your hard disk as well.
 
 
 ### Operations
 ![](../images/UserGuide/MediaManager/operation.png)
-Operations are the different actions that can be applied on recordings. When an operation is triggered it will be enqueued until previous operations are finished, showing Pending as its status. Once started, the operation status will change to Processing. If the operation process is successful its status will change to Done, otherwise it will Failed.
+Operations are the different actions that can be applied on recordings. When an operation is triggered it will be enqueued until previous operations are finished, showing Pending as its status. Once started, the operation status will change to Processing. If the operation processing is successful its status will change to Done, otherwise it will Failed.
 
 Operations can be performed nightly, meaning they will be triggered at the period established as 'night', by default local midnight. This way, recording and processing will not interfere with each other. Nightly operations can be cancelled before they start. Selecting an immediate operation on a recording with that operation already scheduled as 'nightly' will override it.
 

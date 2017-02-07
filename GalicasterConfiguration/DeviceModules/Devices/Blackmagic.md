@@ -20,7 +20,7 @@ Blackmagic capture cards support multiple formats - through adaptors - including
 * Connector: **BNC or HDMI**
 * Signal: **RAW**
 * Drivers: available [here](http://www.blackmagicdesign.com/support/)
-* GC Module: [blackmagic](../Blackmagic)
+* GC Module: [blackmagic](../Blackmagic.md)
 * Price: **around 300 €**
 
 ### Models table

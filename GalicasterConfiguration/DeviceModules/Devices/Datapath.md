@@ -23,7 +23,7 @@ Datapath cards are VGA and DVI capturing devices. They capture up to 1080p DVI a
 * Price: **around 650 €**
 
 ### Driver installation
-Links and instructions to install the linux driver for Datapath are available at http://www.datapath.co.uk/linux-driver
+Links and instructions to install the linux driver for Datapath are available at https://www.datapath.co.uk/datapath-current-downloads/linux
 
 ﻿To install the driver unpack the zipped tarball and execute the script at `scripts/install.kernel` **as root**.
 Further information can be found in the installation help file, `docs/INSTALL`.
@@ -85,5 +85,5 @@ Unfortunatelly, the absence of singal after pause make the driver fails. To avoi
 Update your driver to the newest one. Old drivers didn't handled unplugging efficiently.
 
 ### FAQ
-1. **Can I change the NO SIGNAL message?**
+1. **Can I change the NO SIGNAL message?**  
 Yes, you can modifying the driver configuration. When the driver is installed a sample with instruction is placed at `etc/modprobe.d/rgb133.sample.conf`

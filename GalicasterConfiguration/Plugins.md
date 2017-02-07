@@ -8,20 +8,19 @@ Plugins communicate with Galicaster in a very simple way, by connecting to the i
 
 The following list enumerates the current available plugins at the 2.0.0 release. Each plugin's functionality and configuration are briefly explained on its corresponding section in this page.
 
-* [Screensaver for Ubuntu 16.04](#screensaver-for-ubuntu-16.04)
+* [Screensaver for Ubuntu 16.04](#screensaver-for-ubuntu-1604)
 * [No Audio Warning Dialog](#no-audio-warning-dialog)
 * [Hide cursor and modify Ubuntu appearance](#hide-cursor-and-modify-ubuntu-appearance)
 * [Check for a non-started scheduled recording](#check-for-a-non-started-scheduled-recording)
 * [Clean old recordings](#clean-old-recordings)
 * [Limit recording duration](#limit-recording-duration)
-* [REST interface - Experimental](#rest-interface-experimental)
-* [Keyboard Shortcuts - Discontinued](#keyboard-shortcuts-discontinued)
+* [REST interface (Experimental)](#rest-interface-experimental)
+* [Keyboard Shortcuts (Discontinued)](#keyboard-shortcuts-discontinued)
 * [Setup the default values of any recording](#setup-the-default-values-of-any-recording)
 * [Hide tabs in the recorder UI](#hide-tabs-in-the-recorder-ui)
 * [Hide operations](#hide-operations)
-* [Send snapshot to Dashboard](#send-snapshot-to-dashboard)
+* [Send snapshot to Dashboard (Experimental)](#send-snapshot-to-dashboard-experimental)
 * [Retry failed ingest](#retry-failed-ingest)
-* [Notify when a recording has crashed](#notify-when-a-recording-has-crashed)
 * [On-screen Keyboard](#on-screen-keyboard)
 * [Lock Galicaster](#lock-galicaster)
 * [Occlude tracks](#occlude-tracks)
@@ -168,7 +167,7 @@ duration = 240
 `duration`: *An integer representing the maximum duration allowed for a recording, in minutes. Defaults 240 minutes (4 hours).*
 
 
-### REST interface - Experimental
+### REST interface (Experimental)
 This plugin provides a simple REST web interface to retrieve information or control some actions on a running Galicaster instance.
 This module requires the installation of the additional package `python-bottle`.
 
@@ -223,7 +222,7 @@ port = 8080
 `False`: *Disables plugin.*
 
 
-### Keyboard Shortcuts - Discontinued
+### Keyboard Shortcuts (Discontinued)
 This plugin captures certain key combinations to trigger specific actions in Galicaster. The key combinations and their associated actions can be configured by the user. At the present time this plugin provides the possibility to exit typing "Ctrl + Shift + Q".
 
 ```ini
@@ -306,7 +305,7 @@ hide = ingest
 hide_nightly = ingest sidebyside exporttozip
 ```
 
-### Send snapshot to Dashboard - Experimental
+### Send snapshot to Dashboard (Experimental)
 This plugin fetchs a screenchoot of the window through gtk and sends it with Galicaster's Opencast HTTP client to the Dashboard endpoint. This module can work as a plugin or as a separated application.
 
 ```ini

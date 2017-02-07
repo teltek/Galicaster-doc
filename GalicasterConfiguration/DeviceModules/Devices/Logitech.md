@@ -31,13 +31,11 @@ The driver is included in the linux kernel - uvcvideo.
 1. Find the Device name attribute:
   * `udevadm info --attribute-walk --name=/dev/video0 | grep name`
     * Usual Device IDs:
-      * Logitehc c920 on Ubuntu 12.04: HD Pro Webcam C920
-      * Logitehc c910 on Ubuntu 12.04: HD Pro Webcam C910
-      * Logitehc c910 on Ubuntu 10.10: UVC Camera (046d:0821)
+      * Logitech c910 on Ubuntu 16.04: UVC Camera (046d:0821)
 
 2. Fix access path
-  * Create or modify the file `/etc/udev/rules.d/galicaster.rules.`
-  * Add the line: `KERNEL=="video[0-9]*", ATTR{name}=="HD Pro Webcam C920", GROUP="video", SYMLINK+="logitech"`
+  * With sudo create or modify the file: `/etc/udev/rules.d/galicaster.rules`
+  * Add the line: `KERNEL=="video[0-9]*", ATTR{name}=="UVC Camera (046d:0821)", GROUP="video", SYMLINK+="logitech"` **Change ATTR{name} to the one obtained previously.**
 
 ### Device configuration
 To probe the possible parameteres we recommend using **guvcview**, which will show the possible values to each parameter.
@@ -50,7 +48,7 @@ To list the parameters:
 Useful commands
 
   * Powerline frequency: `v4l2-ctl -d /dev/logitech -c power_line_frequency=1` (1: 50 Hz 2: 60 Hz)
-  * Autofocus:
+  * Autofocus: `v4l2-ctl -d /dev/logitech -c focus_auto=1` (0:disable, 1:enable)
   * Exposure: `v4l2-ctl -d /dev/logitech -c exposure_auto=0` (0:auto, 1:manual, 2:shutter, 3:aperture)
 
 ### Module configuration

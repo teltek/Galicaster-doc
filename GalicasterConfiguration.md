@@ -6,10 +6,10 @@ Galicaster configuration
 Configuring Galicaster involves:
 
 * The [general configuration](#general-configuration) of the application - including the [Opencast server configuration](#opencast-server-configuration);
-* The setup of different device combinations, known as [Input Profiles](GalicasterConfiguration/InputProfiles.md);
-* The activation of certain [Plugins](GalicasterConfiguration/Plugins.md).
+* The activation of certain [plugins](GalicasterConfiguration/Plugins.md).
+* The setup of different device combinations, known as [Input Profiles](GalicasterConfiguration/InputProfiles.md).
 
-Due to their their extension and importance, Profiles and Plugins are further explained on their own spaces.
+Due to their their extension and importance, [Profiles](GalicasterConfiguration/InputProfiles.md) and [Plugins](GalicasterConfiguration/Plugins.md) are further explained on their own spaces.
 
 ### General configuration
 The general configuration file is `conf.ini`, located by default at the directory `/etc/galicaster/` of your system. This file includes several sections regarding:
@@ -21,12 +21,13 @@ The general configuration file is `conf.ini`, located by default at the director
   * [Series configuration](#series-configuration)
 * [Plugins configuration](GalicasterConfiguration/Plugins.md)
 
-> `conf-dist.ini`  
-> The file `conf-dist.ini`, located at the installation folder of Galicaster, contains the factory configuration of Galicaster. You can check the default parameters there. This file is meant to remain unchanged.
+|![Info](images/info.gif) `conf-dist.ini` |
+| :------ |
+| The file `conf-dist.ini`, located at the installation folder of Galicaster, contains the factory configuration of Galicaster. You can check the default parameters there. This file is meant to remain unchanged. |
 
 
 ## Main parameters
-Parameters are set in different sections at the `conf.ini file`. Parameters include folder designation, UI configuration, processing options, etc.
+Parameters are set in different sections at the `conf.ini` file. Parameters include folder designation, UI configuration, processing options, etc.
 
 In the `basic` section of the `conf.ini` file, you can configure the following items:
 
@@ -57,7 +58,7 @@ profile = Default
 Default value: `Default`
 
 #### Stop dialog
-If set, an "are you sure" pop-up will show when the stop button is clicked during a recording. If unset, the recording will stop immediatly.
+If set, an *"are you sure?"* pop-up will show when the stop button is clicked during a recording. If unset, the recording will stop immediatly.
 Disabling this option is specially useful in consecutive recordings, where the time between pieces is minimum.
 
 ```ini
@@ -67,7 +68,7 @@ stopdialog = True|False
 Default value: `False`
 
 #### Quit
-If set, a "Quit" button will be displayed in the Welcome screen of Galicaster. The quit button will close Galicaster.
+If set, a *"Quit"* button will be displayed in the Welcome screen of Galicaster. The quit button will close Galicaster.
 If shortcuts are activated, the program can be closed with ctrl+shift+q
 
 ```ini
@@ -77,7 +78,7 @@ quit = True|False
 Default value: `True`
 
 #### Shutdown
-If set, a "Shutdown" button will be displayed in the Welcome screen of Galicaster. The shutdown button will close Galicaster and shutdown the system.
+If set, a *"Shutdown"* button will be displayed in the Welcome screen of Galicaster. The shutdown button will close Galicaster and shutdown the system.
 
 ```ini
 [basic]
@@ -86,7 +87,7 @@ shutdown = True|False
 Default value: `False`
 
 #### Resolution
-The application window resolution can be defined manually. Recommended resolutions are 1080p, 1024x768 and 1280x1024. Other resolutions are also possible. "auto" will adapt the resolution to the maximum available in fullscreen mode.
+The application window resolution can be defined manually. Recommended resolutions are 1080p, 1024x768 and 1280x1024. Other resolutions are also possible. The value *"auto"* will adapt the resolution to the maximum available in fullscreen mode.
 
 ```ini
 [basic]
@@ -94,7 +95,10 @@ resolution = auto|1920x1080|1024x768|...
 ```
 Default value: `auto`
 
-> ￼Dual screens may require a manual resolution to be defined.
+|![Info](images/info.gif) Info |
+| :------ |
+| Dual screens may require a manual resolution to be defined. |
+
 
 #### Swap videos
 If set, a button will be displayed in the Recorder view in order to be able to swap the preview videos. For instance, if the camera is been displayed in the right side, pressing this button will be shown in the left side and the screen preview will be shown in the other side.
@@ -106,13 +110,13 @@ swapvideos = True|False
 Default value: `True`
 
 #### Side-by-side layout
-Three types of layout are provide: Side-by-side and Picture-in-picture with screen or camera as main picture. In future releases the layout will be more customizable.
+Three types of layout are provided: Side-by-side, picture-in-picture with screen or picture-in-picture with camera. In future releases the layout will be more customizable.
 
 ```ini
 [sidebyside]
 layout = sbs
 ```
-Layout options: (**sbs**|pip-screen|pip-camera)
+Layout options: (**sbs** | pip-screen | pip-camera )
 
 #### Homepage
 If you are in admin mode, Galicaster can load at startup the recorder or the media manager page.
@@ -158,19 +162,21 @@ failed = #FFAEAE ;red
 The main folder and the name format of the subfolders can be modified.
 ```ini
 [basic]
-repository = /path/to/folder/repository/
+repository = /home/galicaster/Repository/
 
 [repository]
 foldertemplate = gc_{hostname}_{year}-{month}-{day}T{hour}h{minute}m{second}
 ```
-Default value: `/home/$user/Repository`  
-Template format: Free text; the following substitutions (in curly braces) are available: year, month, day, hour, minute, second and hostname.
+Default value: `/home/galicaster/Repository`
+Template format: Free text; the following substitutions (in curly braces) are available: `year`, `month`, `day`, `hour`, `minute`, `second` and `hostname`.
 
->	**Repository privileges**  
-The default user must have privileges for accessing and writing on this folder, otherwise you can execute a command like this: `sudo chown -R $user /path/to/folder/repository/`
+|![Info](images/info.gif) Repository privileges |
+| :------ |
+| The default user must have privileges for accessing and writing to this folder. To achieve this execute a command like this one: `sudo chown -R galicaster /path/to/folder/repository/` |
+
 
 #### Export Folder
-The default user must have privileges for accessing and writing this folder.
+The default user must have privileges for accessing and writing to this folder.
 
 ```ini
 [basic]
@@ -188,16 +194,16 @@ tmp = /path/folder/repository/
 Default value: `/tmp` (in Ubuntu distros)
 
 ### Recorder
-Allow to modify the behaviour of the recorder:
+Allows to modify the behaviour of the recorder:
 * autorecover: If active the recorder reloads automatically after an error in the profile.
-* pausetype: Select if pause the pipeline or only pause the recording.
+* pausetype: Selects if the pause event will pause the full pipeline or only its recording. Pausing only the recording will cause the preview to still show the tracks output.
 
 ```ini
 [recorder]
 autorecover = False
 pausetype = recording
 ```
-autorecover: (True | **False**)  
+autorecover: (True | **False**)
 pausetype: (recording | **pipeline**)
 
 ### Help
@@ -211,7 +217,7 @@ text = ...or contact us on our community list.
 
 
 ## Logger
-By default, the log information is stored at the temporary folder, in a single file named galicaster.log, so the file is deleted on every reboot. However, the syslog system may be used instead. The log level and destination folder can be also configured.
+By default, the log information is stored at a temporary folder, in a single file named galicaster.log, so the file is deleted on every reboot. However, the syslog system can be used instead. The log level and destination folder can be also configured.
 
 ```ini
 [logger]
@@ -221,8 +227,8 @@ use_syslog = False
 rotate = False
 ```
 
-level: (INFO|WARNING|**DEBUG**)  
-use_syslog: (True|**False**)  
+level: (INFO|WARNING|**DEBUG**)
+use_syslog: (True|**False**)
 rotate: (True|**False**)
 
 ## Opencast server configuration
@@ -268,7 +274,7 @@ This is a summary of all the parameters related to the Opencast configuration in
 * **host**: Opencast server URL (For example:  http://<opencast_server_ip_address>:<opencast_server_port>).
 * **username**: Name of the account used to operate the Opencast REST endpoints.
 * **password**: Password for the account used to operate the Opencast REST endpoints.
-* **hostname**: Name of the Galicaster unit. Defaults to the host name as defined in the OS, prepended by "GC-" if it is a Galicaster Class or "GCMobile-" if it is a Galicaster Mobile.
+* **hostname**: Name of the Galicaster unit. Defaults to the host name as defined in the OS, prepended by *"GC-"* if it is a Galicaster Class or *"GCMobile-"* if it is a Galicaster Mobile.
 * **workflow**: name of the workflow used to ingest the recordings.
 * **workflow-parameters**: list of name-value pairs (name:value) to be passed to the Opencast workflow. The items in the list are separated by semicolons (";").
   * If you specify trimHold:true you will also need videoPreview:true for the default workflow.
@@ -277,16 +283,16 @@ This is a summary of all the parameters related to the Opencast configuration in
   * If active, the available tracks are reported to Opencast, so that the user can choose which ones will be recorded.
   * If not, Galicaster will record all the tracks in the profile active at the moment the scheduled recording starts.
     * If this option is active, and the track names in the configuration file are changed for some reason, the previously scheduled recordings may fail because the track names in such recordings will not much the current track names. Therefore, all the existing recordings should be scheduled again if such a change is made.
-    > **Changes in track names**  
-    If this option is **_enabled_**, and track names are changed at the configuration file for some reason, the recordings already scheduled in Opencast may fail because the track names in the schedule will not match the current ones. Therefore, if the track names are modified, all the existing recordings should be scheduled again so that they include the new track names.
-    When this option is **_disabled_**, Galicaster sends no information about the tracks defined in its profile, and therefore no special precautions should be taken when the track names need to be modified for some reason.
 * **multiple-ingest**: (new in Galicaster 1.3.1): Whether ingestion is made through the admin server or through the less loaded available ingest server. When the option is active, Galicaster looks for the less loaded active sever (not in mantenaince nor offline), always avoiding the admin server. True | **False** (default value) .
 * **address**: IP to connect with Opencast.
 * **connect_timeout**: Connection timeout for curl in seconds. Default: 30
 * **timeout**: Total timeout for curl in seconds. Default: 30
 * **ca_parameters**: Extra parameters to be passed to opencast (More info: https://opencast.jira.com/wiki/display/MH/Configuration+Keys)
 * **ignore_capture_devices**: Whether to record all tracks regardless of capture.device.names (True | **False**)
-￼
+
+|![Forbidden](images/forbidden.gif) Visible tracks - Changing track names |
+| :------ |
+| <li> If the option *visible_tracks* is **_enabled_**, and track names are changed at the configuration file for some reason, the recordings already scheduled in Opencast may fail because the track names in the schedule will not match the current ones. Therefore, if the track names are modified, all the existing recordings should be scheduled again so that they include the new track names. </li><li> When this option is **_disabled_**, Galicaster sends no information about the tracks defined in its profile, and therefore no special precautions should be taken when the track names need to be modified for some reason.</li> |
 
 
 #### Example:
@@ -325,9 +331,11 @@ long = 60
 night = 00:00
 ```
 ### Series configuration
-This section sets allows filtering series shown in the drop down list of the metadata editor. It accepts most of the filter values that Opencast endpoint accepts, namely: seriesId, seriesTitle, creator, contributor, publisher, rightsholder, createdfrom, createdto, language, license, subject, abstract, description.
+This section allows filtering series shown in the drop down list of the metadata editor. It accepts most of the filter values that the Opencast endpoint accepts, namely: `seriesId, seriesTitle, creator, contributor, publisher, rightsholder, createdfrom, createdto, language, license, subject, abstract, description`.
 
-> According to Opencast documentation, the date-like filters (createdfrom and createdto) must follow the format yyyy-MM-dd'T'HH:mm:ss'Z'
+|![Info](images/info.gif) Info |
+| :------ |
+| According to Opencast documentation, the date-like filters (createdfrom and createdto) must follow the format yyyy-MM-dd'T'HH:mm:ss'Z' |
 
 In addition to the previous filters, the 'default' keyword accepts a series ID that will appear in the series list, no matter what. The values to the parameters may include placeholders for certain environment variables. The only one supported currently is '{user}', that is substituted with the current user name.
 

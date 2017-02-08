@@ -13,7 +13,7 @@ Choose Linux, your card series and your Model and press Search. Download the lat
 To install it, run as root the following commands:
 
 ```bash
-apt-get install libjpeg62
+apt-get install libjpeg62 dkms
 dpkg -i <name_of_driver_package.deb>
 modprobe blackmagic
 ```

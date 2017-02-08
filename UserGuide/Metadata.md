@@ -1,7 +1,5 @@
-User Guide - Metadata
-=====================
-
-**THIS PAGE IS UNDER CONSRUCTION**
+Metadata
+========
 
 Metadata is the information related to the audivisual content on a recording. The metadata and content together forms a Mediapackage. In the Galicaster repository each folder represents a Mediapackage. Metadata is stored permanently on XML files. **These files should not be edited directly**.
 

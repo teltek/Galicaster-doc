@@ -1,7 +1,5 @@
-User Guide - OperationsUser Guide - Operations
-==============================================
-
-**THIS PAGE IS UNDER CONSTRUCTION**
+Operations
+==========
 
 Galicaster is able to perform certain procedures over mediapackages. This procedures are called Operations.
 
@@ -9,7 +7,7 @@ Current operations include:
 
 * [Ingest](#ingest) recordings to a Opencast Matterhorn server.
 * Create a [side-by-side](#side-by-side) composition of a video.
-* [Export to zip:](#export-to-zip)
+* [Export to zip](#export-to-zip)
 
 To perform an operation, select a recording on the Media Manager and click over the Operations button, a dialog will pop-up with the available operation for the chosen content.
 

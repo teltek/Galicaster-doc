@@ -59,7 +59,6 @@ To uninstall the driver execute `scripts/uninstall.sh`
   * width=800,height=600, width=640,height=480, width=1024,height=768
   * panorarmic: width=1280,height=720 or width=1920,height=1080
 * Use guvcview to know wich capabilities are compatible with your device.
-For more information http://pygstdocs.berlios.de/pygst-tutorial/capabilities.html
 
 #### Example:
 ```ini

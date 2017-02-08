@@ -9,6 +9,7 @@ The installation process consists of 4 simple steps:
 
 * [Check the prerequisites.](#prerequisites)
 * [Install the software.](#installation)
+* [Before run Galicaster for the first time](#before-run-galicaster-for-the-first-time)
 * [Run Galicaster for the first time.](#run-galicaster-for-the-first-time)
 * [Install and configure drivers.](#install-drivers)
 
@@ -67,20 +68,7 @@ You may remove Galicaster from your system using the Ubuntu Software Center or t
 ```bash
 dpkg --remove galicaster
 ```
-----------------------------------------------------------------
 
-Galicaster will be installed in `/usr/share/galicaster` . The configuration files and profiles folder will be placed at `/etc/galicaster/`. In order to get Galicaster ready to go, it would be useful running this command to put the right file owners:
-```bash
-sudo chown -R galicaster:galicaster /etc/galicaster
-```
-New profiles can be added in `/etc/galicaster/profiles`. For more information about them, refer to the [Input Profiles section](GalicasterConfiguration/InputProfiles.md).
-
-The files at `/etc/galicaster` will not be removed, thus preserving your configuration. If you also want to delete them too, run this instead:
-
-```bash
-sudo rm /etc/galicaster/profiles/*.*
-sudo dpkg --purge galicaster
-```
 #### Source code
 As an alternative, you can install Galicaster from the source code. Stable versions are available on the [Release Archive.](SoftwareInstallation/ReleaseArchive.md). Stable and development versions, as well as development information, are available in our [Git repository](http://github.com/teltek/Galicaster).
 
@@ -96,11 +84,6 @@ gstreamer1.0-plugins-base gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gst
 gir1.2-gstreamer-1.0 gir1.2-gtk-3.0 gir1.2-gst-plugins-base-1.0
 onboard onboard-data
 ```
-For testing devices, specially webcams and V4L2-compatible devices, other software may be installed as well:
-
-* `guvcview (apt)`
-* `v4l-utils (apt)`
-
 
 ###### Adding a launcher
 You can easilly add a launcher to a manual installation by creating a file at `/usr/local/bin/` containing the following command:
@@ -108,6 +91,27 @@ You can easilly add a launcher to a manual installation by creating a file at `/
 python <path>/run_galicaster.py
 ```
 where `<path>` is the directory where you downloaded galicaster source code.
+
+### Before run Galicaster for the first time
+
+Galicaster will be installed in `/usr/share/galicaster` . The configuration files and profiles folder will be placed at `/etc/galicaster/`. In order to get Galicaster ready to go, it would be useful running this command to put the right file owners:
+```bash
+sudo chown -R galicaster:galicaster /etc/galicaster
+```
+New profiles can be added in `/etc/galicaster/profiles`. For more information about them, refer to the [Input Profiles section](GalicasterConfiguration/InputProfiles.md).
+
+The files at `/etc/galicaster` will not be removed when removig Galicaster, thus preserving your configuration. If you also want to delete them too, run this instead:
+
+```bash
+sudo rm /etc/galicaster/profiles/*.*
+sudo dpkg --purge galicaster
+```
+-------------------------------------------------------------------
+
+For testing devices, specially webcams and V4L2-compatible devices, other software may be installed as well:
+
+* `guvcview (apt)`
+* `v4l-utils (apt)`
 
 ### Run Galicaster for the first time
 Once installed, Galicaster is ready to run. You may start Galicaster by:

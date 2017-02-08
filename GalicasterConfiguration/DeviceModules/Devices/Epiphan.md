@@ -117,7 +117,7 @@ modprobe vga2pci
     * Usual Device IDs:
         * *vga2usb*, *vga2pci*, *dvi2pci*
 1. Fix access path
-  * With sudo create or modify the file `/etc/udev/rules.d/galicaster.rules´
+  * With sudo create or modify the file `/etc/udev/rules.d/galicaster.rules`
   * Add the line: ```KERNEL=="video[0-9]*", ATTR{name}=="DVI2PCIe", GROUP="video", SYMLINK+="epiphan"```
 
 ### Module configuration

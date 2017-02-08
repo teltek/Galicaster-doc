@@ -63,16 +63,18 @@ Alternatively, you may also run the following command on a shell (needs root per
 ```bash
 dpkg --install <galicaster_2.0.0_all.deb>
 ```
+You may remove Galicaster from your system using the Ubuntu Software Center or the following command on a terminal:
+```bash
+dpkg --remove galicaster
+```
+----------------------------------------------------------------
+
 Galicaster will be installed in `/usr/share/galicaster` . The configuration files and profiles folder will be placed at `/etc/galicaster/`. In order to get Galicaster ready to go, it would be useful running this command to put the right file owners:
 ```bash
 sudo chown -R galicaster:galicaster /etc/galicaster
 ```
 New profiles can be added in `/etc/galicaster/profiles`. For more information about them, refer to the [Input Profiles section](GalicasterConfiguration/InputProfiles.md).
 
-You may remove Galicaster from your system using the Ubuntu Software Center or the following command on a terminal:
-```bash
-dpkg --remove galicaster
-```
 The files at `/etc/galicaster` will not be removed, thus preserving your configuration. If you also want to delete them too, run this instead:
 
 ```bash
@@ -80,7 +82,7 @@ sudo rm /etc/galicaster/profiles/*.*
 sudo dpkg --purge galicaster
 ```
 #### Source code
-As an alternative to the DEB package installation, you can install Galicaster from the source code. Stable versions are available on the [Release Archive.](SoftwareInstallation/ReleaseArchive.md). Stable and development versions, as well as development information, are available in our [Git repository](http://github.com/teltek/Galicaster).
+As an alternative, you can install Galicaster from the source code. Stable versions are available on the [Release Archive.](SoftwareInstallation/ReleaseArchive.md). Stable and development versions, as well as development information, are available in our [Git repository](http://github.com/teltek/Galicaster).
 
 Installing a source code version requires installing its [dependencies](#dependencies) manually.
 If a DEB package installation is also present, conf.ini and the profiles will be read from the folder /etc/galicaster. Otherwise, the ones in the installation folder will be used.

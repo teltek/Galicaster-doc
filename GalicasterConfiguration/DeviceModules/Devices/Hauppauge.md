@@ -39,7 +39,7 @@ The driver is included in the linux kernel - ivtv.
       * Raw input: `ivtv0 encoder YUV`
       * Audio raw input: `ivtv0 encoder PCM`
 1. Fix access path
-  * Create or modify the file `/etc/udev/rules.d/galicaster.rules`.
+  * With sudo create or modify the file `/etc/udev/rules.d/galicaster.rules`
   * Add the following lines:
   ```bash
 KERNEL=="video[0-9]*", ATTR{name}=="ivtv0 encoder MPG", GROUP="video", SYMLINK+="haucamera"

@@ -35,7 +35,7 @@ To uninstall the driver execute `scripts/uninstall.sh`
   * `udevadm info --attribute-walk --name=/dev/video0 | grep name`
     * rgb133 (0-0)
 1. Fix access path
-  * Create or modify the file `/etc/udev/rules.d/galicaster.rules.`
+  * With sudo create or modify the file `/etc/udev/rules.d/galicaster.rules`
   * Add the line: `KERNEL=="video[0-9]*", ATTR{name}=="rgb133 (0-0)", GROUP="video", SYMLINK+="screen"`
 
 ### Device configuration

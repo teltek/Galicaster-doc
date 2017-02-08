@@ -37,7 +37,7 @@ For PCIe cards, the driver can be found at [kernellabs.com](http://www.kernellab
     * Usual Device IDs:
       * BT878 video (Osprey 210/220/230
 1. Fix access path
-  * Create or modify the file ``/etc/udev/rules.d/galicaster.rules`.
+  * With sudo create or modify the file `/etc/udev/rules.d/galicaster.rules`
   * Add the line: `KERNEL=="video[0-9]*", ATTR{name}=="BT878 video (Osprey 210/220/230", GROUP="video", SYMLINK+="osprey"`
 
 ### Device configuration

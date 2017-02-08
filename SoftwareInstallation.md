@@ -24,8 +24,8 @@ Before starting the installation process, please make sure that:
 ### Installation
  There are three options to install Galicaster:
  * [Install through our repository](#using-the-galicaster-repository). This is the recommended option for newcomers.
- * [Download and install DEB package.](#install-from-.deb-package)
- * [Clone the source code and install manually.](#install-manually-from-source)
+ * [Download and install DEB package.](#install-from-deb-package)
+ * [Clone the source code and install manually.](#source-code)
 
 
  By installing or downloading Galicaster, you agree to the [non-commercial license](http://creativecommons.org/licenses/by-nc-sa/3.0/). ![](http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png) (Commercial licenses also available under request)

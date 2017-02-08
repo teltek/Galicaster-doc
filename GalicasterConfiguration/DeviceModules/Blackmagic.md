@@ -2,8 +2,6 @@
 Blackmagic device module
 ========================
 
-**THIS PAGE IS UNDER CONSTRUCTION**
-
 The blackmagic device module provides compatibility with those Blackmagic Design capture cards compatible with Linux, for instance Decklink SDI and Intensity Pro. These capture cards are focused on recording High Definition formats but they also record other formats such as Svideo, Composite and Components.
 
 Consult our page dedicated to [Blackmagic cards](../../HardwareRecommendations/BlackmagicCards.md) for a more detailed information.
@@ -18,15 +16,15 @@ Consult our page dedicated to [Blackmagic cards](../../HardwareRecommendations/B
 From http://www.blackmagicdesign.com/products/decklink/techspecs
 
 | Connectors | SD Formats | HD Formats 720p | HD Formats 1080i | HD Formats 180p | Audio Input |
-|------------|
+|------------|------------|------------|------------|------------|------------|
 | BNC and Breakout cable	|625/25 PAL, 525/29.97 NTSC and 525/23.98 NTSC| 720p50, 720p59.94, 720p60 | 1080i50, 1080i59.94 and 1080i60 | 1080PsF23.98, 1080p23.98, 1080PsF24, 1080p24, 1080PsF25, 1080p25, 1080PsF29.97, 1080p29.97, 1080PsF30, 1080p30 | 8 Channels embedded in SD and HD |
 
 
 #### Blackmagic Intensity PRO (HDMI)
 http://www.blackmagicdesign.com/products/intensity/
 
-| Connectors | SD Formats | HD Formats 720p | HD Formats 1080i | HD Formats 180p | Audio Input | |
-|------------|
+| Connectors | SD Formats | HD Formats 720p | HD Formats 1080i | HD Formats 180p | Audio Input |
+|------------|------------|------------|------------|------------|------------|
 | HDMI 4:2:2 and Breakout cable with components (also composite and svideo | 625i/50 PAL and 525i/59.94 NTSC. | 720p50, 720p59.94 and 720p60 | 1080i50, 1080i59.94 and 1080i60 | 1080p23.98, 1080p24, 1080p25, 1080p29.97 and 1080p30 | 2 Channel RCA HiFi audio in 24 bit | Estereo RCA, HDMI embeded |
 
 #### Module Configuration

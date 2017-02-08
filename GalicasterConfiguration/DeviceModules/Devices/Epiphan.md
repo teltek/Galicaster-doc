@@ -25,7 +25,7 @@ Epiphan framegrabbers are USB and PCI capture cards for VGA and DVI. The admit m
 * Connector: **VGA or DVI**
 * Signal: **RAW**
 * Drivers: [available here](http://www.epiphan.com/downloads/linux/)
-* GC Module: [epiphan](.../Epiphan.md) or [rtp](../RTP.md) (Broadcaster)
+* GC Module: [epiphan](../Epiphan.md) or [rtp](../RTP.md) (Broadcaster)
 * Price: **from 300 to 2000 $**
 
 

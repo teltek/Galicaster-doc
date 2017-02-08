@@ -23,7 +23,7 @@ They are compatible with both PAL and NTSC. They provide RAW input (for both aud
 * Connector: **RCA or SVideo and mini-jack** (3,5mm)
 * Signal: Composite or Svideo
 * Drivers: **pre-installed on Ubuntu 12**
-* Plugin: [hauppauge](../Hauppage.md) or [v4l2](../V4l2.md)
+* Plugin: [hauppauge](../Hauppauge.md) or [v4l2](../V4L2.md)
 * Price: Obsolete, consult stock.
 
 

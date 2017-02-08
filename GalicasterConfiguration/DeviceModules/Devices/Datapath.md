@@ -19,7 +19,7 @@ Datapath cards are VGA and DVI capturing devices. They capture up to 1080p DVI a
 * Connector: **DVI**
 * Signal: **RAW**
 * Drivers: available [here](https://www.datapath.co.uk/datapath-current-downloads/linux)
-* Plugin: [v4l2](../v4l2.md)
+* Plugin: [v4l2](../V4L2.md)
 * Price: **around 650 €**
 
 ### Driver installation

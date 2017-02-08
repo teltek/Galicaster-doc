@@ -100,7 +100,7 @@ sudo chown -R galicaster:galicaster /etc/galicaster
 ```
 New profiles can be added in `/etc/galicaster/profiles`. For more information about them, refer to the [Input Profiles section](GalicasterConfiguration/InputProfiles.md).
 
-The files at `/etc/galicaster` will not be removed when removig Galicaster, thus preserving your configuration. If you also want to delete them too, run this instead:
+The files at `/etc/galicaster` will not be removed when removig Galicaster, thus preserving your configuration. If you also want to delete them too, run this:
 
 ```bash
 sudo rm /etc/galicaster/profiles/*.*

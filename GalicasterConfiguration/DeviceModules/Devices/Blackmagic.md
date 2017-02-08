@@ -49,7 +49,7 @@ modprobe blackmagic
 ```
 
 There is a full guide on how to install the driver and other information on:
-http://www.blackmagicdesign.com/media/5440492/Blackmagic_Desktop_Video_Linux_9.7.1.txt
+http://documents.blackmagicdesign.com/DesktopVideo/20161007-e10557/Desktop_Video_Manual.pdf
 
 *Note: The project concerning GStreamer plugin for 10.10 has been discontinued and the plugin has been included on an official GStreamer package. We recommend upgrading to Ubuntu 12.04 in order to use Blackmagic cards.*
 

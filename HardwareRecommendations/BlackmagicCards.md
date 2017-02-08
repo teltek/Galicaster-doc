@@ -19,7 +19,7 @@ dpkg -i <name_of_driver_package.deb>
 modprobe blackmagic
 ```
 There is a full guide on how to install the driver and other information on:
-[http://blackmagic-design.com/media/3397979/Blackmagic_Desktop_Video_Linux_9.2.txt]
+[http://documents.blackmagicdesign.com/DesktopVideo/20161007-e10557/Desktop_Video_Manual.pdf]
 
 ### Check if the driver and the card are loaded and ready
 Run on a terminal:

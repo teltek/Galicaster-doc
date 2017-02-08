@@ -31,8 +31,7 @@ Epiphan framegrabbers are USB and PCI capture cards for VGA and DVI. The admit m
 
 ### Model table
 | Model | Signal standards | Connectors | Audio | HD formats | SD Formats | HW Encoding | Price |
-|-----|
-|  |  |  |  |  |  |  |  |
+|-------|------------------|------------|-------|------------|------------|-------------|-------|
 | [DVI2PCIe](http://www.epiphan.com/products/dvi-frame-grabbers/dvi2pcie/specifications/) | DVI VGA HDMI | DVI | None | 1080p 1920x1200 | 1600x1200, 1360x1024, 1400x1050, 1280x1024, 1280x960, 1280x800, 1152x900, 1152x864, 1360x768, 1024x768, 800x600, 640x480, 720x540, 720x480, 720x400 | No | 1000 $ |
 | [DVI2USB](http://www.epiphan.com/products/dvi-frame-grabbers/dvi2usb/specifications/) | DVI | DVI | None | 1080p 1920x1200 (DVI) | 1600x1200, 1280x1024, 1280x960, 1152x900, 1152x864, 1024x768, 800x600, 640x480, 720x400 | No | 1000 $ |
 | [VGA2USB](http://www.epiphan.com/products/frame-grabbers/vga2usb/specifications/) | VGA | VGA DE-15 | None | 1080p 1920x1200 | 1600x1200. 1280x1024, 1280x960, 1152x900, 1152x864, 1024x768, 800x600, 640x480, 720x400 | No | 300 $ |

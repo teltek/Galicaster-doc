@@ -6,6 +6,8 @@ The page contains a general overview of the Input Profiles, including several do
 ### Input Profiles
 Profiles are groups of tracks. Each track contains the reference to a device and its configuration.
 
+**Profiles are ini files** located in directory `/etc/galicaster/profiles`
+
 Each profile must have a name which identifies it on the Profile Selector. Additionally, a configuration script can be set up to run before the profile is loaded. These two values are defined in the data section, as shown below:
 
 ```ini
@@ -89,7 +91,7 @@ file = CAMERA.avi
 ```
 
 ##### Datapath VisionRGB-E1S
-```ìni
+```ini
 [track2]
 name = camera
 device = v4l2

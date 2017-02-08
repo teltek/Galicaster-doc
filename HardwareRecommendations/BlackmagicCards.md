@@ -5,7 +5,6 @@ Blackmagic cards
 Blackmagic cards are an option to capture high definition contents, both camera and laptop sources. Depending on the card installed and the input type you should be able to configure it following these instructions.
 
 ### Driver installation
-*Note: The project concerning gstreamer plugin for 10.10 has been discontinued and the plugin has been included in an official gstreamer package. We recommend upgrading to Ubuntu 12.04 in order to use Blackmagic cards.*
 
 Blackmagic has partial support for Linux. To install their driver you should download the latest one on:
 [http://www.blackmagicdesign.com/support/]
@@ -37,7 +36,7 @@ blackmagic 2082944 1
 ### Input configuration
 Possible inputs can be listed using:
 ```bash
-gst-inspect0.10 decklinksrc
+gst-inspect1.0 decklinksrc
 ```
 Depending on the card in use and the input select you should be able to select:
 
@@ -52,7 +51,7 @@ Depending on your card connectivity you should be able to choose between:
 Example input = sdi
 
 #### Mode
-Choose a value depending on format and framerate, these are listed in full by gst-inspect0.10 :
+Choose a value depending on format and framerate, these are listed in full by gst-inspect1.0 :
 * pal, ntsc
 * 720p50, 720p60
 * 1080i50, 1080i60

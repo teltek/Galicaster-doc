@@ -1,14 +1,14 @@
 Hardware recommendations
 ========================
 
-*This document is updated to the 2.0.0 release*
+*This page is updated to the 2.0.0 release*
 
 Base unit
 ---------
 
 Galicaster units are assembled with standard computer components and compatible capture devices and cards. For a good experience with Galicaster, we recommend a series of reference units, all of them sharing the common components indicated in this base unit.
 
-Three different references are proposed: an [entry level](#entry-level-unit-hd-webcam-based) unit (using a HD webcam), a [SD based unit](#sd-camera-and-dvi-framegrabber) and a [HD based unit](#hd-configuration-unit). Other combinations are possible that may fit your needs better. For instructions on how to assemble or purchase a unit, contact us through any of our multiple [communication channels](https://wiki.teltek.es/display/Galicaster/Community)
+Two different references are proposed: a [HD webcam unit](#hd-webcam-unit) and a [HD based unit](#hd-configuration-unit). Other combinations are possible that may fit your needs better. For instructions on how to assemble or purchase a unit, contact us through any of our multiple [communication channels](https://wiki.teltek.es/display/Galicaster/Community)
 
 
 CPU and RAM requirements
@@ -46,8 +46,8 @@ This section provides some examples of reference units, so that the interested r
 * Publication channels.
 
 
-Entry level unit - HD webcam based
-----------------------------------
+HD webcam unit
+--------------
 
 
 ![Entry level unit schema](images/HardwareRecommendations/g_webcam.png)
@@ -57,18 +57,6 @@ Entry level unit - HD webcam based
 | **Base unit**        | Intel i3 processor 4 GB RAM |                 |              |
 | **Camera**           | [Logitech c920](GalicasterConfiguration/DeviceModules/Devices/Logitech.md)             | 720p or 1080p   |              |
 | **VGA capture card** | [Datapath VisionRBG 1es](GalicasterConfiguration/DeviceModules/Devices/Datapath.md) | 24bit 1920x1080 x 32bit at 60Hz |	Accepts DVI single link and VGA |
-
-
-SD camera and DVI framegrabber
-------------------------------
-
-![SD based unit schema](images/HardwareRecommendations/studio_unit.png)
-
-| Component 	         | Device                      |	Format         | Observations |
-|----------------------|-----------------------------|-----------------|--------------|
-| **Base unit**        | Intel i3 processor 4 GB RAM |                 |              |
-|**Video capture card**| [Blackmagic Intensity Pro](GalicasterConfiguration/DeviceModules/Devices/Blackmagic.md) | 720p, 1080p, 1080i  | Sound embedded or analog |
-| **DVI capture card** | [Datapath VisionRBG 1es](GalicasterConfiguration/DeviceModules/Devices/Datapath.md) | 24bit 1920x1080 x 32bit at 60Hz |	Accepts DVI single link and VGA |
 
 
 
@@ -87,6 +75,3 @@ HD configuration unit
 |![Info](images/info.gif) Info |
 | :------ |
 | Audio can be captured from outside the video capture cards. Multiple audio sources can be recorded at once, but additional processing may be needed afterwards for a proper playback. |
-
-
-

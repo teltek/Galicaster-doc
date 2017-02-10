@@ -19,7 +19,7 @@ Some card models by different vendors and for different video recording formats,
 | Blackmagic cards | [Drivers & Info](../GalicasterConfiguration/DeviceModules/Devices/Blackmagic.md) |	Decklink | [blackmagic](../GalicasterConfiguration/DeviceModules/Blackmagic.md) |	BNC or breakout cable | Multiple | SD-SDI and HD-SDI | Yes (embedded)|
 
 #### Other capture devices
-**NOT TESTED WITH GALICASTER 2**
+**_Not tested yet_**
 
 | Device           |                | Model | GC Module | Connector | Signal | Format | Audio |
 |------------------|----------------|-------|-----------|-----------|--------|--------|-------|
@@ -41,7 +41,7 @@ Presentation is usually captured using specialized capture cards. Those cards ca
 
 
 #### Other VGA/DVI capture devices
-**NOT TESTED WITH GALICASTER 2**
+**_Not tested yet_**
 
 | Device                |                | Model | GC Module | Connector | Signal | Format | Audio | Support Level|
 |-----------------------|----------------|-------|-----------|-----------|--------|--------|-------|--------------|

@@ -2,7 +2,8 @@
 Hauppauge capture card
 ======================
 
-**NOT TESTED WITH GALICASTER 2**
+**_NOT TESTED WITH GALICASTER 2.X_**  
+*This page is updated to the 1.4.2 release*
 
 ### Drivers & information
 Hauppage cards models PVR-350 and PVR-250 (among others) are hardware capture cards. Cameras and other devices can connect to a Hauppauge card through a SVideo or RCA connector (last only PVR-350) and a Line Level audio input.

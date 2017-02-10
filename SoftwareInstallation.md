@@ -7,22 +7,22 @@ Installation process
 --------------------
 The installation process consists of 5 simple steps:
 
-* [Check the prerequisites.](#prerequisites)
-* [Install the software.](#installation)
-* [Setup config directory](#setup-config-directory)
-* [Install and configure drivers.](#install-drivers)( optional )
-* [Run Galicaster for the first time.](#run-galicaster-for-the-first-time)
+1. [Check the prerequisites.](#step-1-check-the-prerequisites)
+1. [Install the software.](#step-2-install-the-software)
+1. [Setup config directory](#step-3-setup-config-directory)
+1. [Install and configure drivers.](#step-4-install-and-configure-drivers-optional)( optional )
+1. [Run Galicaster for the first time.](#step-5-run-galicaster-for-the-first-time)
 
 After installing Galicaster, the next step is configuring it. You can take a look at the [Configuration Guide](GalicasterConfiguration.md).
 
-### Prerequisites
+### Step 1: Check the prerequisites
 Before starting the installation process, please make sure that:
 
 * Your unit meets Galicaster [Hardware Recommendations.](HardwareRecommendations.md)
 * You are running a Linux-based OS. The recommended distribution is Ubuntu 16.04. Make sure that the version chosen matches your system architecture (32 or 64 bits). If using the recommended Linux OS, check the following guide: [How to install Ubuntu.](SoftwareInstallation/InstallingUbuntu.md)
 * `galicaster` is the default user in the system.
 
-### Installation
+### Step 2: Install the sotware
  There are three options to install Galicaster:
  * [Install through our repository](#using-the-galicaster-repository). This is the recommended option for newcomers.
  * [Download and install DEB package.](#install-from-deb-package)
@@ -102,14 +102,14 @@ where `<path>` is the directory where you downloaded galicaster source code.
 | :------ |
 | For testing devices, specially webcams and V4L2-compatible devices, other software may be installed as well:<li>`guvcview (apt)`</li><li>`v4l-utils (apt)`</li> |
 
-### Setup config directory
+### Step 3: Setup config directory
 
 Galicaster will be installed in `/usr/share/galicaster` . The configuration files and profiles folder will be placed at `/etc/galicaster/`. In order to editIn order to get Galicaster ready to go, it would be useful running this command to put the right file owners:
 ```bash
 sudo chown -R galicaster:galicaster /etc/galicaster
 ```
 
-### Install drivers
+### Step 4: Install and configure drivers (Optional)
 Depending on the hardware you have chosen to run Galicaster with, you may need to install and configure its drivers.
 
 Check our [Compatible hardware](HardwareRecommendations/CompatibleHardware.md) and visit your device manufacturer's Driver & Info websites for information on how to install and configure the drivers.
@@ -118,7 +118,7 @@ Check our [Compatible hardware](HardwareRecommendations/CompatibleHardware.md) a
 |                    :------                                             |
 |   If you have purchased a Galicaster unit, the drivers are already installed. |
 
-### Run Galicaster for the first time
+### Step  5: Run Galicaster for the first time
 Once installed, Galicaster is ready to run. You may start Galicaster by:
 
 * Opening a terminal and executing `galicaster`.
@@ -126,5 +126,3 @@ Once installed, Galicaster is ready to run. You may start Galicaster by:
 You can also add Galicaster to your Unity sidebar, place a link at the Desktop or include it as a startup application.
 
 The default Input Profile consists of two mock video sources and a mock audio source. You can try recording from them, edit its metadata and check if the media is listed in the Media Manager.
-
-

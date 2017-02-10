@@ -1,7 +1,7 @@
 Revolabs wireless microphones
 =============================
 
-**THIS PAGE IS UNDER CONSTRUCTION**
+*This page is updated to the 2.0.0 release*
 
 ### Drivers & information
 Revolabs wireless microphones are devices well adapted to a classroom or conference environment. It consists in two pieces: a bay and the microphone.

@@ -22,7 +22,7 @@ Before starting the installation process, please make sure that:
 * You are running a Linux-based OS. The recommended distribution is Ubuntu 16.04. Make sure that the version chosen matches your system architecture (32 or 64 bits). If using the recommended Linux OS, check the following guide: [How to install Ubuntu.](SoftwareInstallation/InstallingUbuntu.md)
 * `galicaster` is the default user in the system.
 
-### Step 2: Install the sotware
+### Step 2: Install the software
  There are three options to install Galicaster:
  * [Install through our repository](#using-the-galicaster-repository). This is the recommended option for newcomers.
  * [Download and install DEB package.](#install-from-deb-package)
@@ -118,7 +118,7 @@ Check our [Compatible hardware](HardwareRecommendations/CompatibleHardware.md) a
 |                    :------                                             |
 |   If you have purchased a Galicaster unit, the drivers are already installed. |
 
-### Step  5: Run Galicaster for the first time
+### Step 5: Run Galicaster for the first time
 Once installed, Galicaster is ready to run. You may start Galicaster by:
 
 * Opening a terminal and executing `galicaster`.

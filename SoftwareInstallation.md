@@ -24,7 +24,7 @@ Before starting the installation process, please make sure that:
 
 |![forbbiden](images/forbidden.gif) Important                                               |
 |                    :------                                             |
-|   Due a [bug in Gstreamer v4l2 library](https://github.com/teltek/Galicaster/issues/298) it's neccesary the last version of gstreamer code to run Galicaster. This version is not found in Ubuntu repository yet. Because of this, we patched the package. See the install step for more info.    |
+|   Due to a [bug in Gstreamer v4l2 library](https://github.com/teltek/Galicaster/issues/298), present in the 1.8.3 version, it is necessary to install our patched version from our repositories, or to compile the latest GStreamer 1.10.3 version manually. We have included the installation of the patched version in our installation instructions. |
 
 
 ### Step 2: Install the software
@@ -57,10 +57,6 @@ sudo apt-get install gstreamer1.0-plugins-good #Required due to gstreamer error
 sudo apt-get install galicaster
 ```
 
-|![forbbiden](images/forbidden.gif) Important                                               |
-|                    :------                                             |
-|   Gstreamer package will be downloaded and installed automatically     |
-
 #### Install from .deb package
 The latest Galicaster version can be downloaded [here](http://webfiler.teltek.es/webfiler/galicaster/galicaster_2.0.0_all.deb), as a DEB package. Older versions and information about the new features that each of them included are available on the [Release Archive.](SoftwareInstallation/ReleaseArchive.md)
 
@@ -76,9 +72,9 @@ Alternatively, you may also run the following command on a shell (needs root per
 dpkg --install <galicaster_2.0.0_all.deb>
 ```
 
-|![forbbiden](images/forbidden.gif) Important                                               |
+|![Info](images/info.gif) Important                                      |
 |                    :------                                             |
-|   Download gstreamer package [here]() and install it: (**Requires gstreamer 1.8.3**) <br> `dpkg -i gstreamer1.0-plugins-good_1.8.3-1ubuntu0.3teltek0.1_amd64.deb`     |
+|   The patched GStreamer package can be found [here](). The package requires GStreamer 1.8.3. Once downloaded, install it with: <br> `dpkg -i gstreamer1.0-plugins-good_1.8.3-1ubuntu0.3teltek0.1_amd64.deb` |
 
 You may remove Galicaster from your system using the Ubuntu Software Center or the following command on a terminal:
 ```bash
@@ -106,9 +102,6 @@ gstreamer1.0-plugins-base gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gst
 gir1.2-gstreamer-1.0 gir1.2-gtk-3.0 gir1.2-gst-plugins-base-1.0
 onboard onboard-data
 ```
-|![forbbiden](images/forbidden.gif) Important                                               |
-|                    :------                                             |
-|   Download gstreamer package [here]() and install it: (**Requires gstreamer 1.8.3**) <br> `dpkg -i gstreamer1.0-plugins-good_1.8.3-1ubuntu0.3teltek0.1_amd64.deb`     |
 
 ###### Adding a launcher
 You can easilly add a launcher to a manual installation by creating a file at `/usr/local/bin/` containing the following command:

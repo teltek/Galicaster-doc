@@ -97,10 +97,11 @@ If a DEB package installation is also present, conf.ini and the profiles will be
 
 Galicaster depends on the following modules and libraries:
 ```
-python python-pip python-setuptools python-pycurl python-bottle python-glade2 python-icalendar python-gi python-dbus python-simplejson
-gstreamer1.0-plugins-base gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-plugins-good gstreamer1.0-alsa gstreamer1.0-libav
+python python-pip python-setuptools python-dev python-pycurl python-bottle python-glade2 python-icalendar python-gi python-dbus python-simplejson python-ldap python-serial
+gstreamer1.0-plugins-base gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-plugins-good gstreamer1.0-alsa gstreamer1.0-libav gstreamer1.0-pulseaudio
 gir1.2-gstreamer-1.0 gir1.2-gtk-3.0 gir1.2-gst-plugins-base-1.0
 onboard onboard-data
+libsasl2-dev libldap2-dev libssl-dev
 ```
 
 ###### Adding a launcher

@@ -2,8 +2,8 @@
 Firewire device module
 ======================
 
-**NOT TESTED WITH GALICASTER 2**
-**THIS PAGE IS UNDER CONSTRUCTION**
+**_NOT TESTED WITH GALICASTER 2.x_**  
+*This page is updated to the 1.4.2 release*
 
 The Firewire device module is meant to give compatibility for Firewire video cards working with DV or miniDV professional cameras.
 

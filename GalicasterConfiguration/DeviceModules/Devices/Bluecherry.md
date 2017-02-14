@@ -1,7 +1,9 @@
 Bluecherry PV and BC cards
 ==========================
 
-**NOT TESTED WITH GALICASTER 2**
+**_NOT TESTED WITH GALICASTER 2.X_**  
+*This page is updated to the 1.4.2 release*
+
 
 ### Drivers & information
 Bluecherry cards are supported by Linux, both SD capturing PV cards and HW encoding BC PCIe. PV cards are SD capturing cards with multiple inputs (tipically 4) via BNC connectors. Some models also supports audio capturing.

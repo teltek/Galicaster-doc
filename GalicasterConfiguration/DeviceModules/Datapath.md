@@ -2,7 +2,7 @@
 Datapath device module
 ======================
 
-**THIS PAGE IS UNDER CONSTRUCTION**
+*This page is updated to the 2.0.0 release*
 
 The Datapath device module is a modificiation of the [V4L2 module](v4l2.md), the most generic device module on Galicaster. For more detailed information check out each device page or contact the [Community spaces](https://wiki.teltek.es/display/Galicaster/Community).
 

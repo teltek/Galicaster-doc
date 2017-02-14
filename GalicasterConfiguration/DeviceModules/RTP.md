@@ -2,8 +2,8 @@
 RTP device module
 =================
 
-**NOT TESTED WITH GALICASTER 2**
-**THIS PAGE IS UNDER CONSTRUCTION**
+**_NOT TESTED WITH GALICASTER 2.X_**  
+*This page is updated to the 1.4.2 release*
 
 The Rtp device module is focused on Network-based Cameras with hardware encoding. This module records the RTP stream directly, whether it is is encoded on MPEG4 or H264, and decodes it for visualization. It can record streams with our without audio.
 

@@ -1,6 +1,8 @@
 Blackmagic capture cards
 ========================
 
+*This page is updated to the 2.0.0 release*
+
 ### Drivers & information
 Blackmagic Design provides linux support for their Intensity, Decklink and Multibridge series.
 Blackmagic capture cards support multiple formats - through adaptors - including HD-SDI and HDMI. Check the table below for more information on connectors and signal standards available.

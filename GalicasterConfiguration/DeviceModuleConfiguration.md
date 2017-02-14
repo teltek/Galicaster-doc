@@ -15,10 +15,10 @@ This section will focus on the device module configuration. Every device or capt
 
 * [V4l2 device module](DeviceModules/V4L2.md) (Datapath, Epiphan and other devices)
 * [Blackmagic device module](DeviceModules/Blackmagic.md)
-* [Hauppauge device module](DeviceModules/Hauppauge.md)
-* [Firewire device module](DeviceModules/Firewire.md)
-* [RTP device module](DeviceModules/RTP.md)
 * [Pulse device module](DeviceModules/Pulse.md)
+* [Hauppauge device module](DeviceModules/Hauppauge.md) (*Not tested with Galicaster 2*)
+* [Firewire device module](DeviceModules/Firewire.md) (*Not tested with Galicaster 2*)
+* [RTP device module](DeviceModules/RTP.md) (*Not tested with Galicaster 2*)
 
 ### Common parameters
 The device module configuration sets the parameters necessary to capture, preview and process the incoming data from a device or capture card. Every device module has 5 common parameters:

@@ -2,8 +2,8 @@
 Epiphan device module
 =====================
 
-**NOT TESTED WITH GALICASTER 2**
-**THIS PAGE IS UNDER CONSTRUCTION**
+**_NOT TESTED WITH GALICASTER 2.X_**  
+*This page is updated to the 1.4.2 release*
 
 Epiphan framegrabbers are able to record VGA, DVI and HDMI inputs. They are meant to record from an computer, laptop, projectors or other devices using RGB format.
 

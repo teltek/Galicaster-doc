@@ -46,7 +46,7 @@ Presentation is usually captured using specialized capture cards. Those cards ca
 | Device                |                | Model | GC Module | Connector | Signal | Format | Audio | Support Level|
 |-----------------------|----------------|-------|-----------|-----------|--------|--------|-------|--------------|
 | Epiphan framegrabbers | [Drivers & Info](../GalicasterConfiguration/DeviceModules/Devices/Epiphan.md) | DVI2PCIe VGA2USB DVI2USB | [v4l2](../GalicasterConfiguration/DeviceModules/V4L2.md) | VGA or DVI | RGBHV |	upto QVGA | Not yet | Low |
-
+| NCast | [Drivers & Info](../GalicasterConfiguration/DeviceModules/Devices/NCast.md) | Digitizer4 | [v4l2](../GalicasterConfiguration/DeviceModules/V4L2.md) | VGA | RGBHV | upto QVGA | No | None |
 
 ### Audio capture devices
 Multiple devices may be used to capture audio, which can connect to the computer through the on-board sound card, a dedicated sound card or the USB ports. A external audio mixer is a good complement for audio capture, allowing multiple audio sources. Independent audio capture devices are recorded through the Pulse Audio system, thus sharing a common configuration.

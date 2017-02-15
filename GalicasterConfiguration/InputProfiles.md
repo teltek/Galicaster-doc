@@ -38,11 +38,11 @@ There are several types of device modules:
 
 * Video plugin
   * [V4L2](DeviceModules/V4L2.md)
-  * [Hauppauge](DeviceModules/Hauppauge.md) - audio available
-  * [Epiphan](DeviceModules/Epiphan.md)
   * [Blackmagic](DeviceModules/Blackmagic.md) - audio available
-  * [Firewire](DeviceModules/Firewire.md) - audio available on DV
-  * [RTPvideo](DeviceModules/RTPvideo.md)
+  * [Epiphan](DeviceModules/Epiphan.md) (*Not tested with Galicaster 2*)
+  * [Firewire](DeviceModules/Firewire.md) - audio available on DV (*Not tested with Galicaster 2*)
+  * [RTPvideo](DeviceModules/RTPvideo.md) (*Not tested with Galicaster 2*)
+  * [Hauppauge](DeviceModules/Hauppauge.md) - audio available (*Not tested with Galicaster 2*)
 * Audio plugin
   * [Pulse](DeviceModules/Pulse.md)
 * [Mock plugins](DeviceModules/Mock.md) - test plugins simulating a real device

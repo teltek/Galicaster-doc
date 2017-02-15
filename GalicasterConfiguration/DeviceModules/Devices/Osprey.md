@@ -1,7 +1,8 @@
 Osprey Cards
 ============
 
-**NOT TESTED WITH GALICASTER 2**
+**_NOT TESTED WITH GALICASTER 2.X_**  
+*This page is updated to the 1.4.2 release*
 
 ### Drivers & information
 Osprey cards are analog video captures on both PAL and NTSC (including panoramic). They work with composite a S-Video inputs and balanced audio input.

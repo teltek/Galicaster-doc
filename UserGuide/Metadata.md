@@ -1,6 +1,8 @@
 Metadata
 ========
 
+*This page is updated to the 2.0.0 release*
+
 Metadata is the information related to the audivisual content on a recording. The metadata and content together forms a Mediapackage. In the Galicaster repository each folder represents a Mediapackage. Metadata is stored permanently on XML files. **These files should not be edited directly**.
 
 The Galicaster metadata scheme is based on the [Matterhorn Metadata Scheme](https://opencast.jira.com/wiki/pages/viewpage.action?pageId=14614561), and it is based on the Dublin Core initiative.

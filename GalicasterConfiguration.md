@@ -134,8 +134,10 @@ Different conflict resolution for manual versus scheduled recordings.
 * manual: If active, the user can start manual recordings
 * stop: If active and manual unactive, a recording can be stopped.
 * start: If activa and manual unactive, a recording can be started.
-* pause: whether any recording can be paused.
-* overlap : wheter a manual recording can or cannot cancel a scheduled recording.
+* pause: Controls whether the recording can be paused/resumed from the user interface. This is independent from the value of the "manual" parameter.
+* overlap : If active, the manual recordings take priority over the scheduled ones, and vice-versa. This means: If, when a scheduled recording has to start, there is another (manual) one running:
+  * If "overlap" is True, the scheduled recording does not start.
+  * If "overlap" is False, the current recording stops, and the scheduled one starts.
 
 ```ini
 [allows]

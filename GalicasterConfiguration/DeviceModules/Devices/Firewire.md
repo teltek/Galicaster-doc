@@ -1,8 +1,8 @@
 Firewire-based professional cameras
 ===================================
 
-**NOT TESTED WITH GALICASTER 2**  
-**THIS PAGE IS UNDER CONSTRUCTION**
+**_NOT TESTED WITH GALICASTER 2.X_**  
+*This page is updated to the 1.4.2 release*
 
 ### Drivers & information
 Firewire-based professional cameras recording in Digital Video (DV) are compatible with Galicaster. Cameras with a DV or miniDV output may also be used through a Linux-compatible firewire interface.

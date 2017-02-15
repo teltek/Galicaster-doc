@@ -5,24 +5,29 @@ Software installation
 
 Installation process
 --------------------
-The installation process consists of 4 simple steps:
+The installation process consists of 5 simple steps:
 
-* [Check the prerequisites.](#prerequisites)
-* [Install the software.](#installation)
-* [Before run Galicaster for the first time](#before-run-galicaster-for-the-first-time)
-* [Run Galicaster for the first time.](#run-galicaster-for-the-first-time)
-* [Install and configure drivers.](#install-drivers)
+1. [Check the prerequisites.](#step-1-check-the-prerequisites)
+1. [Install the software.](#step-2-install-the-software)
+1. [Setup config directory](#step-3-setup-config-directory)
+1. [Install and configure drivers.](#step-4-install-and-configure-drivers-optional)( optional )
+1. [Run Galicaster for the first time.](#step-5-run-galicaster-for-the-first-time)
 
 After installing Galicaster, the next step is configuring it. You can take a look at the [Configuration Guide](GalicasterConfiguration.md).
 
-### Prerequisites
+### Step 1: Check the prerequisites
 Before starting the installation process, please make sure that:
 
 * Your unit meets Galicaster [Hardware Recommendations.](HardwareRecommendations.md)
 * You are running a Linux-based OS. The recommended distribution is Ubuntu 16.04. Make sure that the version chosen matches your system architecture (32 or 64 bits). If using the recommended Linux OS, check the following guide: [How to install Ubuntu.](SoftwareInstallation/InstallingUbuntu.md)
 * `galicaster` is the default user in the system.
 
-### Installation
+|![forbbiden](images/forbidden.gif) Important                                               |
+|                    :------                                             |
+|   Due to a [bug in Gstreamer v4l2 library](https://github.com/teltek/Galicaster/issues/298), present in the 1.8.3 version, it is necessary to install our patched version from our repositories, or to compile the latest GStreamer 1.10.3 version manually. We have included the installation of the patched version in our installation instructions. |
+
+
+### Step 2: Install the software
  There are three options to install Galicaster:
  * [Install through our repository](#using-the-galicaster-repository). This is the recommended option for newcomers.
  * [Download and install DEB package.](#install-from-deb-package)
@@ -42,11 +47,13 @@ Installation instructions using the galicaster repository are as follows:
 echo "deb https://packages.galicaster.org/apt xenial main" | sudo tee --append /etc/apt/sources.list.d/galicaster.list
 wget -O - https://packages.galicaster.org/apt/galicaster.gpg.key  | sudo apt-key add -
 sudo apt-get update
+sudo apt-get install gstreamer1.0-plugins-good #Required due to gstreamer error
 sudo apt-get install galicaster
 ```
-If you are **upgrading from a previous 2.0 version**, you just need to execute
+If you are **upgrading from a previous 2.0-RCX version**, you just need to execute
 ```bash
 sudo apt-get update
+sudo apt-get install gstreamer1.0-plugins-good #Required due to gstreamer error
 sudo apt-get install galicaster
 ```
 
@@ -64,9 +71,20 @@ Alternatively, you may also run the following command on a shell (needs root per
 ```bash
 dpkg --install <galicaster_2.0.0_all.deb>
 ```
+
+|![Info](images/info.gif) Important                                      |
+|                    :------                                             |
+|   The patched GStreamer package can be found [here](). The package requires GStreamer 1.8.3. Once downloaded, install it with: <br> `dpkg -i gstreamer1.0-plugins-good_1.8.3-1ubuntu0.3teltek0.1_amd64.deb` |
+
 You may remove Galicaster from your system using the Ubuntu Software Center or the following command on a terminal:
 ```bash
 dpkg --remove galicaster
+```
+The files at `/etc/galicaster` will not be removed when removing Galicaster, thus preserving your configuration. If you also want to delete them too, run this:
+
+```bash
+sudo rm /etc/galicaster/profiles/*.*
+sudo dpkg --purge galicaster
 ```
 
 #### Source code
@@ -79,10 +97,11 @@ If a DEB package installation is also present, conf.ini and the profiles will be
 
 Galicaster depends on the following modules and libraries:
 ```
-python python-pip python-setuptools python-pycurl python-bottle python-glade2 python-icalendar python-gi python-dbus python-simplejson
-gstreamer1.0-plugins-base gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-plugins-good gstreamer1.0-alsa gstreamer1.0-libav
+python python-pip python-setuptools python-dev python-pycurl python-bottle python-glade2 python-icalendar python-gi python-dbus python-simplejson python-ldap python-serial
+gstreamer1.0-plugins-base gstreamer1.0-plugins-base-apps gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-plugins-good gstreamer1.0-alsa gstreamer1.0-libav gstreamer1.0-pulseaudio
 gir1.2-gstreamer-1.0 gir1.2-gtk-3.0 gir1.2-gst-plugins-base-1.0
 onboard onboard-data
+libsasl2-dev libldap2-dev libssl-dev
 ```
 
 ###### Adding a launcher
@@ -92,28 +111,27 @@ python <path>/run_galicaster.py
 ```
 where `<path>` is the directory where you downloaded galicaster source code.
 
-### Before run Galicaster for the first time
+|![Info](images/info.gif) Info |
+| :------ |
+| For testing devices, specially webcams and V4L2-compatible devices, other software may be installed as well:<li>`guvcview (apt)`</li><li>`v4l-utils (apt)`</li> |
 
-Galicaster will be installed in `/usr/share/galicaster` . The configuration files and profiles folder will be placed at `/etc/galicaster/`. In order to get Galicaster ready to go, it would be useful running this command to put the right file owners:
+### Step 3: Setup config directory
+
+Galicaster will be installed in `/usr/share/galicaster` . The configuration files and profiles folder will be placed at `/etc/galicaster/`. In order to editIn order to get Galicaster ready to go, it would be useful running this command to put the right file owners:
 ```bash
 sudo chown -R galicaster:galicaster /etc/galicaster
 ```
-New profiles can be added in `/etc/galicaster/profiles`. For more information about them, refer to the [Input Profiles section](GalicasterConfiguration/InputProfiles.md).
 
-The files at `/etc/galicaster` will not be removed when removig Galicaster, thus preserving your configuration. If you also want to delete them too, run this:
+### Step 4: Install and configure drivers (Optional)
+Depending on the hardware you have chosen to run Galicaster with, you may need to install and configure its drivers.
 
-```bash
-sudo rm /etc/galicaster/profiles/*.*
-sudo dpkg --purge galicaster
-```
--------------------------------------------------------------------
+Check our [Compatible hardware](HardwareRecommendations/CompatibleHardware.md) and visit your device manufacturer's Driver & Info websites for information on how to install and configure the drivers.
 
-For testing devices, specially webcams and V4L2-compatible devices, other software may be installed as well:
+|![Info](images/info.gif) Info                                                |
+|                    :------                                             |
+|   If you have purchased a Galicaster unit, the drivers are already installed. |
 
-* `guvcview (apt)`
-* `v4l-utils (apt)`
-
-### Run Galicaster for the first time
+### Step 5: Run Galicaster for the first time
 Once installed, Galicaster is ready to run. You may start Galicaster by:
 
 * Opening a terminal and executing `galicaster`.
@@ -121,18 +139,3 @@ Once installed, Galicaster is ready to run. You may start Galicaster by:
 You can also add Galicaster to your Unity sidebar, place a link at the Desktop or include it as a startup application.
 
 The default Input Profile consists of two mock video sources and a mock audio source. You can try recording from them, edit its metadata and check if the media is listed in the Media Manager.
-
-
-### Install drivers
-Depending on the hardware you have chosen to run Galicaster with, you may need to install and configure its drivers.
-
-Check our [Compatible hardware](HardwareRecommendations/CompatibleHardware.md) and visit your device manufacturer's Driver & Info websites for information on how to install and configure the drivers.
-
-|![Info](images/info.gif) Info                                                |
-|                    :------                                             |
-|   If you have purcharsed a Galicaster unit, the drivers are already installed. |
-
-<!--
-!!! Info:
-If you have purcharsed a Galicaster unit, the drivers are already installed.
--->

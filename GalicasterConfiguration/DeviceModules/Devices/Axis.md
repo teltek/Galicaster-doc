@@ -1,7 +1,7 @@
 Axis Network Cameras
 ====================
-**NOT TESTED WITH GALICASTER 2**  
-**THIS PAGE IS UNDER CONSTRUCTION**
+**_NOT TESTED WITH GALICASTER 2.X_**  
+*This page is updated to the 1.4.2 release*
 
 ### Drivers & information
 Based on open IP standards, Axis network cameras connect to any kind of IP network, including the Internet, and enable remote viewing and recording from anywhere.

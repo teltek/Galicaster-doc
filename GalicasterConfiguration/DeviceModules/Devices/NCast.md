@@ -61,7 +61,7 @@ echo "set_window 0% 0% 100% 100%" > /proc/digitizer
 
 Please check the README file in the driver's package for further information and the full list of available parameters.
 
-Module configuration
+### Module configuration
 #### Admitted values
 
 | Property name | Description | Accepted values | Default |

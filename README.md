@@ -1,4 +1,4 @@
-Galicaster Documentation Project
+Galicaster 2 Documentation Project
 ==================================
 
 *This page is updated to the 2.0.0 release*

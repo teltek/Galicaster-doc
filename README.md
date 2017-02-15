@@ -18,6 +18,7 @@ Documentation:
   * [Media Manager](UserGuide/MediaManager.md)
   * [Metadata](UserGuide/Metadata.md)
   * [Operations](UserGuide/Operations.md)
+5. [Developer Guide](DeveloperGuide.md)
 
 Galicaster Site:
 ------------------

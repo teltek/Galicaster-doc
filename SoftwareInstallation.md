@@ -30,7 +30,6 @@ Before starting the installation process, please make sure that:
 ### Step 2: Install the software
  There are three options to install Galicaster:
  * [Install through our repository](#using-the-galicaster-repository). This is the recommended option for newcomers.
- * [Download and install DEB package.](#install-from-deb-package)
  * [Clone the source code and install manually.](#source-code)
 
 
@@ -57,41 +56,11 @@ sudo apt-get install gstreamer1.0-plugins-good #Required due to gstreamer error
 sudo apt-get install galicaster
 ```
 
-#### Install from .deb package
-The latest Galicaster version can be downloaded [here](http://webfiler.teltek.es/webfiler/galicaster/galicaster_2.0.0_all.deb), as a DEB package. Older versions and information about the new features that each of them included are available on the [Release Archive.](SoftwareInstallation/ReleaseArchive.md)
-
-Once downloaded, the DEB package can be installed through the Ubuntu Software Center by simply *double-clicking* on it. Both the Galicaster software and the dependencies will be installed.
-
-|![Info](images/info.gif) Info                                                |
-|                    :------                                             |
-|   The Ubuntu Software Center will show a warning. You can safely ignore it and continue the installation. This is due to Galicaster not strictly adhering to the Ubuntu .deb standards. |
-
-Alternatively, you may also run the following command on a shell (needs root permissions):
-
-```bash
-dpkg --install <galicaster_2.0.0_all.deb>
-```
-
-|![Info](images/info.gif) Important                                      |
-|                    :------                                             |
-|   The patched GStreamer package can be found [here](). The package requires GStreamer 1.8.3. Once downloaded, install it with: <br> `dpkg -i gstreamer1.0-plugins-good_1.8.3-1ubuntu0.3teltek0.1_amd64.deb` |
-
-You may remove Galicaster from your system using the Ubuntu Software Center or the following command on a terminal:
-```bash
-dpkg --remove galicaster
-```
-The files at `/etc/galicaster` will not be removed when removing Galicaster, thus preserving your configuration. If you also want to delete them too, run this:
-
-```bash
-sudo rm /etc/galicaster/profiles/*.*
-sudo dpkg --purge galicaster
-```
-
 #### Source code
 As an alternative, you can install Galicaster from the source code. Stable versions are available on the [Release Archive.](SoftwareInstallation/ReleaseArchive.md). Stable and development versions, as well as development information, are available in our [Git repository](http://github.com/teltek/Galicaster).
 
 Installing a source code version requires installing its [dependencies](#dependencies) manually.
-If a DEB package installation is also present, conf.ini and the profiles will be read from the folder /etc/galicaster. Otherwise, the ones in the installation folder will be used.
+If a repository installation is also present, conf.ini and the profiles will be read from the folder /etc/galicaster. Otherwise, the ones in the installation folder will be used.
 
 ##### Dependencies
 

@@ -23,7 +23,7 @@ Before starting the installation process, please make sure that:
 * `galicaster` is the default user in the system.
 
 ### Installation
- There are three options to install Galicaster:
+ There are two options to install Galicaster:
  * [Install through our repository](#using-the-galicaster-repository). This is the recommended option for newcomers.
  * [Clone the source code and install manually.](#source-code)
 
@@ -100,5 +100,3 @@ Once installed, Galicaster is ready to run. You may start Galicaster by:
 You can also add Galicaster to your Unity sidebar, place a link at the Desktop or include it as a startup application.
 
 The default Input Profile consists of two mock video sources and a mock audio source. You can try recording from them, edit its metadata and check if the media is listed in the Media Manager.
-
-

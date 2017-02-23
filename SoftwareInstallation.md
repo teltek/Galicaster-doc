@@ -28,7 +28,7 @@ Before starting the installation process, please make sure that:
 
 
 ### Step 2: Install the software
- There are three options to install Galicaster:
+ There are two options to install Galicaster:
  * [Install through our repository](#using-the-galicaster-repository). This is the recommended option for newcomers.
  * [Clone the source code and install manually.](#source-code)
 

@@ -19,6 +19,7 @@ Documentation:
   * [Metadata](UserGuide/Metadata.md)
   * [Operations](UserGuide/Operations.md)
 5. [Developer Guide](DeveloperGuide.md)
+6. [External Plugins](ExternalPluginsList.md)
 
 Galicaster Site:
 ------------------

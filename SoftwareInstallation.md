@@ -46,13 +46,13 @@ Installation instructions using the galicaster repository are as follows:
 echo "deb https://packages.galicaster.org/apt xenial main" | sudo tee --append /etc/apt/sources.list.d/galicaster.list
 wget -O - https://packages.galicaster.org/apt/galicaster.gpg.key  | sudo apt-key add -
 sudo apt-get update
-sudo apt-get install gstreamer1.0-plugins-good #Required due to gstreamer error
+sudo apt-get install gstreamer1.0-plugins-good gir1.2-gstreamer-1.0 #Required to solve # and #29
 sudo apt-get install galicaster
 ```
 If you are **upgrading from a previous 2.0-RCX version**, you just need to execute
 ```bash
 sudo apt-get update
-sudo apt-get install gstreamer1.0-plugins-good #Required due to gstreamer error
+sudo apt-get install gir1.2-gstreamer-1.0 gstreamer1.0-plugins-good #Required to solve #298 and #29
 sudo apt-get install galicaster
 ```
 

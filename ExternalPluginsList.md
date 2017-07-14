@@ -1,6 +1,6 @@
 External Plugins List
 ==========================
-*This page is updated to the 2.0.0 version*
+*This page is updated to the 2.0.1 version*
 
 List of external plugins
 ------------------------------

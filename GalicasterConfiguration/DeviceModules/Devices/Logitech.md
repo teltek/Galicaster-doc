@@ -2,7 +2,7 @@
 Logitech webcams
 ================
 
-*This page is updated to the 2.0.0 release*
+*This page is updated to the 2.0.1 release*
 
 ### Drivers & information
 Logitech HD Webcams are compatible with Galicaster. They provide HD and Full HD videos. Other Logitech UVC webcams will work but most of them don't provide a fair resolution-framerate ratio.

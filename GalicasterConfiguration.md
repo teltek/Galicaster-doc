@@ -1,7 +1,7 @@
 Galicaster configuration
 ========================
 
-*This page is updated to the 2.0.0 release*
+*This page is updated to the 2.0.1 release*
 
 Configuring Galicaster involves:
 

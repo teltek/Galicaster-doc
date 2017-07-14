@@ -1,7 +1,7 @@
 Upgrading from older versions
 =============================
 
-### From 2.0-RCX to 2.0
+### From a previous 2.0
 
 You just need to execute
 ```bash

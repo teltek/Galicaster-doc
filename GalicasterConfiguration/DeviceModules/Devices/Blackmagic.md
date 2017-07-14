@@ -1,7 +1,7 @@
 Blackmagic capture cards
 ========================
 
-*This page is updated to the 2.0.0 release*
+*This page is updated to the 2.0.1 release*
 
 ### Drivers & information
 Blackmagic Design provides linux support for their Intensity, Decklink and Multibridge series.

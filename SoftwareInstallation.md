@@ -1,7 +1,7 @@
 Software installation
 =====================
 
-*This page is updated to the 2.0.0 release*
+*This page is updated to the 2.0.1 release*
 
 Installation process
 --------------------
@@ -49,7 +49,7 @@ sudo apt-get update
 sudo apt-get install gstreamer1.0-plugins-good gir1.2-gstreamer-1.0 #Required to solve #298 and #29
 sudo apt-get install galicaster
 ```
-If you are **upgrading from a previous 2.0-RCX version**, you just need to execute
+If you are **upgrading from a previous 2.0 version**, you just need to execute
 ```bash
 sudo apt-get update
 sudo apt-get install gir1.2-gstreamer-1.0 gstreamer1.0-plugins-good #Required to solve #298 and #29

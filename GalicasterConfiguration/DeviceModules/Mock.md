@@ -2,7 +2,7 @@
 Test device modules
 ==================
 
-*This page is updated to the 2.0.0 release*
+*This page is updated to the 2.0.1 release*
 
 For testing purposes, we've developed two mock sources, one for video and one for audio.
 

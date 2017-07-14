@@ -2,7 +2,7 @@
 User Guide - Media Manager
 ==========================
 
-*This page is updated to the 2.0.0 release*
+*This page is updated to the 2.0.1 release*
 
 The Media Manager is the area where recordings are browsed. You can do operations on all the finished recordings from here. Two of the most important features are [Metadata](Metadata.md) and [Operations](Operations.md). We will take a brief look to all its features.
 

@@ -1,7 +1,7 @@
 Operations
 ==========
 
-*This page is updated to the 2.0.0 release*
+*This page is updated to the 2.0.1 release*
 
 Galicaster is able to perform certain procedures over mediapackages. This procedures are called Operations.
 

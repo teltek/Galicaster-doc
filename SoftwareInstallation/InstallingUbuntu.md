@@ -17,7 +17,7 @@ Installing Ubuntu
 sudo apt remove  xserver-xorg-core-hwe-16.04
 sudo apt install ubuntu-desktop xorg xserver-xorg-core #Fix #543
 ```
-4. Due to a incompatibility between the kernel in Ubuntu 16.04.2 and the drivers for Blackmagic and Datapath cards it's necessary to install and use the kernel 4.4.0-81.
+4. Due to a incompatibility between the kernel in Ubuntu 16.04.2 and our version of the drivers for Blackmagic and Datapath cards it's required to install the 4.4.0-81 kernel.
 ```bash
 apt-get -y --force-yes install linux-headers-4.4.0-81 linux-headers-4.4.0-81-generic linux-image-4.4.0-81-generic linux-image-extra-4.4.0-81-generic
 apt-get -y --force-yes remove linux-headers-4.8.* linux-image-4.8.*

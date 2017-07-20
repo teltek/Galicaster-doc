@@ -1,7 +1,7 @@
 Installing Ubuntu
 =================
 
-*This document is updated to the 2.0.0 release*
+*This document is updated to the 2.0.1 release*
 
 1. Download Ubuntu 16.04.2  
 
@@ -17,5 +17,12 @@ Installing Ubuntu
 sudo apt remove  xserver-xorg-core-hwe-16.04
 sudo apt install ubuntu-desktop xorg xserver-xorg-core #Fix #543
 ```
+4. Due to a incompatibility between the kernel in Ubuntu 16.04.2 and our version of the drivers for Blackmagic and Datapath cards it's required to install the 4.4.0-81 kernel.
+```bash
+apt-get -y --force-yes install linux-headers-4.4.0-81 linux-headers-4.4.0-81-generic linux-image-4.4.0-81-generic linux-image-extra-4.4.0-81-generic
+apt-get -y --force-yes remove linux-headers-4.8.* linux-image-4.8.*
+```
 
-4. Now you can [install Galicaster](../SoftwareInstallation.md)
+5. Reboot the computer
+
+6. Now you can [install Galicaster](../SoftwareInstallation.md)

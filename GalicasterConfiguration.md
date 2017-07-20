@@ -284,7 +284,7 @@ This is a summary of all the parameters related to the Opencast configuration in
 * **visible_tracks**: Whether or not the tracks in Galicaster are visible.(True|**False**)
   * If active, the available tracks are reported to Opencast, so that the user can choose which ones will be recorded.
   * If not, Galicaster will record all the tracks in the profile active at the moment the scheduled recording starts.
-    * If this option is active, and the track names in the configuration file are changed for some reason, the previously scheduled recordings may fail because the track names in such recordings will not much the current track names. Therefore, all the existing recordings should be scheduled again if such a change is made.
+    * If this option is active, and the track names in the configuration file are changed for some reason, the previously scheduled recordings may fail because the track names in such recordings will not match the current track names. Therefore, all the existing recordings should be scheduled again if such a change is made.
 * **multiple-ingest**: (new in Galicaster 1.3.1): Whether ingestion is made through the admin server or through the less loaded available ingest server. When the option is active, Galicaster looks for the less loaded active sever (not in mantenaince nor offline), always avoiding the admin server. True | **False** (default value) .
 * **address**: IP to connect with Opencast.
 * **connect_timeout**: Connection timeout for curl in seconds. Default: 30

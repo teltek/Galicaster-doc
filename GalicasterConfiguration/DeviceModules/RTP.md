@@ -24,7 +24,7 @@ Rtp has been tested with several [Axis Network cameras](Devices/Axis.md) of both
 * `cameratype`: Whether the device streams a MPEG4 or H264 stream. (`mpeg4`|`h264`)
 * `audio`: Whether the audio is recorded or not. (`True`|`False`)
 * `audiotype`: Audio format to capture, by default mp3. (`acc`|`mp3`)
-* `videomux`: Muxer to encapsulate the stream. FLV by default, other options include `mpegtsmux`, `avimux`, `mp4mux`.
+* `muxer`: Muxer to encapsulate the stream. FLV by default, other options include `mpegtsmux`, `avimux`, `mp4mux`.
 
 ### Examples
 ##### MPEG4 without audio
@@ -37,7 +37,7 @@ file = CAMERA.mpeg.ts
 flavor = presenter
 cameratype = mpeg4
 audio = False
-videomux = mpegtsmux
+muxer = mpegtsmux
 ```
 
 ##### H264 with audio

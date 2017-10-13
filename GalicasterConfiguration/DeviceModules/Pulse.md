@@ -32,6 +32,8 @@ Admitted values:
 * `vumeter`: Activates data sending to the program's vumeter. (`True`|`False`) Only one device should be activated.
 * `amplification`: Gstreamer amplification value: < 1 decreases and > 1 increases volume. Values between 1 and 2 are commonly used.
 * `player`: Whether the audio will be previewed (played).
+* `delay`: Audio delay in seconds
+* `buffer_time`: Size of audio buffer in microseconds.
 
 To list PulseAudio devices run:
 ```bash

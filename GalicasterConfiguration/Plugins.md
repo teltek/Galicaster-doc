@@ -359,6 +359,13 @@ ldapou = users system
 ldapdc =
 ldapusertype = cn
 enable_quit_button = false
+
+ldap_advanced_bind = False
+search_dn = cn=admin,dc=example,dc=com
+search_password = admin
+base_dn = dc=example,dc=com
+group = cn=Users,dc=example,dc=com
+filter = (&(sAMAccountName={user})(memberof=cn=Users,dc=example,dc=com))
 ```
 
 `password`: *Password to unlock Galicaster when basic autentication is in use*  
@@ -367,8 +374,14 @@ enable_quit_button = false
 `ldapserverport`: *Port for LDAP server*  
 `ldapou`: *LDAP Organizational Unit*  
 `ldapdc`: *LDAP Domain Component*  
-`ldapusertype`:  *User type: (`cn`|`uid`)*  
-`enable_quit_button`: *Enable or disable quit button in lockscreen window*
+`ldapusertype`:  *User type*   
+`enable_quit_button`: *Enable or disable quit button in lockscreen window*  
+`ldap_advanced_bind`: *Enable advanced bind, search in the ldap for the user and then try to bind it*  
+`search_dn`: *Read-only user's DN, which will be used to authenticate against the LDAP server in order to fetch the user's information.*  
+`search_password`: *Read-only user's password, which will be used to authenticate against the LDAP server in order to fetch the user's information.*  
+`base_dn`: *Base DN for the directory search*  
+`group`: *Group where users are located*  
+`filter`: *Custom filter to query the database. If a filter is not provided, the default filter is `(&({ldapusertype}={user})(memberof=cn=Users,dc=example,dc=com))` The `{user}` __will be replace by the user introduced in Galicaster.__*
 
 ### Occlude tracks
 This plugin gives the possibility to disable tracks in the recording when pressing a button in the recorder.  

@@ -1,7 +1,7 @@
 Plugins
 =======
 
-*This page is updated to the 2.0.1 release*
+*This page is updated to the 2.0.2 release*
 
 Plugins are independent modules that provide a specific feature to Galicaster without affecting its normal behaviour and can be enabled or disabled separately. They may also have some sort of configuration to control its behaviour.
 Plugins communicate with Galicaster in a very simple way, by connecting to the inner signals of the program. They also can retrieve information from different elements of the application - repository, profiles, network status, GUI, etc.

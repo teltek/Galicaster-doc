@@ -1,7 +1,7 @@
 Compatible hardware
 ===================
 
-*This page is updated to the 2.0.1 release*
+*This page is updated to the 2.0.2 release*
 
 In this section we will enumerate the devices and capture cards compatible with Galicaster, and mention the Galicaster modules designed to make them work. Usually, Galicaster captures a camera feed and a presentation feed from a laptop or similar device. Audio can be captured through the video capture card, through the soundcard or with specialized devices.
 

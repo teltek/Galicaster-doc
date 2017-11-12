@@ -1,7 +1,7 @@
 Datapath video capture cards
 ============================
 
-*This page is updated to the 2.0.1 release*
+*This page is updated to the 2.0.2 release*
 
 ### Drivers & information
 Datapath cards are VGA and DVI capturing devices. They capture up to 1080p DVI and 2048x1536 analog. They also provide a blank signal when signal is missing and scales the resolution if a change occur.

@@ -344,11 +344,11 @@ keyboard = True
 This plugin allow to use Galicaster only by authorized users. It can use a simple password or LDAP to authenticate users.
 
 #### Loading and configuration:
-In `conf.ini`, include thefollowing section with your value of choice:
+In `conf.ini`, include the following section with your value of choice:
 
 ```ini
 [plugins]
-setuprecording = True
+lockscreen = True
 
 [lockscreen]
 password = 1234

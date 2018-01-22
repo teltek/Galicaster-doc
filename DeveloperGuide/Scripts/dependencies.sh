@@ -21,5 +21,3 @@ sudo apt-get install python-gi
 sudo apt-get install python-dbus
 # Libav
 sudo apt-get install gstreamer1.0-libav
-# Serial com
-sudo pip install pyserial

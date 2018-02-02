@@ -21,13 +21,14 @@ This section will focus on the device module configuration. Every device or capt
 * [RTP device module](DeviceModules/RTP.md) (*Not tested with Galicaster 2*)
 
 ### Common parameters
-The device module configuration sets the parameters necessary to capture, preview and process the incoming data from a device or capture card. Every device module has 5 common parameters:
+The device module configuration sets the parameters necessary to capture, preview and process the incoming data from a device or capture card. Every device module has 6 common parameters:
 
 * `name`: Name assigned to the device.
 * `device`: Device module type.
 * `file`: Filename - not route - where the data will be stored, including the extension.
 * `location`: Device mount point on the filesystem (source of the data coming from the device).
 * `flavor`: The role the device plays in the recording.
+* `tags`: Optional array of 'tags' to be added to the device track.
 
 ### Audio parameters
 The device modules with audio capturing capabilities have the ability to amplify and preview audio. Preview is done by playing the audio live and/or displaying its level in a VU meter. The parameters related to the audio preview are:

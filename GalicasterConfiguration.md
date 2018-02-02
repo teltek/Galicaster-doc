@@ -339,7 +339,7 @@ This section allows filtering series shown in the drop down list of the metadata
 | :------ |
 | According to Opencast documentation, the date-like filters (createdfrom and createdto) must follow the format yyyy-MM-dd'T'HH:mm:ss'Z' |
 
-In addition to the previous filters, the 'default' keyword accepts a series ID that will appear in the series list, no matter what. The values to the parameters may include placeholders for certain environment variables. The only one supported currently is '{user}', that is substituted with the current user name.
+In addition to the previous filters, the 'default' keyword accepts a series ID that will appear in the series list, no matter what. This series will be selected by default for all recordings. The values to the parameters may include placeholders for certain environment variables. The only one supported currently is '{user}', that is substituted with the current user name.
 
 ```ini
 [series]

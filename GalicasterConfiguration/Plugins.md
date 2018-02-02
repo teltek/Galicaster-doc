@@ -24,6 +24,7 @@ The following list enumerates the current available plugins at the 2.0.0 release
 * [On-screen Keyboard](#on-screen-keyboard)
 * [Lock Galicaster](#lock-galicaster)
 * [Occlude tracks](#occlude-tracks)
+* [Check space](#check-space)
 
 ### Screensaver for Ubuntu 16.04
 This plugin uses the Xorg system and the DBUS application interface to provide an automatic screensaver control for Galicaster. In order to work properly, this plugin requires both the screensaver and tge power management system to be disabled.
@@ -391,3 +392,18 @@ mute_type = input
 `mute_on_startup`: *Disable tracks on startup*  
 `bin`: *Tracks name to disable, __if empty disable all__*  
 `mute_type`: *Where to disable tracks (`preview`|`input`)*
+
+### Check space
+This plugin allows setting a space threshold for the Repository. When the filesystem goes under this threshold, the plugin will set Galicaster on a record-error. Useful to notice when you are running out of space.
+
+
+#### Loading and configuring
+In `conf.ini`, include the following code with your values of choice:
+```ini
+[plugins]
+checkpsace = True
+
+[checkspace]
+minfreespace = 10 ;In GB
+```
+`minfreespace`: *Threshold in GB after which the error will appear*  

@@ -37,6 +37,7 @@ In the `basic` section of the `conf.ini` file, you can configure the following i
 * [Quit option](#quit)
 * [Shutdown option](#shutdown)
 * [Resolution](#resolution)
+* [Pause Dialog Size](#pause-dialog-size)
 
 #### Administration mode
 The *admin mode* allows the user to access the Profile Selector and the Media manager. If the *admin mode* is disabled, only the Recorder area is available and the selected profile is locked.
@@ -99,6 +100,14 @@ Default value: `auto`
 | :------ |
 | Dual screens may require a manual resolution to be defined. |
 
+#### Pause Dialog Size
+Allows changing the size of the pause dialog that appears after the pause button is pressed. Useful for certain instances where you want the dialog to be easily noticeable, specially using a smaller screen.
+
+```ini
+[basic]
+pausedialog_size = 15
+```
+Default value: `15`
 
 #### Swap videos
 If set, a button will be displayed in the Recorder view in order to be able to swap the preview videos. For instance, if the camera is been displayed in the right side, pressing this button will be shown in the left side and the screen preview will be shown in the other side.

@@ -1,7 +1,7 @@
 Device module configuration
 ===========================
 
-*This page is updated to the 2.0.1 release*
+*This page is updated to the 2.1 version*
 
 The configuration of a capture card or device involves different aspects:
 

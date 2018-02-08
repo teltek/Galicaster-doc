@@ -2,7 +2,7 @@
 Blackmagic cards
 ================
 
-*This page is updated to the 2.0.1 release*
+*This page is updated to the 2.1 version*
 
 Blackmagic cards are an option to capture high definition contents, both camera and laptop sources. Depending on the card installed and the input type you should be able to configure it following these instructions.
 

@@ -1,7 +1,7 @@
 User Guide - Recorder
 =====================
 
-*This page is updated to the 2.0.1 release*
+*This page is updated to the 2.1 version*
 
 The main area of Galicaster is the Recorder. The Recorder will show you a real-time preview of the devices set in the configuration.
 

@@ -1,7 +1,7 @@
 User Guide
 ==========
 
-*This page is updated to the 2.0.1 release*
+*This page is updated to the 2.1 version*
 
 This area will compile all the information available about the daily use of Galicaster. Some of this information is also available in the docs folder of the source code.
 

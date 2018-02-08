@@ -1,7 +1,7 @@
 Hardware recommendations
 ========================
 
-*This page is updated to the 2.0.1 release*
+*This page is updated to the 2.1 version*
 
 Base unit
 ---------

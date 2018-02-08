@@ -1,7 +1,7 @@
 Installing Ubuntu
 =================
 
-*This document is updated to the 2.0.1 release*
+*This page is updated to the 2.1 version*
 
 1. Download Ubuntu 16.04.2  
 

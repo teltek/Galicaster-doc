@@ -2,7 +2,7 @@
 Pulse device module
 ===================
 
-*This page is updated to the 2.0.1 release*
+*This page is updated to the 2.1 version*
 
 This module records audio through the well-know PulseAudio sound server. It can capture audio coming from the various motherboard inputs and from USB audio devices.
 

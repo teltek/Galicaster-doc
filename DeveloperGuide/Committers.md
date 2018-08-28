@@ -6,7 +6,7 @@ The committer role is created to give more tools to experienced and dedicated co
 
 To facilitate this, committers will share the following privileges:
 
-* Write access to the codebase. (Note: All code contributed by a commiter needs to be reviewed by a different committer, see [REVIEWING-RULES.md](REVIEWING-RULES.md) for more information)
+* Write access to the codebase. (Note: All code contributed by a commiter needs to be reviewed by a different committer, see [Reviewing Rules](ReviewingRules.md) for more information)
 * Access to the private committers mailing list.
 * Vote on the product design and the project direction.
 

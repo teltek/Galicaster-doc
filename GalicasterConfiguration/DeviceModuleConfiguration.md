@@ -16,6 +16,7 @@ This section will focus on the device module configuration. Every device or capt
 * [V4l2 device module](DeviceModules/V4L2.md) (Datapath, Epiphan and other devices)
 * [Blackmagic device module](DeviceModules/Blackmagic.md)
 * [Pulse device module](DeviceModules/Pulse.md)
+* [NDI device module](DeviceModules/NDI.md)
 * [Hauppauge device module](DeviceModules/Hauppauge.md) (*Not tested with Galicaster 2*)
 * [Firewire device module](DeviceModules/Firewire.md) (*Not tested with Galicaster 2*)
 * [RTP device module](DeviceModules/RTP.md) (*Not tested with Galicaster 2*)

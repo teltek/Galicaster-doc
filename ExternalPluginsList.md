@@ -13,3 +13,5 @@ List of external plugins
   Send email and/or change Pulseaudio input when someone plugs/unplugs a USB device from a device running Galicaster.
 * [Blinkstick plugin](https://github.com/ppettit/galicaster-plugin-blinkstick):
   Use USB RGB LED to display Galicaster recording status
+* [Hide buttons](https://github.com/SussexLearningSystems/Galicaster-plugin-hidebuttons):
+  Hide buttons from the non-admin UI

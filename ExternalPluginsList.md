@@ -15,3 +15,5 @@ List of external plugins
   Use USB RGB LED to display Galicaster recording status
 * [Hide buttons](https://github.com/SussexLearningSystems/Galicaster-plugin-hidebuttons):
   Hide buttons from the non-admin UI
+* [Sussex keyboard](https://github.com/SussexLearningSystems/Galicaster-plugin-sussexkeyboard):
+  Alternative to the internal keyboard plugin that doesn't require the continued setting of dconf options

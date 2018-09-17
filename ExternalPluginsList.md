@@ -13,3 +13,5 @@ List of external plugins
   Send email and/or change Pulseaudio input when someone plugs/unplugs a USB device from a device running Galicaster.
 * [Blinkstick plugin](https://github.com/ppettit/galicaster-plugin-blinkstick):
   Use USB RGB LED to display Galicaster recording status
+* [Sussex keyboard](https://github.com/SussexLearningSystems/Galicaster-plugin-sussexkeyboard):
+  Alternative to the internal keyboard plugin that doesn't require the continued setting of dconf options

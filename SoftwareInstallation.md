@@ -28,11 +28,6 @@ Before starting the installation process, please make sure that:
 * You are running a Linux-based OS. The recommended distribution is Ubuntu 20.04. Make sure that the version chosen matches your system architecture (32 or 64 bits). If using the recommended Linux OS, check the following guide: [How to install Ubuntu.](SoftwareInstallation/InstallingUbuntu.md)
 * `galicaster` is the default user in the system.
 
-|![forbbiden](images/forbidden.gif) Important                                               |
-|                    :------                                             |
-|   Due to a [bug in Gstreamer v4l2 library](https://github.com/teltek/Galicaster/issues/298), present in the 1.8.3 version, it is necessary to install our patched version from our repositories, or to compile the latest GStreamer 1.10.3 version manually. We have included the installation of the patched version in our installation instructions. |
-
-
 ### Step 2: Install the software
  There are two options to install Galicaster:
  * [Install through our repository](#using-the-galicaster-repository). This is the recommended option for newcomers.

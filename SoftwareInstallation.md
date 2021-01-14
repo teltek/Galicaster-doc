@@ -7,11 +7,17 @@ Installation process
 --------------------
 The installation process consists of 5 simple steps:
 
-1. [Check the prerequisites.](#step-1-check-the-prerequisites)
-1. [Install the software.](#step-2-install-the-software)
-1. [Setup config directory](#step-3-setup-config-directory)
-1. [Install and configure drivers.](#step-4-install-and-configure-drivers-optional)( optional )
-1. [Run Galicaster for the first time.](#step-5-run-galicaster-for-the-first-time)
+- [Software installation](#software-installation)
+  - [Installation process](#installation-process)
+    - [Step 1: Check the prerequisites](#step-1-check-the-prerequisites)
+    - [Step 2: Install the software](#step-2-install-the-software)
+      - [Using the Galicaster repository](#using-the-galicaster-repository)
+      - [Source code](#source-code)
+        - [Dependencies](#dependencies)
+          - [Adding a launcher](#adding-a-launcher)
+    - [Step 3: Setup config directory](#step-3-setup-config-directory)
+    - [Step 4: Install and configure drivers (Optional)](#step-4-install-and-configure-drivers-optional)
+    - [Step 5: Run Galicaster for the first time](#step-5-run-galicaster-for-the-first-time)
 
 After installing Galicaster, the next step is configuring it. You can take a look at the [Configuration Guide](GalicasterConfiguration.md).
 
@@ -19,7 +25,7 @@ After installing Galicaster, the next step is configuring it. You can take a loo
 Before starting the installation process, please make sure that:
 
 * Your unit meets Galicaster [Hardware Recommendations.](HardwareRecommendations.md)
-* You are running a Linux-based OS. The recommended distribution is Ubuntu 16.04. Make sure that the version chosen matches your system architecture (32 or 64 bits). If using the recommended Linux OS, check the following guide: [How to install Ubuntu.](SoftwareInstallation/InstallingUbuntu.md)
+* You are running a Linux-based OS. The recommended distribution is Ubuntu 20.04. Make sure that the version chosen matches your system architecture (32 or 64 bits). If using the recommended Linux OS, check the following guide: [How to install Ubuntu.](SoftwareInstallation/InstallingUbuntu.md)
 * `galicaster` is the default user in the system.
 
 |![forbbiden](images/forbidden.gif) Important                                               |
@@ -43,16 +49,9 @@ Installation instructions using the galicaster repository are as follows:
 |   Remember to install the system using the galicaster user|
 
 ```bash
-echo "deb https://packages.galicaster.org/apt xenial main" | sudo tee --append /etc/apt/sources.list.d/galicaster.list
+echo "deb https://packages.galicaster.org/apt focal main" | sudo tee --append /etc/apt/sources.list.d/galicaster.list
 wget -O - https://packages.galicaster.org/apt/galicaster.gpg.key  | sudo apt-key add -
 sudo apt-get update
-sudo apt-get install gstreamer1.0-plugins-good gir1.2-gstreamer-1.0 #Required to solve #298 and #29
-sudo apt-get install galicaster
-```
-If you are **upgrading from a previous 2.0 version**, you just need to execute
-```bash
-sudo apt-get update
-sudo apt-get install gir1.2-gstreamer-1.0 gstreamer1.0-plugins-good #Required to solve #298 and #29
 sudo apt-get install galicaster
 ```
 
@@ -66,11 +65,7 @@ If a repository installation is also present, conf.ini and the profiles will be 
 
 Galicaster depends on the following modules and libraries:
 ```
-python python-pip python-setuptools python-dev python-pycurl python-bottle python-glade2 python-icalendar python-gi python-dbus python-simplejson python-ldap python-serial
-gstreamer1.0-plugins-base gstreamer1.0-plugins-base-apps gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-plugins-good gstreamer1.0-alsa gstreamer1.0-libav gstreamer1.0-pulseaudio
-gir1.2-gstreamer-1.0 gir1.2-gtk-3.0 gir1.2-gst-plugins-base-1.0
-onboard onboard-data
-libsasl2-dev libldap2-dev libssl-dev
+apt-get install python3 python3-pip python3-setuptools python3-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-base-apps gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-plugins-good gstreamer1.0-plugins-bad-videoparsers gstreamer1.0-plugins-bad-faad gstreamer1.0-alsa gstreamer1.0-libav gstreamer1.0-pulseaudio libgstreamer1.0-0 gir1.2-gstreamer-1.0 gir1.2-gtk-3.0 gir1.2-gst-plugins-base-1.0 python3-pycurl python3-bottle python3-icalendar python3-gi python3-dbus python3-simplejson python3-ldap python3-gst-1.0 python3-parse python3-pil onboard onboard-data libogg0 libvorbis0a libvorbisenc2 libsasl2-dev libldap2-dev libssl-dev
 ```
 
 ###### Adding a launcher

@@ -66,7 +66,7 @@ apt-get install python3 python3-pip python3-setuptools python3-dev gstreamer1.0-
 ###### Adding a launcher
 You can easilly add a launcher to a manual installation by creating a file at `/usr/local/bin/` containing the following command:
 ```bash
-python <path>/run_galicaster.py
+python3 <path>/run_galicaster.py
 ```
 where `<path>` is the directory where you downloaded galicaster source code.
 

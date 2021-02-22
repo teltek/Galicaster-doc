@@ -1,7 +1,7 @@
-Galicaster 2.x Documentation Project
+Galicaster 3.x Documentation Project
 ==================================
 
-*This page is updated to the 2.1 version*
+*This page is updated to the 3.0 version*
 
 Documentation:
 --------------

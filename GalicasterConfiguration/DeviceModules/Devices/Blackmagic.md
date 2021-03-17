@@ -97,7 +97,7 @@ ls /dev/blackmagic/*
 
 For more information on mode, connection and audio values please use:
 ```bash
-gst-inspect1.0 decklinksrc
+gst-inspect-1.0 decklinksrc
 ```
 
 Example:

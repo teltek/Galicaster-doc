@@ -106,7 +106,7 @@ hidecursor = False
 `hidecursor`: *Enable or disable cursor*
 
 ### Check for a non-started scheduled recording
-If the Galicaster unit is turned on after a scheduled recording should had been started, the recording will be lost. This pluging helps mitigating this problem by checking for a recording that should have already been started and starting it immediately for the remaining time.
+If the Galicaster unit is turned on after a scheduled recording should had been started, the recording will be lost. This pluging helps mitigating this problem by checking for a recording that should have already been started and starting it immediately for the remaining time. This plugin may also handle the merging of the resulting partial video and audio files generated
 
 #### Behaviour
 The plugin looks for recordings that should be currently running. If there is any, it is started immediately with its metadata - duration and start time - modified appropriately. The recovered recording will run for the remaining time only. An example:
@@ -115,16 +115,23 @@ The plugin looks for recordings that should be currently running. If there is an
 * Computer started at 10:20.
 * The recording will run from 10:20 to 12:00, resulting on a video 1 hour and 40 minutes long.
 
+If merging is enabled the resulting partial audio and video files recorded will be concatenated into single continuous files and placed in the correct mediapackage with ammended metadata including recording duration. This merging can happen immediately or at nightly time.
+
 #### Loading
 In `conf.ini` (link to conf.ini), include the following code with your values of choice:
 
 ```ini
 [plugins]
 checkrepo = True
+
+[checkrepo]
+to_merge = False
+delay_merge = False
 ```
 `True`: *Enables plugin.*  
-`False`: *Disables plugin.*
-
+`False`: *Disables plugin.*  
+`to_merge`: *Enables merging of the partial audio and video files generated from the restarted recordings.*  
+`delay_merge`: *Enables delaying the merging behavior until the nightly timer in galicaster.*  
 
 ### Clean old recordings
 This plugin deletes every recording older than a certain threshold. It is meant to keep enough free space on the hard drive, assuming the copies of the media in the recording units are not used as backup.

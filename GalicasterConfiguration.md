@@ -204,6 +204,16 @@ tmp = /path/folder/repository/
 ```
 Default value: `/tmp` (in Ubuntu distros)
 
+### Repository
+Modifies the behavior of the repository:
+* recoverytype: Galicaster has some in-built recovery of recorded video/audio files and metadata (the mediapackage). If there is an error or crash, by default the mediapackage is recovered automatically in full but you may select to just save the mediapackage in the temporary working recording directory (`repository-folder/rectemp`).
+
+```ini
+[repository]
+recoverytype = full
+```
+recoverytype: (save | **full**)
+
 ### Recorder
 Allows to modify the behaviour of the recorder:
 * autorecover: If active the recorder reloads automatically after an error in the profile.

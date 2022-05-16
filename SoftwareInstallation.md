@@ -60,7 +60,12 @@ If a repository installation is also present, conf.ini and the profiles will be 
 
 Galicaster depends on the following modules and libraries:
 ```
-apt-get install python3 python3-pip python3-setuptools python3-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-base-apps gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-plugins-good gstreamer1.0-plugins-bad-videoparsers gstreamer1.0-plugins-bad-faad gstreamer1.0-alsa gstreamer1.0-libav gstreamer1.0-pulseaudio libgstreamer1.0-0 gir1.2-gstreamer-1.0 gir1.2-gtk-3.0 gir1.2-gst-plugins-base-1.0 python3-pycurl python3-bottle python3-icalendar python3-gi python3-dbus python3-simplejson python3-ldap python3-gst-1.0 python3-parse python3-pil onboard onboard-data libogg0 libvorbis0a libvorbisenc2 libsasl2-dev libldap2-dev libssl-dev python-is-python3
+apt-get install python3 python3-pip python3-setuptools python3-dev gstreamer1.0-plugins-base gstreamer1.0-plugins-base-apps gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-plugins-good gstreamer1.0-plugins-bad-videoparsers gstreamer1.0-plugins-bad-faad gstreamer1.0-alsa gstreamer1.0-libav gstreamer1.0-pulseaudio libgstreamer1.0-0 gir1.2-gstreamer-1.0 gir1.2-gtk-3.0 gir1.2-gst-plugins-base-1.0 python3-pycurl python3-bottle python3-icalendar python3-gi python3-dbus python3-simplejson python3-ldap python3-gst-1.0 python3-parse python3-pil onboard onboard-data libogg0 libvorbis0a libvorbisenc2 libsasl2-dev libldap2-dev libssl-dev python-is-python3 scrot python3-tk python3-dev
+```
+
+It is also necessary to install the following dependencies with pip:
+```
+pip install pyautogui
 ```
 
 ###### Adding a launcher

@@ -48,7 +48,13 @@ echo "deb https://packages.galicaster.org/apt focal main" | sudo tee --append /e
 wget -O - https://packages.galicaster.org/apt/galicaster.gpg.key  | sudo apt-key add -
 sudo apt-get update
 sudo apt-get install galicaster
+sudo apt-get install python3-tk python3-dev
 ```
+It is also necessary to install the following dependencies with pip:
+```
+pip install pyautogui
+```
+
 
 #### Source code
 As an alternative, you can install Galicaster from the source code. Stable versions are available on the [Release Archive.](SoftwareInstallation/ReleaseArchive.md). Stable and development versions, as well as development information, are available in our [Git repository](http://github.com/teltek/Galicaster).
